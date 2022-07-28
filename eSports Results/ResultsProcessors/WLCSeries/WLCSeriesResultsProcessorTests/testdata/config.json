@@ -1,0 +1,62 @@
+[
+  {
+    "bestOf": 4,
+    "bottomColour": "#f2329a",
+    "events": [ 2425294, 2445599, 2471894, 2498214, 2525130, 2572480 ],
+    "maxPoints": 50,
+    "middleColour": "#1b93c9",
+    "pointsCap": 3,
+    "seriesName": "Wahoo Le Col Racing Series",
+    "topColour": "#f2329a"
+  },
+  {
+    "seriesName": "Wahoo Le Col Racing Series 2",
+    "maxPoints": 100,
+    "pointsCap": 3,
+    "bestOf": 6,
+    "topColour": "#f2329a",
+    "middleColour": "#1b93c9",
+    "bottomColour": "#f2329a",
+    "events": [ 2596513, 2628997, 2660809, 2692552, 2724408, 2756973, 2786004, 2816374 ]
+  },
+  {
+    "seriesName": "Wahoo Le Col Racing Series For Women",
+    "maxPoints": 50,
+    "pointsCap": 3,
+    "bestOf": 6,
+    "topColour": "#f2324f",
+    "middleColour": "#5ed2e7",
+    "bottomColour": "#f2329a",
+    "events": [ 2618305, 2629060, 2660874, 2692618, 2724470, 2757036, 2786067, 2816439 ]
+  },
+  {
+    "seriesName": "Wahoo Le Col Awesome Foursome",
+    "maxPoints": 50,
+    "pointsCap": 3,
+    "bestOf": 4,
+    "topColour": "#f2329a",
+    "middleColour": "#1b93c9",
+    "bottomColour": "#f2329a",
+    "events": [ 2858644, 2873037, 2873049, 2873050 ]
+  },
+  {
+    "seriesName": "Wahoo Le Col Racing Season 3",
+    "maxPoints": 100,
+    "pointsCap": 3,
+    "bestOf": 4,
+    "topColour": "#f2329a",
+    "middleColour": "#1b93c9",
+    "bottomColour": "#f2329a",
+    "events": [ 2906197, 2906198, 2906200, 2906203, 2906204, 2906206 ]
+  },
+  {
+    "seriesName": "Wahoo Le Col Racing Series For Women - Season 3",
+    "maxPoints": 50,
+    "pointsCap": 3,
+    "bestOf": 4,
+    "topColour": "#f2324f",
+    "middleColour": "#5ed2e7",
+    "bottomColour": "#f2329a",
+    "events": [ 2921808, 2921819, 2921821, 2921825, 2921826, 2921828 ]
+  }
+]

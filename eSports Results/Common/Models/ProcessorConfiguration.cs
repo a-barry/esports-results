@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Common.Models
+{
+    public class SeriesProcessorConfiguration
+    {
+        public int QualifyingEventsPerRider { get; set; } = 0;
+
+        public int QualifyingScoresPerRider { get; set; } = 0;
+
+        public EventProcessorConfiguration EventConfiguration { get; set; }
+    }
+
+    public class EventProcessorConfiguration
+    {
+        /// <summary>
+        /// The number of points earned by the first placed rider
+        /// </summary>
+        public int PointsForFirst { get; set; }
+
+        /// <summary>
+        /// The step size used when calculating points.
+        /// </summary>
+        /// <example>
+        ///     PointStep 1 would produce 1st = 10, 2nd = 9, 3rd = 8
+        ///     PointStep 2 would produce 1st = 10, 2nd = 8, 3rd = 6
+        ///     PointStep 3 would produce 1st = 10, 2nd = 7, 3rd = 4
+        /// </example>
+        public int PointStep { get; set; } = 1;
+
+        /// <summary>
+        /// The number of points earned by any rider just for making the finish line.
+        /// </summary>
+        /// <remarks>Can be zero.</remarks>
+        public int PointsForParticipation { get; set; } = 0;
+
+        /// <summary>
+        /// For team results how many riders will score points. 0 == all riders.
+        /// </summary>
+        public int MaxScorersPerTeam { get; set; } = 0;
+        public bool ScorePrimes { get; set; }
+        //public bool ScorePrimes { get; set; }
+    }
+}
