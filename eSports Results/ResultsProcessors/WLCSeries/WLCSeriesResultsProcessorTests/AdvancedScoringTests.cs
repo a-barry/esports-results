@@ -14,6 +14,17 @@ namespace WLCSeriesResultsProcessorTests
         [TestMethod]
         public async Task Event_2425294()
         {
+            await TestEventIndividual("2425294");
+        }
+
+        [TestMethod]
+        public async Task Event_2445599()
+        {
+            await TestEventIndividual("2445599");
+        }
+
+        private async Task TestEventIndividual(string eventId)
+        {
             var config = new EventProcessorConfiguration()
             {
                 MaxScorersPerTeam = 3,
@@ -23,17 +34,19 @@ namespace WLCSeriesResultsProcessorTests
                 PointsForParticipation = 1
             };
 
-            var rawData = JSectionReader.Section("2425294.json").GetObject<ComparisonIndividualResultCollection>();
+            var rawData = JSectionReader.Section($"{eventId}.json").GetObject<ComparisonIndividualResultCollection>();
 
             // yes this could be done with automapper but thats overkill in a test.
-            var convertedData = rawData.Results.Select(r => new RawResult() {
+            var convertedData = rawData.Results.Select(r => new RawResult()
+            {
                 Id = r.zwid.ToString(),
                 Name = r.name,
                 Pen = r.penInt,
                 TeamId = r.teamId.ToString(),
                 PositionInPen = r.positionInPen,
                 OriginalPositionInPen = r.originalPositionInPen,
-                PositionOverall = r.positionOverall }).ToList();
+                PositionOverall = r.positionOverall
+            }).ToList();
 
             var processor = new WLCSeriesResultsProcessor.WLCEventProcessor();
 
@@ -41,7 +54,7 @@ namespace WLCSeriesResultsProcessorTests
 
             var processedResults = await processor.GetIndividualResultsAsync();
 
-            var expectedResults = JSectionReader.Section("2425294_Results.json").GetObject<ComparisonExpectResults>();
+            var expectedResults = JSectionReader.Section($"{eventId}_Results.json").GetObject<ComparisonExpectResults>();
 
             // compare A pen
             // total results

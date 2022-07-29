@@ -1,0 +1,1163 @@
+{
+  "TeamOverall": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "306"
+    },
+    {
+      "Id": "11991",
+      "Name": "COALITION",
+      "Points": "122"
+    },
+    {
+      "Id": "791",
+      "Name": "Race3R",
+      "Points": "110"
+    },
+    {
+      "Id": "2281",
+      "Name": "TeamNL",
+      "Points": "108"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "108"
+    },
+    {
+      "Id": "11298",
+      "Name": "TMR",
+      "Points": "107"
+    },
+    {
+      "Id": "4976",
+      "Name": "NICO OZ",
+      "Points": "82"
+    },
+    {
+      "Id": "4742",
+      "Name": "EVOLUTION ",
+      "Points": "69"
+    },
+    {
+      "Id": "16151",
+      "Name": "FORCE",
+      "Points": "62"
+    },
+    {
+      "Id": "90",
+      "Name": "Vikings",
+      "Points": "50"
+    },
+    {
+      "Id": "3316",
+      "Name": "Syko",
+      "Points": "49"
+    },
+    {
+      "Id": "1958",
+      "Name": "TEAM ZWC",
+      "Points": "48"
+    },
+    {
+      "Id": "4630",
+      "Name": "TugaZ",
+      "Points": "47"
+    },
+    {
+      "Id": "11939",
+      "Name": "DZR",
+      "Points": "47"
+    },
+    {
+      "Id": "16553",
+      "Name": "[GALAXY]",
+      "Points": "47"
+    },
+    {
+      "Id": "12701",
+      "Name": "Pro-Vision",
+      "Points": "46"
+    },
+    {
+      "Id": "3369",
+      "Name": "Team RWB",
+      "Points": "45"
+    },
+    {
+      "Id": "3498",
+      "Name": "BNJ",
+      "Points": "45"
+    },
+    {
+      "Id": "7592",
+      "Name": "MTBtraining",
+      "Points": "45"
+    },
+    {
+      "Id": "2163",
+      "Name": "KLD",
+      "Points": "44"
+    },
+    {
+      "Id": "2232",
+      "Name": "FCSP ",
+      "Points": "43"
+    },
+    {
+      "Id": "35",
+      "Name": "BZR eCycling Club",
+      "Points": "41"
+    },
+    {
+      "Id": "2091",
+      "Name": "Climbbybike",
+      "Points": "41"
+    },
+    {
+      "Id": "4995",
+      "Name": "EMU",
+      "Points": "40"
+    },
+    {
+      "Id": "588",
+      "Name": "Team Italy",
+      "Points": "39"
+    },
+    {
+      "Id": "13822",
+      "Name": "ZRG-R",
+      "Points": "39"
+    },
+    {
+      "Id": "1805",
+      "Name": "PeaceFIT Racing",
+      "Points": "38"
+    },
+    {
+      "Id": "7221",
+      "Name": "SDW",
+      "Points": "37"
+    },
+    {
+      "Id": "6116",
+      "Name": "Serpentine",
+      "Points": "36"
+    },
+    {
+      "Id": "16362",
+      "Name": "Talent:frei",
+      "Points": "36"
+    },
+    {
+      "Id": "8520",
+      "Name": "G!RO ATQ",
+      "Points": "35"
+    },
+    {
+      "Id": "5673",
+      "Name": "Didcot Phoenix CC",
+      "Points": "34"
+    },
+    {
+      "Id": "32",
+      "Name": "SZ",
+      "Points": "33"
+    },
+    {
+      "Id": "6936",
+      "Name": "VCGS",
+      "Points": "33"
+    },
+    {
+      "Id": "10557",
+      "Name": "DHC",
+      "Points": "32"
+    },
+    {
+      "Id": "3919",
+      "Name": "CONED",
+      "Points": "31"
+    },
+    {
+      "Id": "984",
+      "Name": "HFR",
+      "Points": "29"
+    },
+    {
+      "Id": "3052",
+      "Name": "KST",
+      "Points": "27"
+    },
+    {
+      "Id": "13404",
+      "Name": "BL13",
+      "Points": "27"
+    },
+    {
+      "Id": "17308",
+      "Name": "eCKD/SeC",
+      "Points": "27"
+    },
+    {
+      "Id": "2740",
+      "Name": "Team CRYO-GEN",
+      "Points": "25"
+    },
+    {
+      "Id": "8745",
+      "Name": "SunEnd",
+      "Points": "25"
+    },
+    {
+      "Id": "3757",
+      "Name": "PTT",
+      "Points": "24"
+    },
+    {
+      "Id": "4889",
+      "Name": "Sportlove EST",
+      "Points": "24"
+    },
+    {
+      "Id": "4982",
+      "Name": "CCNS ",
+      "Points": "22"
+    },
+    {
+      "Id": "168",
+      "Name": "Team Type 1",
+      "Points": "17"
+    },
+    {
+      "Id": "1965",
+      "Name": "BIKES-FR",
+      "Points": "16"
+    },
+    {
+      "Id": "2153",
+      "Name": "ZOSS VOG",
+      "Points": "15"
+    },
+    {
+      "Id": "5563",
+      "Name": "Zwaluwen Deventer",
+      "Points": "11"
+    },
+    {
+      "Id": "9872",
+      "Name": "OKCC",
+      "Points": "7"
+    },
+    {
+      "Id": "25",
+      "Name": "ZTPL.CC",
+      "Points": "6"
+    },
+    {
+      "Id": "9263",
+      "Name": "DT",
+      "Points": "2"
+    },
+    {
+      "Id": "293",
+      "Name": "GenX",
+      "Points": "1"
+    },
+    {
+      "Id": "1986",
+      "Name": "DBR",
+      "Points": "1"
+    },
+    {
+      "Id": "8792",
+      "Name": "VELOEX",
+      "Points": "1"
+    },
+    {
+      "Id": "8959",
+      "Name": "SUB4",
+      "Points": "1"
+    },
+    {
+      "Id": "9165",
+      "Name": "VCC",
+      "Points": "1"
+    },
+    {
+      "Id": "16138",
+      "Name": "VIGORE",
+      "Points": "1"
+    },
+    {
+      "Id": "16219",
+      "Name": "SISU",
+      "Points": "1"
+    }
+  ],
+  "TeamA": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "128"
+    },
+    {
+      "Id": "11298",
+      "Name": "TMR",
+      "Points": "88"
+    },
+    {
+      "Id": "4976",
+      "Name": "NICO OZ",
+      "Points": "82"
+    },
+    {
+      "Id": "1958",
+      "Name": "TEAM ZWC",
+      "Points": "48"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "47"
+    },
+    {
+      "Id": "7592",
+      "Name": "MTBtraining",
+      "Points": "45"
+    },
+    {
+      "Id": "35",
+      "Name": "BZR eCycling Club",
+      "Points": "41"
+    },
+    {
+      "Id": "4995",
+      "Name": "EMU",
+      "Points": "40"
+    },
+    {
+      "Id": "7221",
+      "Name": "SDW",
+      "Points": "37"
+    },
+    {
+      "Id": "16362",
+      "Name": "Talent:frei",
+      "Points": "36"
+    },
+    {
+      "Id": "10557",
+      "Name": "DHC",
+      "Points": "32"
+    },
+    {
+      "Id": "3919",
+      "Name": "CONED",
+      "Points": "31"
+    },
+    {
+      "Id": "984",
+      "Name": "HFR",
+      "Points": "29"
+    },
+    {
+      "Id": "2281",
+      "Name": "TeamNL",
+      "Points": "28"
+    },
+    {
+      "Id": "13404",
+      "Name": "BL13",
+      "Points": "27"
+    },
+    {
+      "Id": "11991",
+      "Name": "COALITION",
+      "Points": "26"
+    },
+    {
+      "Id": "2740",
+      "Name": "Team CRYO-GEN",
+      "Points": "25"
+    },
+    {
+      "Id": "4889",
+      "Name": "Sportlove EST",
+      "Points": "24"
+    }
+  ],
+  "TeamB": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "113"
+    },
+    {
+      "Id": "4742",
+      "Name": "EVOLUTION ",
+      "Points": "69"
+    },
+    {
+      "Id": "16151",
+      "Name": "FORCE",
+      "Points": "62"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "61"
+    },
+    {
+      "Id": "791",
+      "Name": "Race3R",
+      "Points": "60"
+    },
+    {
+      "Id": "11991",
+      "Name": "COALITION",
+      "Points": "50"
+    },
+    {
+      "Id": "3316",
+      "Name": "Syko",
+      "Points": "49"
+    },
+    {
+      "Id": "11939",
+      "Name": "DZR",
+      "Points": "47"
+    },
+    {
+      "Id": "12701",
+      "Name": "Pro-Vision",
+      "Points": "46"
+    },
+    {
+      "Id": "3498",
+      "Name": "BNJ",
+      "Points": "45"
+    },
+    {
+      "Id": "2163",
+      "Name": "KLD",
+      "Points": "44"
+    },
+    {
+      "Id": "588",
+      "Name": "Team Italy",
+      "Points": "39"
+    },
+    {
+      "Id": "1805",
+      "Name": "PeaceFIT Racing",
+      "Points": "38"
+    },
+    {
+      "Id": "8520",
+      "Name": "G!RO ATQ",
+      "Points": "35"
+    },
+    {
+      "Id": "5673",
+      "Name": "Didcot Phoenix CC",
+      "Points": "34"
+    },
+    {
+      "Id": "32",
+      "Name": "SZ",
+      "Points": "33"
+    },
+    {
+      "Id": "2281",
+      "Name": "TeamNL",
+      "Points": "31"
+    },
+    {
+      "Id": "3052",
+      "Name": "KST",
+      "Points": "27"
+    },
+    {
+      "Id": "8745",
+      "Name": "SunEnd",
+      "Points": "25"
+    },
+    {
+      "Id": "4982",
+      "Name": "CCNS ",
+      "Points": "22"
+    },
+    {
+      "Id": "11298",
+      "Name": "TMR",
+      "Points": "19"
+    },
+    {
+      "Id": "168",
+      "Name": "Team Type 1",
+      "Points": "17"
+    },
+    {
+      "Id": "1965",
+      "Name": "BIKES-FR",
+      "Points": "16"
+    },
+    {
+      "Id": "2153",
+      "Name": "ZOSS VOG",
+      "Points": "15"
+    },
+    {
+      "Id": "5563",
+      "Name": "Zwaluwen Deventer",
+      "Points": "11"
+    },
+    {
+      "Id": "9872",
+      "Name": "OKCC",
+      "Points": "7"
+    },
+    {
+      "Id": "25",
+      "Name": "ZTPL.CC",
+      "Points": "6"
+    },
+    {
+      "Id": "9263",
+      "Name": "DT",
+      "Points": "2"
+    },
+    {
+      "Id": "293",
+      "Name": "GenX",
+      "Points": "1"
+    },
+    {
+      "Id": "1986",
+      "Name": "DBR",
+      "Points": "1"
+    },
+    {
+      "Id": "8792",
+      "Name": "VELOEX",
+      "Points": "1"
+    },
+    {
+      "Id": "8959",
+      "Name": "SUB4",
+      "Points": "1"
+    },
+    {
+      "Id": "9165",
+      "Name": "VCC",
+      "Points": "1"
+    },
+    {
+      "Id": "16138",
+      "Name": "VIGORE",
+      "Points": "1"
+    },
+    {
+      "Id": "16219",
+      "Name": "SISU",
+      "Points": "1"
+    }
+  ],
+  "TeamC": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "65"
+    },
+    {
+      "Id": "90",
+      "Name": "Vikings",
+      "Points": "50"
+    },
+    {
+      "Id": "2281",
+      "Name": "TeamNL",
+      "Points": "49"
+    },
+    {
+      "Id": "4630",
+      "Name": "TugaZ",
+      "Points": "47"
+    },
+    {
+      "Id": "11991",
+      "Name": "COALITION",
+      "Points": "46"
+    },
+    {
+      "Id": "3369",
+      "Name": "Team RWB",
+      "Points": "45"
+    },
+    {
+      "Id": "2232",
+      "Name": "FCSP ",
+      "Points": "43"
+    },
+    {
+      "Id": "2091",
+      "Name": "Climbbybike",
+      "Points": "41"
+    },
+    {
+      "Id": "13822",
+      "Name": "ZRG-R",
+      "Points": "39"
+    },
+    {
+      "Id": "6116",
+      "Name": "Serpentine",
+      "Points": "36"
+    },
+    {
+      "Id": "6936",
+      "Name": "VCGS",
+      "Points": "33"
+    },
+    {
+      "Id": "17308",
+      "Name": "eCKD/SeC",
+      "Points": "27"
+    },
+    {
+      "Id": "3757",
+      "Name": "PTT",
+      "Points": "24"
+    }
+  ],
+  "TeamD": [
+    {
+      "Id": "791",
+      "Name": "Race3R",
+      "Points": "50"
+    },
+    {
+      "Id": "16553",
+      "Name": "[GALAXY]",
+      "Points": "47"
+    }
+  ],
+  "IndividualA": [
+    {
+      "Name": "Hywel Davies [Wahoo Le Col]",
+      "Points": "50"
+    },
+    {
+      "Name": "ZG Chen2550",
+      "Points": "49"
+    },
+    {
+      "Name": "Hidenori Sasauchi (Team ZWC - Awake)",
+      "Points": "48"
+    },
+    {
+      "Name": "Rob Devlin (Eat Dirt)",
+      "Points": "47"
+    },
+    {
+      "Name": "suzukaT",
+      "Points": "46"
+    },
+    {
+      "Name": "Andrey Galafeev[MTBtraining]",
+      "Points": "45"
+    },
+    {
+      "Name": "Tatsuya Sugi[NICO]",
+      "Points": "44"
+    },
+    {
+      "Name": "Dan Halliday [Wahoo Le Col] ",
+      "Points": "43"
+    },
+    {
+      "Name": "Jun kamotora [TMR]",
+      "Points": "42"
+    },
+    {
+      "Name": "Robin Ferket",
+      "Points": "41"
+    },
+    {
+      "Name": "Y Nanamiya[EMU]",
+      "Points": "40"
+    },
+    {
+      "Name": "Neil B",
+      "Points": "39"
+    },
+    {
+      "Name": "HMBC Hayui[NICO/EMU]",
+      "Points": "38"
+    },
+    {
+      "Name": "Max Duckworth",
+      "Points": "37"
+    },
+    {
+      "Name": "Jan Lammers [JR]",
+      "Points": "36"
+    },
+    {
+      "Name": "Renger Zoonen",
+      "Points": "35"
+    },
+    {
+      "Name": "Phil Donnelly [Wahoo Le Col]",
+      "Points": "34"
+    },
+    {
+      "Name": "Pieter Avenant [Wahoo Le Col]",
+      "Points": "33"
+    },
+    {
+      "Name": "Sam Murphy (DHC)",
+      "Points": "32"
+    },
+    {
+      "Name": "Arno Witvliet [CN!D]",
+      "Points": "31"
+    },
+    {
+      "Name": "Shawn Aker",
+      "Points": "30"
+    },
+    {
+      "Name": "Stegorg Etsianosu",
+      "Points": "29"
+    },
+    {
+      "Name": "Mees Willemsen(Vhard)1712",
+      "Points": "28"
+    },
+    {
+      "Name": "Robbie Britton (BL13)",
+      "Points": "27"
+    },
+    {
+      "Name": "Reece Egner (Canyon Coalition)",
+      "Points": "26"
+    },
+    {
+      "Name": "Amelia Van Hove ",
+      "Points": "25"
+    },
+    {
+      "Name": "Jako Leidorp",
+      "Points": "24"
+    }
+  ],
+  "IndividualB": [
+    {
+      "Name": "Richard Vale (R3R ACDC)",
+      "Points": "50"
+    },
+    {
+      "Name": "stijn crabbe1720",
+      "Points": "49"
+    },
+    {
+      "Name": "Richard Payne [EVO]",
+      "Points": "48"
+    },
+    {
+      "Name": "Thomas  Japp ",
+      "Points": "47"
+    },
+    {
+      "Name": "Michael  Gordon",
+      "Points": "46"
+    },
+    {
+      "Name": "BMC&#53440;&#45716; hebi",
+      "Points": "45"
+    },
+    {
+      "Name": "Roman Pyasetskiy",
+      "Points": "44"
+    },
+    {
+      "Name": "Sebastian Geuthner",
+      "Points": "43"
+    },
+    {
+      "Name": "1404 Lo&iuml;c Voodooz Wheels [V&eacute;loex/FORCE] ",
+      "Points": "42"
+    },
+    {
+      "Name": "Alex Cooper [Wahoo Le Col]",
+      "Points": "41"
+    },
+    {
+      "Name": "Mathew Charnley [Wahoo Le Col]",
+      "Points": "40"
+    },
+    {
+      "Name": "Alfonso Leone",
+      "Points": "39"
+    },
+    {
+      "Name": "Al Craig &#129313;",
+      "Points": "38"
+    },
+    {
+      "Name": "Shio Otecos_40_",
+      "Points": "37"
+    },
+    {
+      "Name": "Eric Borjesson",
+      "Points": "36"
+    },
+    {
+      "Name": "Tim Bishop GRO",
+      "Points": "35"
+    },
+    {
+      "Name": "Giles P",
+      "Points": "34"
+    },
+    {
+      "Name": "Erik From [SZ] (Ymir)",
+      "Points": "33"
+    },
+    {
+      "Name": "Oliver Jackson",
+      "Points": "32"
+    },
+    {
+      "Name": "F.o.c.h.i  Nitritus STAGIAIRES..CC",
+      "Points": "31"
+    },
+    {
+      "Name": "Firman Mac",
+      "Points": "30"
+    },
+    {
+      "Name": "Sandy Wilson (Wahoo Le Col)",
+      "Points": "29"
+    },
+    {
+      "Name": ". Alexander",
+      "Points": "28"
+    },
+    {
+      "Name": "Tobias Talboom Petersen | KST",
+      "Points": "27"
+    },
+    {
+      "Name": "Brian White ",
+      "Points": "26"
+    },
+    {
+      "Name": "John H Alm&aring;s",
+      "Points": "25"
+    },
+    {
+      "Name": "kev miles (COALITION)",
+      "Points": "24"
+    },
+    {
+      "Name": "Jurgen Schenk",
+      "Points": "23"
+    },
+    {
+      "Name": "Peter Thomson",
+      "Points": "22"
+    },
+    {
+      "Name": "Andrew Mudge",
+      "Points": "21"
+    },
+    {
+      "Name": "Olivier RABAUD [FORCE]",
+      "Points": "20"
+    },
+    {
+      "Name": "Kentaro MellowDucK [TMR]",
+      "Points": "19"
+    },
+    {
+      "Name": "Manuel Henry [Wahoo Le Col]",
+      "Points": "18"
+    },
+    {
+      "Name": "Dave Lakin [TT1 BGs]",
+      "Points": "17"
+    },
+    {
+      "Name": "Jonathan Lebouvier ",
+      "Points": "16"
+    },
+    {
+      "Name": "Ruben Tavares(ZOSS VOG team)",
+      "Points": "15"
+    },
+    {
+      "Name": "Simon Strmsek",
+      "Points": "14"
+    },
+    {
+      "Name": "Benjamin Gl&auml;ser ",
+      "Points": "13"
+    },
+    {
+      "Name": "Dan West1622",
+      "Points": "12"
+    },
+    {
+      "Name": "Ynte de Vries (ZwD)",
+      "Points": "11"
+    },
+    {
+      "Name": "Tom Crom (R3R Dev) ",
+      "Points": "10"
+    },
+    {
+      "Name": "peter eyles ",
+      "Points": "9"
+    },
+    {
+      "Name": "Jacob Laan",
+      "Points": "8"
+    },
+    {
+      "Name": "Triston Smy ",
+      "Points": "7"
+    },
+    {
+      "Name": "Vincent LECOQ",
+      "Points": "6"
+    },
+    {
+      "Name": "Rafa&#322; S&#322;omczewski",
+      "Points": "5"
+    },
+    {
+      "Name": "Gary Morrison",
+      "Points": "4"
+    },
+    {
+      "Name": "Jamie Watson [Wahoo Le Col]",
+      "Points": "3"
+    },
+    {
+      "Name": "Damien DENIZOT",
+      "Points": "2"
+    },
+    {
+      "Name": "Rock Racing (KTC)",
+      "Points": "1"
+    },
+    {
+      "Name": "1401 ghyslain lapanderie - www.velo-experience.com [VELOEX]",
+      "Points": "1"
+    },
+    {
+      "Name": "alban DELOURME",
+      "Points": "1"
+    },
+    {
+      "Name": "Vanessa Fursden (Wahoo Le Col)",
+      "Points": "1"
+    },
+    {
+      "Name": "Fzhip Fontieyn",
+      "Points": "1"
+    },
+    {
+      "Name": "Miguel Mendez [SISU]",
+      "Points": "1"
+    },
+    {
+      "Name": "Colin Lowe",
+      "Points": "1"
+    },
+    {
+      "Name": "Robert Wooldridge (Village Cycle Club)",
+      "Points": "1"
+    },
+    {
+      "Name": "Karl Foster",
+      "Points": "1"
+    },
+    {
+      "Name": "Ben Laughton",
+      "Points": "1"
+    },
+    {
+      "Name": "Christian Hellesvik [ZuNo][GenX]",
+      "Points": "1"
+    },
+    {
+      "Name": "Jeroen. Jansman",
+      "Points": "1"
+    },
+    {
+      "Name": "joris tolenaar",
+      "Points": "1"
+    },
+    {
+      "Name": "David Faucheux",
+      "Points": "1"
+    },
+    {
+      "Name": "jens Rasmussen",
+      "Points": "1"
+    },
+    {
+      "Name": "Naoyuki Ogi",
+      "Points": "1"
+    },
+    {
+      "Name": "Masahiro Mori [VIGORE]",
+      "Points": "1"
+    }
+  ],
+  "IndividualC": [
+    {
+      "Name": "Steven  Asheim [V]",
+      "Points": "50"
+    },
+    {
+      "Name": "Joost Schepel (TeamNL C4)",
+      "Points": "49"
+    },
+    {
+      "Name": "Chris McMahon",
+      "Points": "48"
+    },
+    {
+      "Name": "Joaquim Sousa [TugaZ] ",
+      "Points": "47"
+    },
+    {
+      "Name": "Dave Ives ",
+      "Points": "46"
+    },
+    {
+      "Name": "Brian J Connolly (IRL)",
+      "Points": "45"
+    },
+    {
+      "Name": "M&aring;ns Berglund",
+      "Points": "44"
+    },
+    {
+      "Name": "Marcos P. [FCSP]",
+      "Points": "43"
+    },
+    {
+      "Name": "masato celeste5849",
+      "Points": "42"
+    },
+    {
+      "Name": "E. De Boeck",
+      "Points": "41"
+    },
+    {
+      "Name": "Gary Walker",
+      "Points": "40"
+    },
+    {
+      "Name": "Tobias Wei [ZRG-R]",
+      "Points": "39"
+    },
+    {
+      "Name": "Henry Bunting7885",
+      "Points": "38"
+    },
+    {
+      "Name": "Tom Allen",
+      "Points": "37"
+    },
+    {
+      "Name": "Vin Lam [Serpentine]",
+      "Points": "36"
+    },
+    {
+      "Name": "Gus Goad ",
+      "Points": "35"
+    },
+    {
+      "Name": "Craig Christie [Wahoo Le Col]",
+      "Points": "34"
+    },
+    {
+      "Name": "Jim Barr VCGS",
+      "Points": "33"
+    },
+    {
+      "Name": "Ghislain Cavard",
+      "Points": "32"
+    },
+    {
+      "Name": "David Swan [Wahoo Le Col]",
+      "Points": "31"
+    },
+    {
+      "Name": "Michael Stockfleth (RCC Copenhagen)",
+      "Points": "30"
+    },
+    {
+      "Name": "Hein Raijmakers",
+      "Points": "29"
+    },
+    {
+      "Name": "Sergio Fernandes",
+      "Points": "28"
+    },
+    {
+      "Name": "Erik Knudsen eCKD",
+      "Points": "27"
+    },
+    {
+      "Name": "Chris Koerf",
+      "Points": "26"
+    },
+    {
+      "Name": "Vladislav Sta&scaron;kevi&#269;",
+      "Points": "25"
+    },
+    {
+      "Name": "GedR",
+      "Points": "24"
+    },
+    {
+      "Name": "A Gocciardi",
+      "Points": "23"
+    }
+  ],
+  "IndividualD": [
+    {
+      "Name": "Hayley Vale (Race3R)",
+      "Points": "50"
+    },
+    {
+      "Name": "Chris Sullivan",
+      "Points": "49"
+    },
+    {
+      "Name": "Jean-Rene Lepezel",
+      "Points": "48"
+    },
+    {
+      "Name": "Karen Livermore [GXY]",
+      "Points": "47"
+    },
+    {
+      "Name": "Rem Vertelman (Midwoud.nl) ",
+      "Points": "46"
+    },
+    {
+      "Name": "Fies Vlug4710",
+      "Points": "45"
+    }
+  ]
+}
