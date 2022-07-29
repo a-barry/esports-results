@@ -1,4 +1,489 @@
 {
+  "teams": {
+    "0": {
+      "backgroundColour": "",
+      "borderColour": "",
+      "textColour": "00dd00",
+      "id": 0,
+      "name": ""
+    },
+    "4": {
+      "backgroundColour": "050505",
+      "borderColour": "ff8100",
+      "textColour": "ffffff",
+      "id": 4,
+      "name": "BRT"
+    },
+    "7": {
+      "backgroundColour": "111111",
+      "borderColour": "3c8dbc",
+      "textColour": "ff851b",
+      "id": 7,
+      "name": "TeamODZ"
+    },
+    "9": {
+      "backgroundColour": "2ea9e0",
+      "borderColour": "000000",
+      "textColour": "ffffff",
+      "id": 9,
+      "name": "Vision"
+    },
+    "25": {
+      "backgroundColour": "ff1800",
+      "borderColour": "ff0000",
+      "textColour": "ffffff",
+      "id": 25,
+      "name": "ZTPL.CC"
+    },
+    "32": {
+      "backgroundColour": "285697",
+      "borderColour": "ffd700",
+      "textColour": "ffffff",
+      "id": 32,
+      "name": "SZ"
+    },
+    "35": {
+      "backgroundColour": "111111",
+      "borderColour": "ff1900",
+      "textColour": "ffe903",
+      "id": 35,
+      "name": "BZR eCycling Club"
+    },
+    "168": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 168,
+      "name": "Team Type 1"
+    },
+    "975": {
+      "backgroundColour": "52ff33",
+      "borderColour": "000000",
+      "textColour": "000000",
+      "id": 975,
+      "name": "Innovation"
+    },
+    "1165": {
+      "backgroundColour": "f71203",
+      "borderColour": "030303",
+      "textColour": "faff06",
+      "id": 1165,
+      "name": "W2T2"
+    },
+    "1426": {
+      "backgroundColour": "ffffff",
+      "borderColour": "ffffff",
+      "textColour": "3d9970",
+      "id": 1426,
+      "name": "Team CLS"
+    },
+    "1658": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 1658,
+      "name": "Gorillaz RC"
+    },
+    "1845": {
+      "backgroundColour": "00a65a",
+      "borderColour": "0adb2c",
+      "textColour": "ffffff",
+      "id": 1845,
+      "name": " VEGAN "
+    },
+    "1942": {
+      "backgroundColour": "3d3d3d",
+      "borderColour": "1bc1f1",
+      "textColour": "1bc1f1",
+      "id": 1942,
+      "name": "ZRG"
+    },
+    "2003": {
+      "backgroundColour": "b1d9b8",
+      "borderColour": "63c0a6",
+      "textColour": "231d68",
+      "id": 2003,
+      "name": "L&rsquo;Equipe Provence"
+    },
+    "2639": {
+      "backgroundColour": "fc6719",
+      "borderColour": "383c3d",
+      "textColour": "383c3d",
+      "id": 2639,
+      "name": "HERD"
+    },
+    "2707": {
+      "backgroundColour": "211208",
+      "borderColour": "df6a0d",
+      "textColour": "29ec34",
+      "id": 2707,
+      "name": "DIRT"
+    },
+    "2854": {
+      "backgroundColour": "000000",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 2854,
+      "name": "FUSION ECT"
+    },
+    "2898": {
+      "backgroundColour": "95d2dc",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 2898,
+      "name": "Foudre&#9889;&#65039;"
+    },
+    "3103": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 3103,
+      "name": "RUS"
+    },
+    "3244": {
+      "backgroundColour": "d72791",
+      "borderColour": "000000",
+      "textColour": "ffffff",
+      "id": 3244,
+      "name": "KMTB"
+    },
+    "3282": {
+      "backgroundColour": "20d6d6",
+      "borderColour": "007788",
+      "textColour": "ffffff",
+      "id": 3282,
+      "name": "POAUTO - CeramicSpeed"
+    },
+    "3686": {
+      "backgroundColour": "3a75ae",
+      "borderColour": "01479c",
+      "textColour": "ffffff",
+      "id": 3686,
+      "name": "Ribble Pro Cycling"
+    },
+    "3800": {
+      "backgroundColour": "757070",
+      "borderColour": "000000",
+      "textColour": "db9999",
+      "id": 3800,
+      "name": "CCR"
+    },
+    "4201": {
+      "backgroundColour": "000000",
+      "borderColour": "d4af37",
+      "textColour": "d4af37",
+      "id": 4201,
+      "name": "WTRL"
+    },
+    "4516": {
+      "backgroundColour": "c6007e",
+      "borderColour": "0095c8",
+      "textColour": "ffffff",
+      "id": 4516,
+      "name": "Wahoo Le Col"
+    },
+    "4630": {
+      "backgroundColour": "ff1f00",
+      "borderColour": "33735b",
+      "textColour": "ffffff",
+      "id": 4630,
+      "name": "TugaZ"
+    },
+    "4742": {
+      "backgroundColour": "2e1c1c",
+      "borderColour": "ff09ff",
+      "textColour": "ff09ff",
+      "id": 4742,
+      "name": "EVOLUTION "
+    },
+    "4976": {
+      "backgroundColour": "00a7ff",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 4976,
+      "name": "NICO OZ"
+    },
+    "5032": {
+      "backgroundColour": "2d009e",
+      "borderColour": "f521f5",
+      "textColour": "fccb5a",
+      "id": 5032,
+      "name": "VCRT"
+    },
+    "5081": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 5081,
+      "name": "team RX"
+    },
+    "5578": {
+      "backgroundColour": "ff0000",
+      "borderColour": "000000",
+      "textColour": "e7ff00",
+      "id": 5578,
+      "name": "Poole Wheelers"
+    },
+    "5648": {
+      "backgroundColour": "ffffff",
+      "borderColour": "00bed6",
+      "textColour": "011e41",
+      "id": 5648,
+      "name": "KWCC"
+    },
+    "5671": {
+      "backgroundColour": "cc8585",
+      "borderColour": "994444",
+      "textColour": "ffffff",
+      "id": 5671,
+      "name": "SVK+40"
+    },
+    "5983": {
+      "backgroundColour": "080808",
+      "borderColour": "9e39c7",
+      "textColour": "e5eb0f",
+      "id": 5983,
+      "name": "RELENTLESS"
+    },
+    "6116": {
+      "backgroundColour": "dd3300",
+      "borderColour": "ffdd00",
+      "textColour": "ffdd00",
+      "id": 6116,
+      "name": "Serpentine"
+    },
+    "6167": {
+      "backgroundColour": "ff0000",
+      "borderColour": "fdd017",
+      "textColour": "fdd017",
+      "id": 6167,
+      "name": "  &#1161;       Team Veneto "
+    },
+    "6936": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 6936,
+      "name": "VCGS"
+    },
+    "7634": {
+      "backgroundColour": "181ee3",
+      "borderColour": "e80b0b",
+      "textColour": "ffffff",
+      "id": 7634,
+      "name": "TEAM UVP"
+    },
+    "8520": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 8520,
+      "name": "G!RO ATQ"
+    },
+    "9976": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ff4500",
+      "textColour": "ffffff",
+      "id": 9976,
+      "name": "Valhalla"
+    },
+    "10003": {
+      "backgroundColour": "ffff00",
+      "borderColour": "00ff00",
+      "textColour": "ff00ff",
+      "id": 10003,
+      "name": "JETT"
+    },
+    "10683": {
+      "backgroundColour": "ffff00",
+      "borderColour": "000000",
+      "textColour": "ff0000",
+      "id": 10683,
+      "name": "PETA-Z"
+    },
+    "11211": {
+      "backgroundColour": "59c448",
+      "borderColour": "996048",
+      "textColour": "000000",
+      "id": 11211,
+      "name": "GRIT"
+    },
+    "11298": {
+      "backgroundColour": "2e7515",
+      "borderColour": "000000",
+      "textColour": "ffffff",
+      "id": 11298,
+      "name": "TMR"
+    },
+    "11818": {
+      "backgroundColour": "272c52",
+      "borderColour": "ffffff",
+      "textColour": "ff66c4",
+      "id": 11818,
+      "name": "RHINO"
+    },
+    "11939": {
+      "backgroundColour": "ff0000",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 11939,
+      "name": "DZR"
+    },
+    "11991": {
+      "backgroundColour": "0000ff",
+      "borderColour": "ff00ff",
+      "textColour": "ffffff",
+      "id": 11991,
+      "name": "COALITION"
+    },
+    "12045": {
+      "backgroundColour": "ff4e24",
+      "borderColour": "ffffff",
+      "textColour": "000000",
+      "id": 12045,
+      "name": "Team Electricspirit.co"
+    },
+    "12299": {
+      "backgroundColour": "c43636",
+      "borderColour": "c43636",
+      "textColour": "ffffff",
+      "id": 12299,
+      "name": "ACC"
+    },
+    "12300": {
+      "backgroundColour": "76bcfa",
+      "borderColour": "000000",
+      "textColour": "ffffff",
+      "id": 12300,
+      "name": "SNOW"
+    },
+    "12978": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 12978,
+      "name": "TLK"
+    },
+    "13647": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 13647,
+      "name": "UKPUT"
+    },
+    "13822": {
+      "backgroundColour": "5b5b5b",
+      "borderColour": "fe5917",
+      "textColour": "1bc1f1",
+      "id": 13822,
+      "name": "ZRG-R"
+    },
+    "13901": {
+      "backgroundColour": "cf2b2b",
+      "borderColour": "ffffff",
+      "textColour": "fcfcfc",
+      "id": 13901,
+      "name": "SNOOZE"
+    },
+    "14106": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 14106,
+      "name": "Jogclub"
+    },
+    "14903": {
+      "backgroundColour": "004400",
+      "borderColour": "ff9944",
+      "textColour": "ff9999",
+      "id": 14903,
+      "name": "HSFC"
+    },
+    "15128": {
+      "backgroundColour": "050c10",
+      "borderColour": "0000ff",
+      "textColour": "42c0fb",
+      "id": 15128,
+      "name": "Absque Fines pb Wolfe"
+    },
+    "15516": {
+      "backgroundColour": "0076c2",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 15516,
+      "name": "VIRIATVS"
+    },
+    "15733": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 15733,
+      "name": "CCC"
+    },
+    "16219": {
+      "backgroundColour": "2f1cbe",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 16219,
+      "name": "SISU Racing"
+    },
+    "16233": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 16233,
+      "name": "Colnago"
+    },
+    "16243": {
+      "backgroundColour": "f20606",
+      "borderColour": "f20606",
+      "textColour": "ffffff",
+      "id": 16243,
+      "name": "LOVE BEATS HATE"
+    },
+    "16365": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 16365,
+      "name": "AAVC"
+    },
+    "16553": {
+      "backgroundColour": "74c3f9",
+      "borderColour": "050000",
+      "textColour": "ffffff",
+      "id": 16553,
+      "name": "[GALAXY]"
+    },
+    "16838": {
+      "backgroundColour": "000000",
+      "borderColour": "ff0000",
+      "textColour": "ffffff",
+      "id": 16838,
+      "name": "NetGen x Foudre"
+    },
+    "16914": {
+      "backgroundColour": "000000",
+      "borderColour": "ffd700",
+      "textColour": "ffd700",
+      "id": 16914,
+      "name": "SIGN"
+    },
+    "18013": {
+      "backgroundColour": "000000",
+      "borderColour": "ff00d4",
+      "textColour": "40bad1",
+      "id": 18013,
+      "name": "eSRT"
+    },
+    "18271": {
+      "backgroundColour": "84d1ca",
+      "borderColour": "808d86",
+      "textColour": "ffffff",
+      "id": 18271,
+      "name": "Team Italy pb Castelli"
+    }
+  },
   "results": [
     {
       "zwid": 833092,
@@ -290,7 +775,7 @@
     },
     {
       "zwid": 303296,
-      "name": "Steen Bang-Madsen DZR",
+      "name": "Steen Bang-Madsen",
       "pen": "2",
       "positionOverall": 9,
       "originalPositionInPen": 9,
@@ -317,7 +802,7 @@
     },
     {
       "zwid": 3444537,
-      "name": "Karen Livermore [GXY]",
+      "name": "Karen Livermore [GXY] ",
       "pen": "4",
       "positionOverall": 155,
       "originalPositionInPen": 9,
@@ -722,7 +1207,7 @@
     },
     {
       "zwid": 149963,
-      "name": "Jimmy Salzburg (RadUNION Salzburg)",
+      "name": "Jimmy Salzburg (DeVito TT)",
       "pen": "2",
       "positionOverall": 22,
       "originalPositionInPen": 22,
@@ -983,7 +1468,7 @@
     },
     {
       "zwid": 1208423,
-      "name": "Kazuya Hitomi[Ume]",
+      "name": "Kazuya Hitomi[ume]",
       "pen": "3",
       "positionOverall": 137,
       "originalPositionInPen": 31,
@@ -1217,7 +1702,7 @@
     },
     {
       "zwid": 927062,
-      "name": "peter eyles ",
+      "name": "peter eyles ( Zwift Insider CC) ",
       "pen": "2",
       "positionOverall": 116,
       "originalPositionInPen": 40,
@@ -1316,12 +1801,12 @@
     },
     {
       "zwid": 3208714,
-      "name": "christopher anderson ",
+      "name": "christopher anderson (cryo-gen)",
       "pen": "2",
       "positionOverall": 122,
       "originalPositionInPen": 44,
       "positionInPen": 44,
-      "teamId": 15895
+      "teamId": 4
     },
     {
       "zwid": 1102725,
@@ -1469,7 +1954,7 @@
     },
     {
       "zwid": 1539388,
-      "name": "Innes R.J  (DTCC & SNOW)",
+      "name": "I nnes  DTCC & SNOW",
       "pen": "1",
       "positionOverall": 125,
       "originalPositionInPen": 53,
@@ -1557,497 +2042,5 @@
       "positionInPen": 60,
       "teamId": 15516
     }
-  ],
-  "teams": {
-    "0": {
-      "backgroundColour": "",
-      "borderColour": "",
-      "textColour": "00dd00",
-      "id": 0,
-      "name": ""
-    },
-    "4": {
-      "backgroundColour": "050505",
-      "borderColour": "ff8100",
-      "textColour": "ffffff",
-      "id": 4,
-      "name": "BRT"
-    },
-    "7": {
-      "backgroundColour": "111111",
-      "borderColour": "3c8dbc",
-      "textColour": "ff851b",
-      "id": 7,
-      "name": "TeamODZ"
-    },
-    "9": {
-      "backgroundColour": "2ea9e0",
-      "borderColour": "000000",
-      "textColour": "ffffff",
-      "id": 9,
-      "name": "Vision"
-    },
-    "25": {
-      "backgroundColour": "ff1800",
-      "borderColour": "ff0000",
-      "textColour": "ffffff",
-      "id": 25,
-      "name": "ZTPL.CC"
-    },
-    "32": {
-      "backgroundColour": "285697",
-      "borderColour": "ffd700",
-      "textColour": "ffffff",
-      "id": 32,
-      "name": "SZ"
-    },
-    "35": {
-      "backgroundColour": "111111",
-      "borderColour": "ff1900",
-      "textColour": "ffe903",
-      "id": 35,
-      "name": "BZR eCycling Club"
-    },
-    "168": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 168,
-      "name": "Team Type 1"
-    },
-    "975": {
-      "backgroundColour": "52ff33",
-      "borderColour": "000000",
-      "textColour": "000000",
-      "id": 975,
-      "name": "Innovation"
-    },
-    "1165": {
-      "backgroundColour": "f71203",
-      "borderColour": "030303",
-      "textColour": "faff06",
-      "id": 1165,
-      "name": "W2T2"
-    },
-    "1426": {
-      "backgroundColour": "ffffff",
-      "borderColour": "ffffff",
-      "textColour": "3d9970",
-      "id": 1426,
-      "name": "Team CLS"
-    },
-    "1658": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 1658,
-      "name": "Gorillaz RC"
-    },
-    "1845": {
-      "backgroundColour": "00a65a",
-      "borderColour": "0adb2c",
-      "textColour": "ffffff",
-      "id": 1845,
-      "name": " VEGAN "
-    },
-    "1942": {
-      "backgroundColour": "3d3d3d",
-      "borderColour": "1bc1f1",
-      "textColour": "1bc1f1",
-      "id": 1942,
-      "name": "ZRG"
-    },
-    "2003": {
-      "backgroundColour": "b1d9b8",
-      "borderColour": "63c0a6",
-      "textColour": "231d68",
-      "id": 2003,
-      "name": "L&rsquo;Equipe Provence"
-    },
-    "2639": {
-      "backgroundColour": "fc6719",
-      "borderColour": "383c3d",
-      "textColour": "383c3d",
-      "id": 2639,
-      "name": "HERD"
-    },
-    "2707": {
-      "backgroundColour": "211208",
-      "borderColour": "df6a0d",
-      "textColour": "29ec34",
-      "id": 2707,
-      "name": "DIRT"
-    },
-    "2854": {
-      "backgroundColour": "000000",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 2854,
-      "name": "FUSION ECT"
-    },
-    "2898": {
-      "backgroundColour": "95d2dc",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 2898,
-      "name": "Foudre &#9889;&#65039;"
-    },
-    "3103": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 3103,
-      "name": "RUS"
-    },
-    "3244": {
-      "backgroundColour": "d72791",
-      "borderColour": "000000",
-      "textColour": "ffffff",
-      "id": 3244,
-      "name": "KMTB"
-    },
-    "3282": {
-      "backgroundColour": "20d6d6",
-      "borderColour": "007788",
-      "textColour": "ffffff",
-      "id": 3282,
-      "name": "POAUTO - CeramicSpeed"
-    },
-    "3686": {
-      "backgroundColour": "3a75ae",
-      "borderColour": "01479c",
-      "textColour": "ffffff",
-      "id": 3686,
-      "name": "Ribble Pro Cycling"
-    },
-    "3800": {
-      "backgroundColour": "757070",
-      "borderColour": "000000",
-      "textColour": "db9999",
-      "id": 3800,
-      "name": "CCR"
-    },
-    "4201": {
-      "backgroundColour": "000000",
-      "borderColour": "d4af37",
-      "textColour": "d4af37",
-      "id": 4201,
-      "name": "WTRL"
-    },
-    "4516": {
-      "backgroundColour": "c6007e",
-      "borderColour": "0095c8",
-      "textColour": "ffffff",
-      "id": 4516,
-      "name": "Wahoo Le Col"
-    },
-    "4630": {
-      "backgroundColour": "ff1f00",
-      "borderColour": "33735b",
-      "textColour": "ffffff",
-      "id": 4630,
-      "name": "TugaZ"
-    },
-    "4742": {
-      "backgroundColour": "2e1c1c",
-      "borderColour": "ff09ff",
-      "textColour": "ff09ff",
-      "id": 4742,
-      "name": "EVOLUTION "
-    },
-    "4976": {
-      "backgroundColour": "00a7ff",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 4976,
-      "name": "NICO OZ"
-    },
-    "5032": {
-      "backgroundColour": "2d009e",
-      "borderColour": "f521f5",
-      "textColour": "fccb5a",
-      "id": 5032,
-      "name": "VCRT"
-    },
-    "5081": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 5081,
-      "name": "team RX"
-    },
-    "5578": {
-      "backgroundColour": "ff0000",
-      "borderColour": "000000",
-      "textColour": "e7ff00",
-      "id": 5578,
-      "name": "Poole Wheelers"
-    },
-    "5648": {
-      "backgroundColour": "ffffff",
-      "borderColour": "00bed6",
-      "textColour": "011e41",
-      "id": 5648,
-      "name": "KWCC"
-    },
-    "5671": {
-      "backgroundColour": "cc8585",
-      "borderColour": "994444",
-      "textColour": "ffffff",
-      "id": 5671,
-      "name": "SVK+40"
-    },
-    "5983": {
-      "backgroundColour": "080808",
-      "borderColour": "9e39c7",
-      "textColour": "e5eb0f",
-      "id": 5983,
-      "name": "RELENTLESS"
-    },
-    "6116": {
-      "backgroundColour": "dd3300",
-      "borderColour": "ffdd00",
-      "textColour": "ffdd00",
-      "id": 6116,
-      "name": "Serpentine"
-    },
-    "6167": {
-      "backgroundColour": "ff0000",
-      "borderColour": "fdd017",
-      "textColour": "fdd017",
-      "id": 6167,
-      "name": "  &#1161;       Team Veneto "
-    },
-    "6936": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 6936,
-      "name": "VCGS"
-    },
-    "7634": {
-      "backgroundColour": "181ee3",
-      "borderColour": "e80b0b",
-      "textColour": "ffffff",
-      "id": 7634,
-      "name": "TEAM UVP"
-    },
-    "8520": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 8520,
-      "name": "G!RO ATQ"
-    },
-    "9976": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ff4500",
-      "textColour": "ffffff",
-      "id": 9976,
-      "name": "Valhalla"
-    },
-    "10003": {
-      "backgroundColour": "ffff00",
-      "borderColour": "00ff00",
-      "textColour": "ff00ff",
-      "id": 10003,
-      "name": "JETT"
-    },
-    "10683": {
-      "backgroundColour": "ffff00",
-      "borderColour": "000000",
-      "textColour": "ff0000",
-      "id": 10683,
-      "name": "PETA-Z"
-    },
-    "11211": {
-      "backgroundColour": "59c448",
-      "borderColour": "996048",
-      "textColour": "000000",
-      "id": 11211,
-      "name": "GRIT"
-    },
-    "11298": {
-      "backgroundColour": "2e7515",
-      "borderColour": "000000",
-      "textColour": "ffffff",
-      "id": 11298,
-      "name": "TMR"
-    },
-    "11818": {
-      "backgroundColour": "272c52",
-      "borderColour": "ffffff",
-      "textColour": "ff66c4",
-      "id": 11818,
-      "name": "RHINO"
-    },
-    "11939": {
-      "backgroundColour": "ff0000",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 11939,
-      "name": "DZR"
-    },
-    "11991": {
-      "backgroundColour": "0000ff",
-      "borderColour": "ff00ff",
-      "textColour": "ffffff",
-      "id": 11991,
-      "name": "COALITION"
-    },
-    "12045": {
-      "backgroundColour": "ff4e24",
-      "borderColour": "ffffff",
-      "textColour": "000000",
-      "id": 12045,
-      "name": "Team Electricspirit.co"
-    },
-    "12299": {
-      "backgroundColour": "c43636",
-      "borderColour": "c43636",
-      "textColour": "ffffff",
-      "id": 12299,
-      "name": "ACC"
-    },
-    "12300": {
-      "backgroundColour": "76bcfa",
-      "borderColour": "000000",
-      "textColour": "ffffff",
-      "id": 12300,
-      "name": "SNOW"
-    },
-    "12978": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 12978,
-      "name": "TLK"
-    },
-    "13647": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 13647,
-      "name": "UKPUT"
-    },
-    "13822": {
-      "backgroundColour": "5b5b5b",
-      "borderColour": "fe5917",
-      "textColour": "1bc1f1",
-      "id": 13822,
-      "name": "ZRG-R"
-    },
-    "13901": {
-      "backgroundColour": "cf2b2b",
-      "borderColour": "ffffff",
-      "textColour": "fcfcfc",
-      "id": 13901,
-      "name": "SNOOZE"
-    },
-    "14106": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 14106,
-      "name": "Jogclub"
-    },
-    "14903": {
-      "backgroundColour": "004400",
-      "borderColour": "ff9944",
-      "textColour": "ff9999",
-      "id": 14903,
-      "name": "HSFC"
-    },
-    "15128": {
-      "backgroundColour": "050c10",
-      "borderColour": "0000ff",
-      "textColour": "42c0fb",
-      "id": 15128,
-      "name": "Absque Fines pb Wolfe"
-    },
-    "15516": {
-      "backgroundColour": "0076c2",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 15516,
-      "name": "VIRIATVS"
-    },
-    "15733": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 15733,
-      "name": "CCC"
-    },
-    "15895": {
-      "backgroundColour": "0073b7",
-      "borderColour": "764848",
-      "textColour": "762f2f",
-      "id": 15895,
-      "name": "Old dogs &#128054; race team "
-    },
-    "16219": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 16219,
-      "name": "SISU"
-    },
-    "16233": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 16233,
-      "name": "Colnago"
-    },
-    "16243": {
-      "backgroundColour": "f20606",
-      "borderColour": "f20606",
-      "textColour": "ffffff",
-      "id": 16243,
-      "name": "LOVE BEATS HATE"
-    },
-    "16365": {
-      "backgroundColour": "0073b7",
-      "borderColour": "ffffff",
-      "textColour": "ffffff",
-      "id": 16365,
-      "name": "AAVC"
-    },
-    "16553": {
-      "backgroundColour": "74c3f9",
-      "borderColour": "050000",
-      "textColour": "ffffff",
-      "id": 16553,
-      "name": "[GALAXY]"
-    },
-    "16838": {
-      "backgroundColour": "000000",
-      "borderColour": "ff0000",
-      "textColour": "ffffff",
-      "id": 16838,
-      "name": "NetGen x Foudre"
-    },
-    "16914": {
-      "backgroundColour": "000000",
-      "borderColour": "ffd700",
-      "textColour": "ffd700",
-      "id": 16914,
-      "name": "SIGN"
-    },
-    "18013": {
-      "backgroundColour": "e441ed",
-      "borderColour": "40bad1",
-      "textColour": "000000",
-      "id": 18013,
-      "name": "eSRT"
-    },
-    "18271": {
-      "backgroundColour": "84d1ca",
-      "borderColour": "808d86",
-      "textColour": "ffffff",
-      "id": 18271,
-      "name": "Team Italy pb Castelli"
-    }
-  }
+  ]
 }

@@ -9,9 +9,11 @@
 
   <ItemGroup>
     <None Remove="testdata\2425294.json" />
+    <None Remove="testdata\2425294_Results.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="testdata\2425294_Results.json" />
     <EmbeddedResource Include="testdata\2425294.json" />
   </ItemGroup>
 
