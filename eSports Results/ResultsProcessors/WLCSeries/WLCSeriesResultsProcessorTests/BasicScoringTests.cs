@@ -34,9 +34,7 @@ namespace WLCSeriesResultsProcessorTests
 
             var processor = new WLCSeriesResultsProcessor.WLCEventProcessor();
 
-            processor.Init(config, testEventResults);
-
-            var processedResults = await processor.GetIndividualResultsAsync();
+            var processedResults = await processor.GetIndividualResultsAsync(config, testEventResults);
 
             //// check the first 10 riders in test pen have points
             //for (int i = 0; i < config.PointsForFirst; i++)
@@ -94,9 +92,7 @@ namespace WLCSeriesResultsProcessorTests
 
             var processor = new WLCSeriesResultsProcessor.WLCEventProcessor();
 
-            processor.Init(config, testEventResults);
-
-            var processedResults = await processor.GetIndividualResultsAsync();
+            var processedResults = await processor.GetIndividualResultsAsync(config, testEventResults);
 
             for (int p = 1; p <= pens; p++)
             {

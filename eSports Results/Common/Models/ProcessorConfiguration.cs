@@ -8,8 +8,14 @@ namespace Common.Models
 {
     public class SeriesProcessorConfiguration
     {
+        /// <summary>
+        /// THe miniumum number of events a rider has to complete to be included in the GC
+        /// </summary>
         public int QualifyingEventsPerRider { get; set; } = 0;
 
+        /// <summary>
+        /// The number of events that contribute towards the riders GC score.
+        /// </summary>
         public int QualifyingScoresPerRider { get; set; } = 0;
 
         public EventProcessorConfiguration EventConfiguration { get; set; }

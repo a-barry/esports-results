@@ -1,0 +1,465 @@
+{
+  "TeamOverall": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "170"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "95"
+    },
+    {
+      "Id": "17696",
+      "Name": "MWC",
+      "Points": "84"
+    },
+    {
+      "Id": "3052",
+      "Name": "KST",
+      "Points": "50"
+    },
+    {
+      "Id": "1",
+      "Name": "PTz",
+      "Points": "49"
+    },
+    {
+      "Id": "5051",
+      "Name": "Queen Mill",
+      "Points": "49"
+    },
+    {
+      "Id": "7177",
+      "Name": "CCC",
+      "Points": "48"
+    },
+    {
+      "Id": "11757",
+      "Name": "World Elite Zwifters",
+      "Points": "48"
+    },
+    {
+      "Id": "2934",
+      "Name": "ZRScot",
+      "Points": "47"
+    },
+    {
+      "Id": "2281",
+      "Name": "TeamNL",
+      "Points": "46"
+    },
+    {
+      "Id": "11298",
+      "Name": "TMR",
+      "Points": "46"
+    },
+    {
+      "Id": "2740",
+      "Name": "Team CRYO-GEN",
+      "Points": "45"
+    },
+    {
+      "Id": "5701",
+      "Name": "IDF",
+      "Points": "43"
+    },
+    {
+      "Id": "1426",
+      "Name": "Team CLS",
+      "Points": "42"
+    },
+    {
+      "Id": "588",
+      "Name": "Team Italy",
+      "Points": "41"
+    },
+    {
+      "Id": "1187",
+      "Name": "SAKARI",
+      "Points": "41"
+    },
+    {
+      "Id": "32",
+      "Name": "SZ",
+      "Points": "39"
+    },
+    {
+      "Id": "2233",
+      "Name": "Utrecht",
+      "Points": "36"
+    },
+    {
+      "Id": "7423",
+      "Name": "England CC",
+      "Points": "35"
+    },
+    {
+      "Id": "10683",
+      "Name": "PETA-Z",
+      "Points": "33"
+    },
+    {
+      "Id": "11991",
+      "Name": "COALITION",
+      "Points": "30"
+    },
+    {
+      "Id": "14263",
+      "Name": "ArdsCC",
+      "Points": "29"
+    },
+    {
+      "Id": "7485",
+      "Name": "comolaketeam",
+      "Points": "26"
+    },
+    {
+      "Id": "3070",
+      "Name": "KOSHA",
+      "Points": "25"
+    }
+  ],
+  "TeamA": [
+    {
+      "Id": "1",
+      "Name": "PTz",
+      "Points": "49"
+    },
+    {
+      "Id": "11757",
+      "Name": "World Elite Zwifters",
+      "Points": "48"
+    },
+    {
+      "Id": "2934",
+      "Name": "ZRScot",
+      "Points": "47"
+    },
+    {
+      "Id": "11298",
+      "Name": "TMR",
+      "Points": "46"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "45"
+    },
+    {
+      "Id": "5701",
+      "Name": "IDF",
+      "Points": "43"
+    }
+  ],
+  "TeamB": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "124"
+    },
+    {
+      "Id": "3052",
+      "Name": "KST",
+      "Points": "50"
+    },
+    {
+      "Id": "5051",
+      "Name": "Queen Mill",
+      "Points": "49"
+    },
+    {
+      "Id": "2281",
+      "Name": "TeamNL",
+      "Points": "46"
+    },
+    {
+      "Id": "1187",
+      "Name": "SAKARI",
+      "Points": "41"
+    },
+    {
+      "Id": "32",
+      "Name": "SZ",
+      "Points": "39"
+    },
+    {
+      "Id": "2233",
+      "Name": "Utrecht",
+      "Points": "36"
+    },
+    {
+      "Id": "7423",
+      "Name": "England CC",
+      "Points": "35"
+    },
+    {
+      "Id": "10683",
+      "Name": "PETA-Z",
+      "Points": "33"
+    },
+    {
+      "Id": "11991",
+      "Name": "COALITION",
+      "Points": "30"
+    },
+    {
+      "Id": "14263",
+      "Name": "ArdsCC",
+      "Points": "29"
+    },
+    {
+      "Id": "7485",
+      "Name": "comolaketeam",
+      "Points": "26"
+    },
+    {
+      "Id": "3070",
+      "Name": "KOSHA",
+      "Points": "25"
+    }
+  ],
+  "TeamC": [
+    {
+      "Id": "17696",
+      "Name": "MWC",
+      "Points": "84"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "50"
+    },
+    {
+      "Id": "7177",
+      "Name": "CCC",
+      "Points": "48"
+    },
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "46"
+    },
+    {
+      "Id": "2740",
+      "Name": "Team CRYO-GEN",
+      "Points": "45"
+    },
+    {
+      "Id": "1426",
+      "Name": "Team CLS",
+      "Points": "42"
+    },
+    {
+      "Id": "588",
+      "Name": "Team Italy",
+      "Points": "41"
+    }
+  ],
+  "TeamD": [],
+  "IndividualA": [
+    {
+      "Name": "Yushi Kitahara",
+      "Points": "50"
+    },
+    {
+      "Name": "&#9734;FilipeMatos&#9734; [PTZ]",
+      "Points": "49"
+    },
+    {
+      "Name": "Mirco Lupinetti (WEz)",
+      "Points": "48"
+    },
+    {
+      "Name": "Clive Vallance (ZRScot)",
+      "Points": "47"
+    },
+    {
+      "Name": "Jun kamotora [TMR]",
+      "Points": "46"
+    },
+    {
+      "Name": "Pat Kneeland",
+      "Points": "45"
+    },
+    {
+      "Name": "Anderson Pupulin8526",
+      "Points": "44"
+    },
+    {
+      "Name": "Olivier Baud[IDF]",
+      "Points": "43"
+    }
+  ],
+  "IndividualB": [
+    {
+      "Name": "Tobias Talboom Petersen | KST",
+      "Points": "50"
+    },
+    {
+      "Name": "Daniel Anders Svendsen [Queen Mill]",
+      "Points": "49"
+    },
+    {
+      "Name": "Iwan Rhys [Wahoo Le Col]",
+      "Points": "48"
+    },
+    {
+      "Name": "Mike Rogers",
+      "Points": "47"
+    },
+    {
+      "Name": "Huub van Santvoort",
+      "Points": "46"
+    },
+    {
+      "Name": "Mathew Charnley [Wahoo Le Col]",
+      "Points": "45"
+    },
+    {
+      "Name": "Matias Grepperud",
+      "Points": "44"
+    },
+    {
+      "Name": "Mike Hysiak ",
+      "Points": "43"
+    },
+    {
+      "Name": "Tobias Jansson",
+      "Points": "42"
+    },
+    {
+      "Name": "Austin Boaz (Sakari pb Smart Honda)",
+      "Points": "41"
+    },
+    {
+      "Name": "Tayun TooDoo",
+      "Points": "40"
+    },
+    {
+      "Name": "Tonie Olsson",
+      "Points": "39"
+    },
+    {
+      "Name": "Pascal Sauvayre [VESELKA]",
+      "Points": "38"
+    },
+    {
+      "Name": "Liam Maher",
+      "Points": "37"
+    },
+    {
+      "Name": "Eelco Keuvelaar",
+      "Points": "36"
+    },
+    {
+      "Name": "chris thomas 3825 (ENGine)",
+      "Points": "35"
+    },
+    {
+      "Name": "Fzhip Fontieyn",
+      "Points": "34"
+    },
+    {
+      "Name": "piruk (PETA-Z)",
+      "Points": "33"
+    },
+    {
+      "Name": "Fil Aguilar",
+      "Points": "32"
+    },
+    {
+      "Name": "Manuel Henry [Wahoo Le Col]",
+      "Points": "31"
+    },
+    {
+      "Name": "Phil Hardaway",
+      "Points": "30"
+    },
+    {
+      "Name": "Glen Curry",
+      "Points": "29"
+    },
+    {
+      "Name": "Eneko Intxausti",
+      "Points": "28"
+    },
+    {
+      "Name": "Colin Lowe",
+      "Points": "27"
+    },
+    {
+      "Name": "Pietro Mauri",
+      "Points": "26"
+    },
+    {
+      "Name": "Choi Gyooun[MALOJA_ABLE]",
+      "Points": "25"
+    }
+  ],
+  "IndividualC": [
+    {
+      "Name": "Terence Temlett",
+      "Points": "50"
+    },
+    {
+      "Name": "Colin McCreath",
+      "Points": "49"
+    },
+    {
+      "Name": "Mark Kirley | CCC BABS",
+      "Points": "48"
+    },
+    {
+      "Name": "Martin Hochheim",
+      "Points": "47"
+    },
+    {
+      "Name": "David Swan [Wahoo Le Col]",
+      "Points": "46"
+    },
+    {
+      "Name": "Simon Hopkinson (CRYO-GEN)",
+      "Points": "45"
+    },
+    {
+      "Name": "Jonathan McNeill",
+      "Points": "44"
+    },
+    {
+      "Name": "Eivind Berland",
+      "Points": "43"
+    },
+    {
+      "Name": "Chris Bedford",
+      "Points": "42"
+    },
+    {
+      "Name": "Nicola Ricci2440",
+      "Points": "41"
+    },
+    {
+      "Name": "Russ Coulter",
+      "Points": "40"
+    },
+    {
+      "Name": "Margriet Loeven",
+      "Points": "39"
+    }
+  ],
+  "IndividualD": [
+    {
+      "Name": "Greg Payne",
+      "Points": "50"
+    },
+    {
+      "Name": "Hubert Wiloch",
+      "Points": "49"
+    },
+    {
+      "Name": "Sune Skak Pedersen1927",
+      "Points": "48"
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+{
+  "TeamOverall": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "301"
+    },
+    {
+      "Id": "605",
+      "Name": "ZTBR",
+      "Points": "92"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "85"
+    },
+    {
+      "Id": "11939",
+      "Name": "DZR",
+      "Points": "84"
+    },
+    {
+      "Id": "4549",
+      "Name": "RVC",
+      "Points": "50"
+    },
+    {
+      "Id": "5051",
+      "Name": "Queen Mill",
+      "Points": "50"
+    },
+    {
+      "Id": "41",
+      "Name": "RuhrRiders",
+      "Points": "49"
+    },
+    {
+      "Id": "18521",
+      "Name": "ZZRC Racing",
+      "Points": "49"
+    },
+    {
+      "Id": "588",
+      "Name": "Team Italy",
+      "Points": "48"
+    },
+    {
+      "Id": "4744",
+      "Name": "TEAM SPORTFORUM [TSF]",
+      "Points": "48"
+    },
+    {
+      "Id": "2672",
+      "Name": "REVO",
+      "Points": "47"
+    },
+    {
+      "Id": "2934",
+      "Name": "ZRScot",
+      "Points": "47"
+    },
+    {
+      "Id": "13822",
+      "Name": "ZRG-R",
+      "Points": "47"
+    },
+    {
+      "Id": "1958",
+      "Name": "TEAM ZWC",
+      "Points": "46"
+    },
+    {
+      "Id": "18127",
+      "Name": "mTNT",
+      "Points": "46"
+    },
+    {
+      "Id": "17126",
+      "Name": "SEVEN MIN",
+      "Points": "45"
+    },
+    {
+      "Id": "8287",
+      "Name": "ZSUNL",
+      "Points": "44"
+    },
+    {
+      "Id": "16198",
+      "Name": "24noR",
+      "Points": "44"
+    },
+    {
+      "Id": "13539",
+      "Name": "BCC",
+      "Points": "43"
+    },
+    {
+      "Id": "32",
+      "Name": "SZ",
+      "Points": "42"
+    },
+    {
+      "Id": "17850",
+      "Name": "OLOW",
+      "Points": "42"
+    },
+    {
+      "Id": "4976",
+      "Name": "NICO OZ",
+      "Points": "41"
+    },
+    {
+      "Id": "11818",
+      "Name": "RHINO",
+      "Points": "41"
+    },
+    {
+      "Id": "1986",
+      "Name": "DBR",
+      "Points": "40"
+    },
+    {
+      "Id": "12149",
+      "Name": "F365",
+      "Points": "40"
+    },
+    {
+      "Id": "5894",
+      "Name": "CK Master",
+      "Points": "37"
+    },
+    {
+      "Id": "8957",
+      "Name": "Boston",
+      "Points": "36"
+    },
+    {
+      "Id": "16384",
+      "Name": "RWG22",
+      "Points": "36"
+    },
+    {
+      "Id": "3155",
+      "Name": "Symposium (Elite)",
+      "Points": "35"
+    },
+    {
+      "Id": "12414",
+      "Name": "Team_ETAFC",
+      "Points": "34"
+    },
+    {
+      "Id": "9695",
+      "Name": "Estoira Bikes",
+      "Points": "33"
+    },
+    {
+      "Id": "7294",
+      "Name": "C-Triers",
+      "Points": "32"
+    },
+    {
+      "Id": "2281",
+      "Name": "TeamNL",
+      "Points": "31"
+    },
+    {
+      "Id": "2740",
+      "Name": "Team CRYO-GEN",
+      "Points": "31"
+    }
+  ],
+  "TeamA": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "122"
+    },
+    {
+      "Id": "4744",
+      "Name": "TEAM SPORTFORUM [TSF]",
+      "Points": "48"
+    },
+    {
+      "Id": "2934",
+      "Name": "ZRScot",
+      "Points": "47"
+    },
+    {
+      "Id": "18127",
+      "Name": "mTNT",
+      "Points": "46"
+    },
+    {
+      "Id": "16198",
+      "Name": "24noR",
+      "Points": "44"
+    },
+    {
+      "Id": "32",
+      "Name": "SZ",
+      "Points": "42"
+    },
+    {
+      "Id": "11818",
+      "Name": "RHINO",
+      "Points": "41"
+    },
+    {
+      "Id": "11939",
+      "Name": "DZR",
+      "Points": "39"
+    },
+    {
+      "Id": "5894",
+      "Name": "CK Master",
+      "Points": "37"
+    },
+    {
+      "Id": "3155",
+      "Name": "Symposium (Elite)",
+      "Points": "35"
+    },
+    {
+      "Id": "2740",
+      "Name": "Team CRYO-GEN",
+      "Points": "31"
+    }
+  ],
+  "TeamB": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "89"
+    },
+    {
+      "Id": "5051",
+      "Name": "Queen Mill",
+      "Points": "50"
+    },
+    {
+      "Id": "41",
+      "Name": "RuhrRiders",
+      "Points": "49"
+    },
+    {
+      "Id": "588",
+      "Name": "Team Italy",
+      "Points": "48"
+    },
+    {
+      "Id": "1958",
+      "Name": "TEAM ZWC",
+      "Points": "46"
+    },
+    {
+      "Id": "11939",
+      "Name": "DZR",
+      "Points": "45"
+    },
+    {
+      "Id": "605",
+      "Name": "ZTBR",
+      "Points": "44"
+    },
+    {
+      "Id": "4976",
+      "Name": "NICO OZ",
+      "Points": "41"
+    },
+    {
+      "Id": "12149",
+      "Name": "F365",
+      "Points": "40"
+    },
+    {
+      "Id": "16384",
+      "Name": "RWG22",
+      "Points": "36"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "35"
+    },
+    {
+      "Id": "12414",
+      "Name": "Team_ETAFC",
+      "Points": "34"
+    },
+    {
+      "Id": "9695",
+      "Name": "Estoira Bikes",
+      "Points": "33"
+    },
+    {
+      "Id": "7294",
+      "Name": "C-Triers",
+      "Points": "32"
+    },
+    {
+      "Id": "2281",
+      "Name": "TeamNL",
+      "Points": "31"
+    }
+  ],
+  "TeamC": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "90"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "50"
+    },
+    {
+      "Id": "18521",
+      "Name": "ZZRC Racing",
+      "Points": "49"
+    },
+    {
+      "Id": "13822",
+      "Name": "ZRG-R",
+      "Points": "47"
+    },
+    {
+      "Id": "17126",
+      "Name": "SEVEN MIN",
+      "Points": "45"
+    },
+    {
+      "Id": "13539",
+      "Name": "BCC",
+      "Points": "43"
+    },
+    {
+      "Id": "1986",
+      "Name": "DBR",
+      "Points": "40"
+    },
+    {
+      "Id": "8957",
+      "Name": "Boston",
+      "Points": "36"
+    }
+  ],
+  "TeamD": [
+    {
+      "Id": "4549",
+      "Name": "RVC",
+      "Points": "50"
+    },
+    {
+      "Id": "605",
+      "Name": "ZTBR",
+      "Points": "48"
+    },
+    {
+      "Id": "2672",
+      "Name": "REVO",
+      "Points": "47"
+    },
+    {
+      "Id": "8287",
+      "Name": "ZSUNL",
+      "Points": "44"
+    },
+    {
+      "Id": "17850",
+      "Name": "OLOW",
+      "Points": "42"
+    }
+  ],
+  "IndividualA": [
+    {
+      "Name": "Jermaine Izukanne [Wahoo Le Col]",
+      "Points": "50"
+    },
+    {
+      "Name": "Charlie Mullins ",
+      "Points": "49"
+    },
+    {
+      "Name": "Felix Happke 1998 [TSF]",
+      "Points": "48"
+    },
+    {
+      "Name": "Synth Ryder | ZRScot",
+      "Points": "47"
+    },
+    {
+      "Name": "Bas Noll&eacute; &#128304; [mTNT]",
+      "Points": "46"
+    },
+    {
+      "Name": "Jacob Vezey",
+      "Points": "45"
+    },
+    {
+      "Name": "Pochi dog(24noR/ANMs)",
+      "Points": "44"
+    },
+    {
+      "Name": "T 516",
+      "Points": "43"
+    },
+    {
+      "Name": "Robin Liljeros [SZ]",
+      "Points": "42"
+    },
+    {
+      "Name": "David Moreno",
+      "Points": "41"
+    },
+    {
+      "Name": "Daniel Rytz",
+      "Points": "40"
+    },
+    {
+      "Name": "Daniel Wegener DZR PP",
+      "Points": "39"
+    },
+    {
+      "Name": "Phil Donnelly [Wahoo Le Col]",
+      "Points": "38"
+    },
+    {
+      "Name": "Marcus Svensson M&ouml;lndal",
+      "Points": "37"
+    },
+    {
+      "Name": "John Peasland",
+      "Points": "36"
+    },
+    {
+      "Name": "Mikhail Petrochenko",
+      "Points": "35"
+    },
+    {
+      "Name": "Lizi Brooke [Wahoo Le Col]",
+      "Points": "34"
+    },
+    {
+      "Name": "T TommyMasta",
+      "Points": "33"
+    },
+    {
+      "Name": "Moto Zawa[Igname]",
+      "Points": "32"
+    },
+    {
+      "Name": "Andreas Gessner",
+      "Points": "31"
+    }
+  ],
+  "IndividualB": [
+    {
+      "Name": "Daniel Anders Svendsen [Queen Mill]",
+      "Points": "50"
+    },
+    {
+      "Name": "Bert Xxx [R2]",
+      "Points": "49"
+    },
+    {
+      "Name": "Alfonso Leone",
+      "Points": "48"
+    },
+    {
+      "Name": "Mathew Charnley [Wahoo Le Col]",
+      "Points": "47"
+    },
+    {
+      "Name": "Y. MATSU [SOR]",
+      "Points": "46"
+    },
+    {
+      "Name": "Morten S&oslash;ding S&oslash;rensen DZR-DD",
+      "Points": "45"
+    },
+    {
+      "Name": "Thiago Costa [ZTBR]",
+      "Points": "44"
+    },
+    {
+      "Name": "T Danji",
+      "Points": "43"
+    },
+    {
+      "Name": "Alex Cooper [Wahoo Le Col]",
+      "Points": "42"
+    },
+    {
+      "Name": "Yuichi Nishio",
+      "Points": "41"
+    },
+    {
+      "Name": "Alan Hunter (F365)",
+      "Points": "40"
+    },
+    {
+      "Name": "F PiPi",
+      "Points": "39"
+    },
+    {
+      "Name": "TP Tomas The Train",
+      "Points": "38"
+    },
+    {
+      "Name": "Colin Lowe",
+      "Points": "37"
+    },
+    {
+      "Name": "James Hayne (RWG) ",
+      "Points": "36"
+    },
+    {
+      "Name": "J osh (Dirty Dancers)",
+      "Points": "35"
+    },
+    {
+      "Name": "Kent  Nikel BWH",
+      "Points": "34"
+    },
+    {
+      "Name": "L. Pimentel [Estoira Bikes]",
+      "Points": "33"
+    },
+    {
+      "Name": "Steve Payne C-Triers",
+      "Points": "32"
+    },
+    {
+      "Name": "Tim Broekmeulen3919",
+      "Points": "31"
+    }
+  ],
+  "IndividualC": [
+    {
+      "Name": "Terence Temlett",
+      "Points": "50"
+    },
+    {
+      "Name": "Knut Brandrud",
+      "Points": "49"
+    },
+    {
+      "Name": "masato celeste5849",
+      "Points": "48"
+    },
+    {
+      "Name": "Jean-Pierre Jonen [ZRG-R] ",
+      "Points": "47"
+    },
+    {
+      "Name": "David Swan [Wahoo Le Col]",
+      "Points": "46"
+    },
+    {
+      "Name": "TUTU TU",
+      "Points": "45"
+    },
+    {
+      "Name": "Craig Christie [Wahoo Le Col]",
+      "Points": "44"
+    },
+    {
+      "Name": "Hao Zhou",
+      "Points": "43"
+    },
+    {
+      "Name": "S&oslash;ren Smidstrup",
+      "Points": "42"
+    },
+    {
+      "Name": "Shawn Stockigt ",
+      "Points": "41"
+    },
+    {
+      "Name": "Henrik Jensen",
+      "Points": "40"
+    },
+    {
+      "Name": "Rune Lillebraten",
+      "Points": "39"
+    },
+    {
+      "Name": "Pierre Cerveau",
+      "Points": "38"
+    },
+    {
+      "Name": "Wayne Taylor",
+      "Points": "37"
+    },
+    {
+      "Name": "Antonio Dominguez",
+      "Points": "36"
+    }
+  ],
+  "IndividualD": [
+    {
+      "Name": "Dustin // Race V&eacute;lo Club",
+      "Points": "50"
+    },
+    {
+      "Name": "Emiel Schuurman",
+      "Points": "49"
+    },
+    {
+      "Name": "MARCIOGPASSOS",
+      "Points": "48"
+    },
+    {
+      "Name": "Jana Parsons [REVO]",
+      "Points": "47"
+    },
+    {
+      "Name": "Brewster Parsons ",
+      "Points": "46"
+    },
+    {
+      "Name": "Arne Ansper",
+      "Points": "45"
+    },
+    {
+      "Name": "Aye SanMiguel",
+      "Points": "44"
+    },
+    {
+      "Name": "Alain Hiriberry",
+      "Points": "43"
+    },
+    {
+      "Name": "Renaud Hoedt &#129471;&#127797;",
+      "Points": "42"
+    }
+  ]
+}

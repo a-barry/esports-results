@@ -106,4 +106,4 @@ function extractDataFromIndividualTable(table, reactProp) {
 
 //extractDataFromIndividualTable($(".individual .a table"), "__reactFiber$w3gxdnoo6ka")
 
-extractResults("__reactFiber$k3d4wipw1y");
+extractResults("__reactFiber$pxm26ozo2r");

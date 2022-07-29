@@ -12,6 +12,23 @@
     <None Remove="testdata\2425294_Results.json" />
     <None Remove="testdata\2445599.json" />
     <None Remove="testdata\2445599_Results.json" />
+    <None Remove="testdata\2471894.json" />
+    <None Remove="testdata\2471894_Results.json" />
+    <None Remove="testdata\2498214.json" />
+    <None Remove="testdata\2498214_Results.json" />
+    <None Remove="testdata\2525130.json" />
+    <None Remove="testdata\2525130_Results.json" />
+    <None Remove="testdata\2572480.json" />
+    <None Remove="testdata\2572480_Results.json" />
+    <None Remove="testdata\2596513.json" />
+    <None Remove="testdata\2628997.json" />
+    <None Remove="testdata\2660809.json" />
+    <None Remove="testdata\2692552.json" />
+    <None Remove="testdata\2724408.json" />
+    <None Remove="testdata\2756973.json" />
+    <None Remove="testdata\2786004.json" />
+    <None Remove="testdata\2816374.json" />
+    <None Remove="testdata\Series1_Results.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +36,23 @@
     <EmbeddedResource Include="testdata\2425294.json" />
     <EmbeddedResource Include="testdata\2445599.json" />
     <EmbeddedResource Include="testdata\2445599_Results.json" />
+    <EmbeddedResource Include="testdata\2471894_Results.json" />
+    <EmbeddedResource Include="testdata\2471894.json" />
+    <EmbeddedResource Include="testdata\2498214_Results.json" />
+    <EmbeddedResource Include="testdata\2498214.json" />
+    <EmbeddedResource Include="testdata\2525130_Results.json" />
+    <EmbeddedResource Include="testdata\2525130.json" />
+    <EmbeddedResource Include="testdata\2572480_Results.json" />
+    <EmbeddedResource Include="testdata\2572480.json" />
+    <EmbeddedResource Include="testdata\Series1_Results.json" />
+    <EmbeddedResource Include="testdata\2596513.json" />
+    <EmbeddedResource Include="testdata\2628997.json" />
+    <EmbeddedResource Include="testdata\2660809.json" />
+    <EmbeddedResource Include="testdata\2692552.json" />
+    <EmbeddedResource Include="testdata\2724408.json" />
+    <EmbeddedResource Include="testdata\2756973.json" />
+    <EmbeddedResource Include="testdata\2786004.json" />
+    <EmbeddedResource Include="testdata\2816374.json" />
   </ItemGroup>
 
   <ItemGroup>

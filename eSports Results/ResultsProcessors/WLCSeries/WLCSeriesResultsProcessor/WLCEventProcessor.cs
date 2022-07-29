@@ -4,32 +4,107 @@ namespace WLCSeriesResultsProcessor
 {
     public class WLCEventProcessor : Common.Interfaces.IResultsProcessor
     {
-        private RawEventResults _rawEventResults;
-        private EventProcessorConfiguration _eventScoringConfig;
-
-        public async Task<Dictionary<int, IEnumerable<IndividualResult>>> GetIndividualResultsAsync()
+        public async Task<Dictionary<int, IEnumerable<IndividualResult>>> GetIndividualResultsAsync(EventProcessorConfiguration configuration, RawEventResults rawEventResults)
         {
-            return await ProcessIndividualResults();
+            return await ProcessIndividualResults(configuration, rawEventResults);
         }
 
-        public async Task<Dictionary<int, IEnumerable<TeamResult>>> GetTeamResultsAsync()
+        public async Task<Dictionary<int, IEnumerable<TeamResult>>> GetTeamResultsAsync(EventProcessorConfiguration configuration, RawEventResults rawEventResults)
         {
-            return await ProcessTeamsResults();
+            return await ProcessTeamsResults(configuration, rawEventResults);
         }
 
-        public void Init(EventProcessorConfiguration configuration, RawEventResults rawEventResults)
+
+        //public void InitSeries(EventProcessorConfiguration configuration, IEnumerable<RawEventResults> rawSeriesResults)
+        //{
+        //    _eventScoringConfig = configuration;
+        //    _rawResults = rawSeriesResults;
+        //}
+
+        public async Task<Dictionary<int, IEnumerable<IndividualResult>>> GetSeriesIndividualResultsAsync(SeriesProcessorConfiguration configuration, IEnumerable<RawEventResults> rawSeriesResults)
         {
-            _eventScoringConfig = configuration;
-            _rawEventResults = rawEventResults;
+            // extract pens found in results (yes probably 4!)
+            var pens = rawSeriesResults.First().Results.Select(r => r.Pen).Distinct();
+
+            var penIndividualResults = new Dictionary<int, IEnumerable<IndividualResult>>();
+
+            foreach (int p in pens)
+            {
+                penIndividualResults.Add(p, new List<IndividualResult>());
+            }
+
+            foreach (RawEventResults eventResults in rawSeriesResults)
+            {
+                foreach (int p in pens)
+                {
+                    var l = penIndividualResults[p].ToList();
+                    l.AddRange(await ProcessIndividualPen(p, configuration.EventConfiguration, eventResults));
+                    penIndividualResults[p] = l;
+                }
+            }
+
+            foreach (int p in pens)
+            {
+                penIndividualResults[p] = penIndividualResults[p].GroupBy(r => r.Id)
+                                                                .Select(i => new IndividualResult()
+                                                                {
+                                                                    Id = i.First().Id,
+                                                                    TeamId = i.First().TeamId,
+                                                                    Points = i.OrderByDescending(j => j.Points).Take(configuration.QualifyingScoresPerRider).Sum(v => v.Points),
+                                                                    HasDuals = i.First().HasDuals,
+                                                                    Name = i.First().Name
+                                                                }).ToList();
+            }
+
+            return penIndividualResults;
+        }
+
+        public async Task<Dictionary<int, IEnumerable<TeamResult>>> GetSeriesTeamResultsAsync(SeriesProcessorConfiguration configuration, IEnumerable<RawEventResults> rawSeriesResults)
+        {
+            // extract pens found in results (yes probably 4!)
+            var pens = rawSeriesResults.First().Results.Select(r => r.Pen).Distinct();
+
+            var penTeamResults = new Dictionary<int, IEnumerable<TeamResult>>();
+
+            foreach (int p in pens)
+            {
+                penTeamResults.Add(p, new List<TeamResult>());
+            }
+
+            foreach (RawEventResults eventResults in rawSeriesResults)
+            {
+                foreach (int p in pens)
+                {
+                    var l = penTeamResults[p].ToList();
+                    l.AddRange(await ProcessTeamPen(p, configuration.EventConfiguration, eventResults));
+                    penTeamResults[p] = l;
+                }
+            }
+
+            foreach (int p in pens)
+            {
+                penTeamResults[p] = penTeamResults[p].GroupBy(r => r.Id)
+                                                                .Select(i => new TeamResult()
+                                                                {
+                                                                    Id = i.First().Id,
+                                                                    Points = i.Sum(v => v.Points),
+                                                                    Name = i.First().Name
+                                                                }).ToList();
+            }
+
+            // combine scores from all pens to make overall team score
+            penTeamResults.Add(0, CombineTeamPensIntoOverall(penTeamResults));
+
+            return penTeamResults;
         }
 
         #region Individual
-        private async Task<Dictionary<int, IEnumerable<IndividualResult>>> ProcessIndividualResults()
+        private async Task<Dictionary<int, IEnumerable<IndividualResult>>> ProcessIndividualResults(EventProcessorConfiguration configuration, RawEventResults eventResults)
         {
             var penIndividualResults =new Dictionary<int, IEnumerable<IndividualResult>>();
 
             // extract pens found in results (yes probably 4!)
-            var pens = _rawEventResults.Results.Select(r => r.Pen).Distinct();
+            var pens = eventResults.Results.Select(r => r.Pen).Distinct();
 
             // process pen '0' (i.e. the whole event)
             //penIndividualResults.Add(0,await ProcessIndividualPen(0));
@@ -37,33 +112,33 @@ namespace WLCSeriesResultsProcessor
             // process the other pens
             foreach (int p in pens)
             {
-                penIndividualResults.Add(p, await ProcessIndividualPen(p));
+                penIndividualResults.Add(p, await ProcessIndividualPen(p, configuration, eventResults));
             }
 
             return penIndividualResults;
         }
 
-        private async Task<IEnumerable<IndividualResult>> ProcessIndividualPen(int pen)
+        private async Task<IEnumerable<IndividualResult>> ProcessIndividualPen(int pen, EventProcessorConfiguration configuration, RawEventResults eventResults)
         {
-            var results = _rawEventResults.Results.Where(r => pen == 0 || r.Pen == pen).Select(r => new IndividualResult()
+            var results = eventResults.Results.Where(r => pen == 0 || r.Pen == pen).Select(r => new IndividualResult()
             {
                 Id = r.Id,
                 Name = r.Name,
                 Position = pen == 0 ? r.PositionOverall : r.PositionInPen,
-                Points = CalcRiderPoints(pen == 0 ? r.PositionOverall : r.PositionInPen),
+                Points = CalcRiderPoints(configuration, pen == 0 ? r.PositionOverall : r.PositionInPen),
                 TeamId = r.TeamId
             });
 
             return results;
         }
 
-        private int CalcRiderPoints(int position)
+        private int CalcRiderPoints(EventProcessorConfiguration configuration, int position)
         {
-            var points = (_eventScoringConfig.PointsForFirst + 1) - (position * _eventScoringConfig.PointStep);
+            var points = (configuration.PointsForFirst + 1) - (position * configuration.PointStep);
 
             if(points <= 0)
             {
-                return _eventScoringConfig.PointsForParticipation;
+                return configuration.PointsForParticipation;
             }
             else
             {
@@ -72,14 +147,13 @@ namespace WLCSeriesResultsProcessor
         }
         #endregion
 
-
         #region Team
-        private async Task<Dictionary<int, IEnumerable<TeamResult>>> ProcessTeamsResults()
+        private async Task<Dictionary<int, IEnumerable<TeamResult>>> ProcessTeamsResults(EventProcessorConfiguration configuration, RawEventResults eventResults)
         {
             var penTeamResults = new Dictionary<int, IEnumerable<TeamResult>>();
 
             // extract pens found in results (yes probably 4!)
-            var pens = _rawEventResults.Results.Select(r => r.Pen).Distinct();
+            var pens = eventResults.Results.Select(r => r.Pen).Distinct();
 
             // process pen '0' (i.e. the whole event)
             // no overall is sum of all cats
@@ -88,21 +162,33 @@ namespace WLCSeriesResultsProcessor
             // process all pens
             foreach (int p in pens)
             {
-                penTeamResults.Add(p, await ProcessTeamPen(p));
+                penTeamResults.Add(p, await ProcessTeamPen(p, configuration, eventResults));
             }
 
             // combine scores from all pens to make overall team scores
-            var overallTeamResults = penTeamResults.SelectMany(p => p.Value) // flatten all pen results into a single list
+            //var overallTeamResults = penTeamResults.SelectMany(p => p.Value) // flatten all pen results into a single list
+            //        .GroupBy(t => t.Id) // group by each team
+            //        .Select<IGrouping<string, TeamResult>, TeamResult>(gtr => new TeamResult()
+            //        {
+            //            Id = gtr.First().Id,
+            //            Points = gtr.Sum(tr => tr.Points)
+            //        }).ToList(); // aggregate team points from each pen into a single result per team for the whole event
+
+            // combine scores from all pens to make overall team scores
+            penTeamResults.Add(0, CombineTeamPensIntoOverall(penTeamResults));
+
+            return penTeamResults;
+        }
+
+        private IEnumerable<TeamResult> CombineTeamPensIntoOverall(Dictionary<int, IEnumerable<TeamResult>> penTeamResults)
+        {
+            return penTeamResults.SelectMany(p => p.Value) // flatten all pen results into a single list
                     .GroupBy(t => t.Id) // group by each team
                     .Select<IGrouping<string, TeamResult>, TeamResult>(gtr => new TeamResult()
                     {
                         Id = gtr.First().Id,
                         Points = gtr.Sum(tr => tr.Points)
                     }).ToList(); // aggregate team points from each pen into a single result per team for the whole event
-
-            penTeamResults.Add(0, overallTeamResults);
-
-            return penTeamResults;
         }
 
         /// <summary>
@@ -112,48 +198,28 @@ namespace WLCSeriesResultsProcessor
         /// </summary>
         /// <param name="pen"></param>
         /// <returns></returns>
-        private async Task<IEnumerable<TeamResult>> ProcessTeamPen(int pen)
+        private async Task<IEnumerable<TeamResult>> ProcessTeamPen(int pen, EventProcessorConfiguration configuration, RawEventResults eventResults)
         {
-            //// Note this calc does not work for the case where every rider should score team points.
-            //var results = _rawEventResults.Results.Where(r => r.TeamId != "0" && pen == 0 || r.Pen == pen) // exclude non team riders
-            //    .GroupBy(r => r.TeamId) // group riders by their teams
-            //    .SelectMany(g => g.Take(_eventScoringConfig.MaxScorersPerTeam)) // trim so we have the top x from each team
-            //    .OrderBy(r => pen == 0 ? r.PositionOverall : r.PositionInPen) // order the list by overall or pen finish position
-            //    .Select((r, index) => new TeamResult()
-            //    {
-            //        Id = r.TeamId, // project each rider as their team
-            //        //Name = String.Empty, // team name not known here
-            //        Position = index + 1, // 'new' position is position in the ordered list
-            //        Points = CalcRiderPoints(index + 1)
-            //    })
-            //    .GroupBy(tr => tr.Id) // group by team again
-            //    .Select<IGrouping<string, TeamResult>, TeamResult>(gtr => new TeamResult()
-            //    {
-            //        Id = gtr.First().Id,
-            //        //Name = String.Empty, // team name not known here
-            //        Points = gtr.Sum(tr => tr.Points)
-            //    }); // aggregate team points into a single result per team
-
             if (pen == 0) throw new ArgumentException("Overall pen is calculate from the sum on the individual pen points.");
 
             // First get the individual results for this pen
-            var individualResults = (await ProcessIndividualPen(pen)).Where(r => r.TeamId != "0"); // exclude non team riders,
+            var individualResults = (await ProcessIndividualPen(pen, configuration, eventResults)).Where(r => r.TeamId != "0"); // exclude non team riders,
                                                                                                    // but because we calculated individual points first we
                                                                                                    // have taken into account the finish positions of non-team riders
 
             // get the full points from the first X riders of each team
             var topXPerTeam = individualResults.GroupBy(i => i.TeamId) // group by team so we can look at each team's riders
                 .SelectMany(g => g.OrderByDescending(i => i.Points) // order the teams riders by the points they scored from high to low
-                                .Take(_eventScoringConfig.MaxScorersPerTeam)); // take the top X results from each teams
+                                .Take(configuration.MaxScorersPerTeam)); // take the top X results from each teams
 
             var othersPerTeam = individualResults.GroupBy(i => i.TeamId) // group by team so we can look at each team's riders
                 .SelectMany(g => g.OrderByDescending(i => i.Points) // order the teams riders by the points they scored from high to low
-                .Skip(_eventScoringConfig.MaxScorersPerTeam)) // skip over the first X riders (accounted for above)
+                .Skip(configuration.MaxScorersPerTeam)) // skip over the first X riders (accounted for above)
                 .Select(i => new IndividualResult()
                 {
                     Id = i.Id,
                     TeamId = i.TeamId,
-                    Points = _eventScoringConfig.PointsForParticipation,
+                    Points = configuration.PointsForParticipation,
                     Position =  i.Position,
                     HasDuals = i.HasDuals,
                     Name = i.Name
@@ -175,20 +241,6 @@ namespace WLCSeriesResultsProcessor
 
             return teamResults;
         }
-
-        //private int CalcRiderPoints(int position)
-        //{
-        //    var points = (_eventScoringConfig.PointsForFirst + 1) - (position * _eventScoringConfig.PointStep);
-
-        //    if (points < 0)
-        //    {
-        //        return 0;
-        //    }
-        //    else
-        //    {
-        //        return points;
-        //    }
-        //}
         #endregion
     }
 }

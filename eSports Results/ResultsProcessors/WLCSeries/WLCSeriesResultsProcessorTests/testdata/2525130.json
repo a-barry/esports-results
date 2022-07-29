@@ -1,1 +1,827 @@
-{"teams":{"0":{"backgroundColour":"","borderColour":"","textColour":"00dd00","id":0,"name":""},"32":{"backgroundColour":"285697","borderColour":"ffd700","textColour":"ffffff","id":32,"name":"SZ"},"41":{"backgroundColour":"000000","borderColour":"5cb0fc","textColour":"ff8700","id":41,"name":"RuhrRiders"},"588":{"backgroundColour":"ffffff","borderColour":"00a65a","textColour":"dd4b39","id":588,"name":"Team Italy"},"605":{"backgroundColour":"ffe100","borderColour":"015278","textColour":"015278","id":605,"name":"ZTBR"},"1958":{"backgroundColour":"140b0b","borderColour":"ea0026","textColour":"f70f66","id":1958,"name":"TEAM ZWC"},"1986":{"backgroundColour":"213ed6","borderColour":"ffffff","textColour":"ffffff","id":1986,"name":"DBR"},"2281":{"backgroundColour":"ffa500","borderColour":"ffa500","textColour":"ffffff","id":2281,"name":"TeamNL"},"2672":{"backgroundColour":"000000","borderColour":"fc00e3","textColour":"fc00e3","id":2672,"name":"REVO"},"2707":{"backgroundColour":"211208","borderColour":"df6a0d","textColour":"29ec34","id":2707,"name":"DIRT"},"2740":{"backgroundColour":"009fe3","borderColour":"0c1e4f","textColour":"ffffff","id":2740,"name":"Team CRYO-GEN"},"2934":{"backgroundColour":"141c4d","borderColour":"c69d4b","textColour":"ffffff","id":2934,"name":"ZRScot"},"3155":{"backgroundColour":"e52f20","borderColour":"f79917","textColour":"ffffff","id":3155,"name":"Symposium (Elite)"},"4516":{"backgroundColour":"c6007e","borderColour":"0095c8","textColour":"ffffff","id":4516,"name":"Wahoo Le Col"},"4549":{"backgroundColour":"0073b7","borderColour":"ffffff","textColour":"ffffff","id":4549,"name":"RVC"},"4744":{"backgroundColour":"0073b7","borderColour":"ffffff","textColour":"ffffff","id":4744,"name":"TEAM SPORTFORUM [TSF]"},"4976":{"backgroundColour":"00a7ff","borderColour":"ffffff","textColour":"ffffff","id":4976,"name":"NICO OZ"},"5051":{"backgroundColour":"b2aba9","borderColour":"63404f","textColour":"ffffff","id":5051,"name":"Queen Mill"},"5894":{"backgroundColour":"0073b7","borderColour":"ffffff","textColour":"ffffff","id":5894,"name":"CK Master"},"7294":{"backgroundColour":"000000","borderColour":"000000","textColour":"ffff00","id":7294,"name":"C-Triers"},"8287":{"backgroundColour":"0073b7","borderColour":"ffffff","textColour":"ffffff","id":8287,"name":"ZSUNL"},"8957":{"backgroundColour":"0073b7","borderColour":"000000","textColour":"ffffff","id":8957,"name":"Boston"},"9695":{"backgroundColour":"0398eb","borderColour":"eb3636","textColour":"ffffff","id":9695,"name":"Estoira Bikes"},"11818":{"backgroundColour":"272c52","borderColour":"ffffff","textColour":"ff66c4","id":11818,"name":"RHINO"},"11939":{"backgroundColour":"ff0000","borderColour":"ffffff","textColour":"ffffff","id":11939,"name":"DZR"},"12149":{"backgroundColour":"0073b7","borderColour":"ffffff","textColour":"ffffff","id":12149,"name":"F365"},"12414":{"backgroundColour":"0073b7","borderColour":"ffff00","textColour":"ffffff","id":12414,"name":"Team_ETAFC"},"13539":{"backgroundColour":"0073b7","borderColour":"ffffff","textColour":"ffffff","id":13539,"name":"BCC"},"13822":{"backgroundColour":"5b5b5b","borderColour":"fe5917","textColour":"1bc1f1","id":13822,"name":"ZRG-R"},"16198":{"backgroundColour":"fc6767","borderColour":"ffffff","textColour":"000000","id":16198,"name":"24noR"},"16384":{"backgroundColour":"0073b7","borderColour":"ffffff","textColour":"ffffff","id":16384,"name":"RWG22"},"17126":{"backgroundColour":"ff7000","borderColour":"000000","textColour":"ffffff","id":17126,"name":"SEVEN MIN"},"17850":{"backgroundColour":"000000","borderColour":"ffffff","textColour":"ffffff","id":17850,"name":"SUPER SPEED WAGON"},"18127":{"backgroundColour":"00cd00","borderColour":"000000","textColour":"000000","id":18127,"name":"mTNT"}},"results":[{"zwid":4031086,"name":"Jermaine Izukanne [Wahoo Le Col]","pen":"1","positionOverall":1,"originalPositionInPen":1,"positionInPen":1,"teamId":4516},{"zwid":1379295,"name":"Daniel Anders Svendsen [Queen Mill]","pen":"2","positionOverall":2,"originalPositionInPen":1,"positionInPen":1,"teamId":5051},{"zwid":564782,"name":"Terence Temlett","pen":"3","positionOverall":25,"originalPositionInPen":1,"positionInPen":1,"teamId":2707},{"zwid":868709,"name":"Dustin // Race V&eacute;lo Club","pen":"4","positionOverall":46,"originalPositionInPen":1,"positionInPen":1,"teamId":4549},{"zwid":197383,"name":"Charlie Mullins ","pen":"1","positionOverall":3,"originalPositionInPen":2,"positionInPen":2,"teamId":0},{"zwid":1478129,"name":"Bert Xxx [R2]","pen":"2","positionOverall":7,"originalPositionInPen":2,"positionInPen":2,"teamId":41},{"zwid":1101818,"name":"Knut Brandrud","pen":"3","positionOverall":28,"originalPositionInPen":2,"positionInPen":2,"teamId":0},{"zwid":943091,"name":"Emiel Schuurman","pen":"4","positionOverall":50,"originalPositionInPen":2,"positionInPen":2,"teamId":0},{"zwid":1870307,"name":"Felix Happke 1998 [TSF]","pen":"1","positionOverall":4,"originalPositionInPen":3,"positionInPen":3,"teamId":4744},{"zwid":3297937,"name":"Alfonso Leone","pen":"2","positionOverall":12,"originalPositionInPen":3,"positionInPen":3,"teamId":588},{"zwid":1527640,"name":"masato celeste5849","pen":"3","positionOverall":33,"originalPositionInPen":3,"positionInPen":3,"teamId":0},{"zwid":1988627,"name":"MARCIOGPASSOS","pen":"4","positionOverall":54,"originalPositionInPen":3,"positionInPen":3,"teamId":605},{"zwid":794852,"name":"Synth Ryder | ZRScot","pen":"1","positionOverall":5,"originalPositionInPen":4,"positionInPen":4,"teamId":2934},{"zwid":854762,"name":"Mathew Charnley [Wahoo Le Col]","pen":"2","positionOverall":13,"originalPositionInPen":4,"positionInPen":4,"teamId":4516},{"zwid":1444304,"name":"Jean-Pierre Jonen [ZRG-R] ","pen":"3","positionOverall":35,"originalPositionInPen":4,"positionInPen":4,"teamId":13822},{"zwid":3530456,"name":"Jana Parsons [REVO]","pen":"4","positionOverall":55,"originalPositionInPen":4,"positionInPen":4,"teamId":2672},{"zwid":2921633,"name":"Bas Noll&eacute; &#128304; [mTNT]","pen":"1","positionOverall":6,"originalPositionInPen":5,"positionInPen":5,"teamId":18127},{"zwid":784499,"name":"Y. MATSU [SOR]","pen":"2","positionOverall":19,"originalPositionInPen":5,"positionInPen":5,"teamId":1958},{"zwid":246094,"name":"David Swan [Wahoo Le Col]","pen":"3","positionOverall":37,"originalPositionInPen":5,"positionInPen":5,"teamId":4516},{"zwid":3530987,"name":"Brewster Parsons ","pen":"4","positionOverall":56,"originalPositionInPen":5,"positionInPen":5,"teamId":0},{"zwid":1418196,"name":"Jacob Vezey","pen":"1","positionOverall":8,"originalPositionInPen":6,"positionInPen":6,"teamId":0},{"zwid":2022483,"name":"Morten S&oslash;ding S&oslash;rensen DZR-DD","pen":"2","positionOverall":23,"originalPositionInPen":6,"positionInPen":6,"teamId":11939},{"zwid":457861,"name":"TUTU TU","pen":"3","positionOverall":39,"originalPositionInPen":6,"positionInPen":6,"teamId":17126},{"zwid":470535,"name":"Arne Ansper","pen":"4","positionOverall":61,"originalPositionInPen":6,"positionInPen":6,"teamId":0},{"zwid":1050433,"name":"Pochi dog(24noR/ANMs)","pen":"1","positionOverall":9,"originalPositionInPen":7,"positionInPen":7,"teamId":16198},{"zwid":2559258,"name":"Thiago Costa [ZTBR]","pen":"2","positionOverall":26,"originalPositionInPen":7,"positionInPen":7,"teamId":605},{"zwid":130703,"name":"Craig Christie [Wahoo Le Col]","pen":"3","positionOverall":40,"originalPositionInPen":7,"positionInPen":7,"teamId":4516},{"zwid":381132,"name":"Aye SanMiguel","pen":"4","positionOverall":62,"originalPositionInPen":7,"positionInPen":7,"teamId":8287},{"zwid":475664,"name":"T 516","pen":"1","positionOverall":10,"originalPositionInPen":8,"positionInPen":8,"teamId":0},{"zwid":2308126,"name":"T Danji","pen":"2","positionOverall":27,"originalPositionInPen":8,"positionInPen":8,"teamId":0},{"zwid":1762324,"name":"Hao Zhou","pen":"3","positionOverall":42,"originalPositionInPen":8,"positionInPen":8,"teamId":13539},{"zwid":4446569,"name":"Alain Hiriberry","pen":"4","positionOverall":63,"originalPositionInPen":8,"positionInPen":8,"teamId":0},{"zwid":493330,"name":"Robin Liljeros [SZ]","pen":"1","positionOverall":11,"originalPositionInPen":9,"positionInPen":9,"teamId":32},{"zwid":1216371,"name":"Alex Cooper [Wahoo Le Col]","pen":"2","positionOverall":29,"originalPositionInPen":9,"positionInPen":9,"teamId":4516},{"zwid":846132,"name":"S&oslash;ren Smidstrup","pen":"3","positionOverall":45,"originalPositionInPen":9,"positionInPen":9,"teamId":0},{"zwid":4324837,"name":"Renaud Hoedt &#129471;&#127797;","pen":"4","positionOverall":64,"originalPositionInPen":9,"positionInPen":9,"teamId":17850},{"zwid":4244603,"name":"David Moreno","pen":"1","positionOverall":14,"originalPositionInPen":10,"positionInPen":10,"teamId":11818},{"zwid":1490600,"name":"Yuichi Nishio","pen":"2","positionOverall":30,"originalPositionInPen":10,"positionInPen":10,"teamId":4976},{"zwid":2231350,"name":"Shawn Stockigt ","pen":"3","positionOverall":47,"originalPositionInPen":10,"positionInPen":10,"teamId":0},{"zwid":60679,"name":"Daniel Rytz","pen":"1","positionOverall":15,"originalPositionInPen":11,"positionInPen":11,"teamId":0},{"zwid":725283,"name":"Alan Hunter (F365)","pen":"2","positionOverall":31,"originalPositionInPen":11,"positionInPen":11,"teamId":12149},{"zwid":47390,"name":"Henrik Jensen","pen":"3","positionOverall":51,"originalPositionInPen":11,"positionInPen":11,"teamId":1986},{"zwid":984874,"name":"Daniel Wegener DZR PP","pen":"1","positionOverall":16,"originalPositionInPen":12,"positionInPen":12,"teamId":11939},{"zwid":1135554,"name":"F PiPi","pen":"2","positionOverall":32,"originalPositionInPen":12,"positionInPen":12,"teamId":0},{"zwid":4379002,"name":"Rune Lillebraten","pen":"3","positionOverall":52,"originalPositionInPen":12,"positionInPen":12,"teamId":0},{"zwid":514370,"name":"Phil Donnelly [Wahoo Le Col]","pen":"1","positionOverall":17,"originalPositionInPen":13,"positionInPen":13,"teamId":4516},{"zwid":1563752,"name":"TP Tomas The Train","pen":"2","positionOverall":34,"originalPositionInPen":13,"positionInPen":13,"teamId":0},{"zwid":4590225,"name":"Pierre Cerveau","pen":"3","positionOverall":53,"originalPositionInPen":13,"positionInPen":13,"teamId":0},{"zwid":1001043,"name":"Marcus Svensson M&ouml;lndal","pen":"1","positionOverall":18,"originalPositionInPen":14,"positionInPen":14,"teamId":5894},{"zwid":1950491,"name":"Colin Lowe","pen":"2","positionOverall":41,"originalPositionInPen":14,"positionInPen":14,"teamId":0},{"zwid":1648870,"name":"Wayne Taylor","pen":"3","positionOverall":58,"originalPositionInPen":14,"positionInPen":14,"teamId":0},{"zwid":4503691,"name":"John Peasland","pen":"1","positionOverall":20,"originalPositionInPen":15,"positionInPen":15,"teamId":0},{"zwid":2590130,"name":"James Hayne (RWG) ","pen":"2","positionOverall":43,"originalPositionInPen":15,"positionInPen":15,"teamId":16384},{"zwid":926879,"name":"Antonio Dominguez","pen":"3","positionOverall":60,"originalPositionInPen":15,"positionInPen":15,"teamId":8957},{"zwid":189817,"name":"Mikhail Petrochenko","pen":"1","positionOverall":21,"originalPositionInPen":16,"positionInPen":16,"teamId":3155},{"zwid":1026823,"name":"Josh Sherwood (DIRT)","pen":"2","positionOverall":44,"originalPositionInPen":16,"positionInPen":16,"teamId":2707},{"zwid":217946,"name":"Lizi Brooke [Wahoo Le Col]","pen":"1","positionOverall":22,"originalPositionInPen":17,"positionInPen":17,"teamId":4516},{"zwid":925648,"name":"Kent  Nikel BWH","pen":"2","positionOverall":48,"originalPositionInPen":17,"positionInPen":17,"teamId":12414},{"zwid":3748152,"name":"T TommyMasta","pen":"1","positionOverall":24,"originalPositionInPen":18,"positionInPen":18,"teamId":0},{"zwid":1347974,"name":"L. Pimentel [Estoira Bikes]","pen":"2","positionOverall":49,"originalPositionInPen":18,"positionInPen":18,"teamId":9695},{"zwid":146582,"name":"Moto Zawa[Igname]","pen":"1","positionOverall":36,"originalPositionInPen":19,"positionInPen":19,"teamId":0},{"zwid":208311,"name":"Steve Payne C-Triers","pen":"2","positionOverall":57,"originalPositionInPen":19,"positionInPen":19,"teamId":7294},{"zwid":4559319,"name":"Andreas Gessner","pen":"1","positionOverall":38,"originalPositionInPen":20,"positionInPen":20,"teamId":2740},{"zwid":4401801,"name":"Tim Broekmeulen3919","pen":"2","positionOverall":59,"originalPositionInPen":20,"positionInPen":20,"teamId":2281}]}
+{
+  "teams": {
+    "0": {
+      "backgroundColour": "",
+      "borderColour": "",
+      "textColour": "00dd00",
+      "id": 0,
+      "name": ""
+    },
+    "32": {
+      "backgroundColour": "285697",
+      "borderColour": "ffd700",
+      "textColour": "ffffff",
+      "id": 32,
+      "name": "SZ"
+    },
+    "41": {
+      "backgroundColour": "000000",
+      "borderColour": "5cb0fc",
+      "textColour": "ff8700",
+      "id": 41,
+      "name": "RuhrRiders"
+    },
+    "588": {
+      "backgroundColour": "ffffff",
+      "borderColour": "00a65a",
+      "textColour": "dd4b39",
+      "id": 588,
+      "name": "Team Italy"
+    },
+    "605": {
+      "backgroundColour": "ffe100",
+      "borderColour": "015278",
+      "textColour": "015278",
+      "id": 605,
+      "name": "ZTBR"
+    },
+    "1958": {
+      "backgroundColour": "140b0b",
+      "borderColour": "ea0026",
+      "textColour": "f70f66",
+      "id": 1958,
+      "name": "TEAM ZWC"
+    },
+    "1986": {
+      "backgroundColour": "213ed6",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 1986,
+      "name": "DBR"
+    },
+    "2281": {
+      "backgroundColour": "ffa500",
+      "borderColour": "ffa500",
+      "textColour": "ffffff",
+      "id": 2281,
+      "name": "TeamNL"
+    },
+    "2672": {
+      "backgroundColour": "000000",
+      "borderColour": "fc00e3",
+      "textColour": "fc00e3",
+      "id": 2672,
+      "name": "REVO"
+    },
+    "2707": {
+      "backgroundColour": "211208",
+      "borderColour": "df6a0d",
+      "textColour": "29ec34",
+      "id": 2707,
+      "name": "DIRT"
+    },
+    "2740": {
+      "backgroundColour": "009fe3",
+      "borderColour": "0c1e4f",
+      "textColour": "ffffff",
+      "id": 2740,
+      "name": "Team CRYO-GEN"
+    },
+    "2934": {
+      "backgroundColour": "141c4d",
+      "borderColour": "c69d4b",
+      "textColour": "ffffff",
+      "id": 2934,
+      "name": "ZRScot"
+    },
+    "3155": {
+      "backgroundColour": "e52f20",
+      "borderColour": "f79917",
+      "textColour": "ffffff",
+      "id": 3155,
+      "name": "Symposium (Elite)"
+    },
+    "4516": {
+      "backgroundColour": "c6007e",
+      "borderColour": "0095c8",
+      "textColour": "ffffff",
+      "id": 4516,
+      "name": "Wahoo Le Col"
+    },
+    "4549": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 4549,
+      "name": "RVC"
+    },
+    "4744": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 4744,
+      "name": "TEAM SPORTFORUM [TSF]"
+    },
+    "4976": {
+      "backgroundColour": "00a7ff",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 4976,
+      "name": "NICO OZ"
+    },
+    "5051": {
+      "backgroundColour": "b2aba9",
+      "borderColour": "63404f",
+      "textColour": "ffffff",
+      "id": 5051,
+      "name": "Queen Mill"
+    },
+    "5894": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 5894,
+      "name": "CK Master"
+    },
+    "7294": {
+      "backgroundColour": "000000",
+      "borderColour": "000000",
+      "textColour": "ffff00",
+      "id": 7294,
+      "name": "C-Triers"
+    },
+    "8287": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 8287,
+      "name": "ZSUNL"
+    },
+    "8957": {
+      "backgroundColour": "0073b7",
+      "borderColour": "000000",
+      "textColour": "ffffff",
+      "id": 8957,
+      "name": "Boston"
+    },
+    "9695": {
+      "backgroundColour": "0398eb",
+      "borderColour": "eb3636",
+      "textColour": "ffffff",
+      "id": 9695,
+      "name": "Estoira Bikes"
+    },
+    "11818": {
+      "backgroundColour": "272c52",
+      "borderColour": "ffffff",
+      "textColour": "ff66c4",
+      "id": 11818,
+      "name": "RHINO"
+    },
+    "11939": {
+      "backgroundColour": "ff0000",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 11939,
+      "name": "DZR"
+    },
+    "12149": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 12149,
+      "name": "F365"
+    },
+    "12414": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffff00",
+      "textColour": "ffffff",
+      "id": 12414,
+      "name": "Team_ETAFC"
+    },
+    "13539": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 13539,
+      "name": "BCC"
+    },
+    "13822": {
+      "backgroundColour": "5b5b5b",
+      "borderColour": "fe5917",
+      "textColour": "1bc1f1",
+      "id": 13822,
+      "name": "ZRG-R"
+    },
+    "16198": {
+      "backgroundColour": "fc6767",
+      "borderColour": "ffffff",
+      "textColour": "000000",
+      "id": 16198,
+      "name": "24noR"
+    },
+    "16384": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 16384,
+      "name": "RWG22"
+    },
+    "17126": {
+      "backgroundColour": "ff7000",
+      "borderColour": "000000",
+      "textColour": "ffffff",
+      "id": 17126,
+      "name": "SEVEN MIN"
+    },
+    "17850": {
+      "backgroundColour": "000000",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 17850,
+      "name": "OLOW"
+    },
+    "18127": {
+      "backgroundColour": "00cd00",
+      "borderColour": "000000",
+      "textColour": "000000",
+      "id": 18127,
+      "name": "mTNT"
+    },
+    "18521": {
+      "backgroundColour": "0073b7",
+      "borderColour": "ffffff",
+      "textColour": "ffffff",
+      "id": 18521,
+      "name": "ZZRC Racing"
+    }
+  },
+  "results": [
+    {
+      "zwid": 4031086,
+      "name": "Jermaine Izukanne [Wahoo Le Col]",
+      "pen": "1",
+      "positionOverall": 1,
+      "originalPositionInPen": 1,
+      "positionInPen": 1,
+      "teamId": 4516
+    },
+    {
+      "zwid": 1379295,
+      "name": "Daniel Anders Svendsen [Queen Mill]",
+      "pen": "2",
+      "positionOverall": 2,
+      "originalPositionInPen": 1,
+      "positionInPen": 1,
+      "teamId": 5051
+    },
+    {
+      "zwid": 564782,
+      "name": "Terence Temlett",
+      "pen": "3",
+      "positionOverall": 25,
+      "originalPositionInPen": 1,
+      "positionInPen": 1,
+      "teamId": 2707
+    },
+    {
+      "zwid": 868709,
+      "name": "Dustin // Race V&eacute;lo Club",
+      "pen": "4",
+      "positionOverall": 46,
+      "originalPositionInPen": 1,
+      "positionInPen": 1,
+      "teamId": 4549
+    },
+    {
+      "zwid": 197383,
+      "name": "Charlie Mullins ",
+      "pen": "1",
+      "positionOverall": 3,
+      "originalPositionInPen": 2,
+      "positionInPen": 2,
+      "teamId": 0
+    },
+    {
+      "zwid": 1478129,
+      "name": "Bert Xxx [R2]",
+      "pen": "2",
+      "positionOverall": 7,
+      "originalPositionInPen": 2,
+      "positionInPen": 2,
+      "teamId": 41
+    },
+    {
+      "zwid": 1101818,
+      "name": "Knut Brandrud",
+      "pen": "3",
+      "positionOverall": 28,
+      "originalPositionInPen": 2,
+      "positionInPen": 2,
+      "teamId": 18521
+    },
+    {
+      "zwid": 943091,
+      "name": "Emiel Schuurman",
+      "pen": "4",
+      "positionOverall": 50,
+      "originalPositionInPen": 2,
+      "positionInPen": 2,
+      "teamId": 0
+    },
+    {
+      "zwid": 1870307,
+      "name": "Felix Happke 1998 [TSF]",
+      "pen": "1",
+      "positionOverall": 4,
+      "originalPositionInPen": 3,
+      "positionInPen": 3,
+      "teamId": 4744
+    },
+    {
+      "zwid": 3297937,
+      "name": "Alfonso Leone",
+      "pen": "2",
+      "positionOverall": 12,
+      "originalPositionInPen": 3,
+      "positionInPen": 3,
+      "teamId": 588
+    },
+    {
+      "zwid": 1527640,
+      "name": "masato celeste5849",
+      "pen": "3",
+      "positionOverall": 33,
+      "originalPositionInPen": 3,
+      "positionInPen": 3,
+      "teamId": 0
+    },
+    {
+      "zwid": 1988627,
+      "name": "MARCIOGPASSOS",
+      "pen": "4",
+      "positionOverall": 54,
+      "originalPositionInPen": 3,
+      "positionInPen": 3,
+      "teamId": 605
+    },
+    {
+      "zwid": 794852,
+      "name": "Synth Ryder | ZRScot",
+      "pen": "1",
+      "positionOverall": 5,
+      "originalPositionInPen": 4,
+      "positionInPen": 4,
+      "teamId": 2934
+    },
+    {
+      "zwid": 854762,
+      "name": "Mathew Charnley [Wahoo Le Col]",
+      "pen": "2",
+      "positionOverall": 13,
+      "originalPositionInPen": 4,
+      "positionInPen": 4,
+      "teamId": 4516
+    },
+    {
+      "zwid": 1444304,
+      "name": "Jean-Pierre Jonen [ZRG-R] ",
+      "pen": "3",
+      "positionOverall": 35,
+      "originalPositionInPen": 4,
+      "positionInPen": 4,
+      "teamId": 13822
+    },
+    {
+      "zwid": 3530456,
+      "name": "Jana Parsons [REVO]",
+      "pen": "4",
+      "positionOverall": 55,
+      "originalPositionInPen": 4,
+      "positionInPen": 4,
+      "teamId": 2672
+    },
+    {
+      "zwid": 2921633,
+      "name": "Bas Noll&eacute; &#128304; [mTNT]",
+      "pen": "1",
+      "positionOverall": 6,
+      "originalPositionInPen": 5,
+      "positionInPen": 5,
+      "teamId": 18127
+    },
+    {
+      "zwid": 784499,
+      "name": "Y. MATSU [SOR]",
+      "pen": "2",
+      "positionOverall": 19,
+      "originalPositionInPen": 5,
+      "positionInPen": 5,
+      "teamId": 1958
+    },
+    {
+      "zwid": 246094,
+      "name": "David Swan [Wahoo Le Col]",
+      "pen": "3",
+      "positionOverall": 37,
+      "originalPositionInPen": 5,
+      "positionInPen": 5,
+      "teamId": 4516
+    },
+    {
+      "zwid": 3530987,
+      "name": "Brewster Parsons ",
+      "pen": "4",
+      "positionOverall": 56,
+      "originalPositionInPen": 5,
+      "positionInPen": 5,
+      "teamId": 0
+    },
+    {
+      "zwid": 1418196,
+      "name": "Jacob Vezey",
+      "pen": "1",
+      "positionOverall": 8,
+      "originalPositionInPen": 6,
+      "positionInPen": 6,
+      "teamId": 0
+    },
+    {
+      "zwid": 2022483,
+      "name": "Morten S&oslash;ding S&oslash;rensen DZR-DD",
+      "pen": "2",
+      "positionOverall": 23,
+      "originalPositionInPen": 6,
+      "positionInPen": 6,
+      "teamId": 11939
+    },
+    {
+      "zwid": 457861,
+      "name": "TUTU TU",
+      "pen": "3",
+      "positionOverall": 39,
+      "originalPositionInPen": 6,
+      "positionInPen": 6,
+      "teamId": 17126
+    },
+    {
+      "zwid": 470535,
+      "name": "Arne Ansper",
+      "pen": "4",
+      "positionOverall": 61,
+      "originalPositionInPen": 6,
+      "positionInPen": 6,
+      "teamId": 0
+    },
+    {
+      "zwid": 1050433,
+      "name": "Pochi dog(24noR/ANMs)",
+      "pen": "1",
+      "positionOverall": 9,
+      "originalPositionInPen": 7,
+      "positionInPen": 7,
+      "teamId": 16198
+    },
+    {
+      "zwid": 2559258,
+      "name": "Thiago Costa [ZTBR]",
+      "pen": "2",
+      "positionOverall": 26,
+      "originalPositionInPen": 7,
+      "positionInPen": 7,
+      "teamId": 605
+    },
+    {
+      "zwid": 130703,
+      "name": "Craig Christie [Wahoo Le Col]",
+      "pen": "3",
+      "positionOverall": 40,
+      "originalPositionInPen": 7,
+      "positionInPen": 7,
+      "teamId": 4516
+    },
+    {
+      "zwid": 381132,
+      "name": "Aye SanMiguel",
+      "pen": "4",
+      "positionOverall": 62,
+      "originalPositionInPen": 7,
+      "positionInPen": 7,
+      "teamId": 8287
+    },
+    {
+      "zwid": 475664,
+      "name": "T 516",
+      "pen": "1",
+      "positionOverall": 10,
+      "originalPositionInPen": 8,
+      "positionInPen": 8,
+      "teamId": 0
+    },
+    {
+      "zwid": 2308126,
+      "name": "T Danji",
+      "pen": "2",
+      "positionOverall": 27,
+      "originalPositionInPen": 8,
+      "positionInPen": 8,
+      "teamId": 0
+    },
+    {
+      "zwid": 1762324,
+      "name": "Hao Zhou",
+      "pen": "3",
+      "positionOverall": 42,
+      "originalPositionInPen": 8,
+      "positionInPen": 8,
+      "teamId": 13539
+    },
+    {
+      "zwid": 4446569,
+      "name": "Alain Hiriberry",
+      "pen": "4",
+      "positionOverall": 63,
+      "originalPositionInPen": 8,
+      "positionInPen": 8,
+      "teamId": 0
+    },
+    {
+      "zwid": 493330,
+      "name": "Robin Liljeros [SZ]",
+      "pen": "1",
+      "positionOverall": 11,
+      "originalPositionInPen": 9,
+      "positionInPen": 9,
+      "teamId": 32
+    },
+    {
+      "zwid": 1216371,
+      "name": "Alex Cooper [Wahoo Le Col]",
+      "pen": "2",
+      "positionOverall": 29,
+      "originalPositionInPen": 9,
+      "positionInPen": 9,
+      "teamId": 4516
+    },
+    {
+      "zwid": 846132,
+      "name": "S&oslash;ren Smidstrup",
+      "pen": "3",
+      "positionOverall": 45,
+      "originalPositionInPen": 9,
+      "positionInPen": 9,
+      "teamId": 0
+    },
+    {
+      "zwid": 4324837,
+      "name": "Renaud Hoedt &#129471;&#127797;",
+      "pen": "4",
+      "positionOverall": 64,
+      "originalPositionInPen": 9,
+      "positionInPen": 9,
+      "teamId": 17850
+    },
+    {
+      "zwid": 4244603,
+      "name": "David Moreno",
+      "pen": "1",
+      "positionOverall": 14,
+      "originalPositionInPen": 10,
+      "positionInPen": 10,
+      "teamId": 11818
+    },
+    {
+      "zwid": 1490600,
+      "name": "Yuichi Nishio",
+      "pen": "2",
+      "positionOverall": 30,
+      "originalPositionInPen": 10,
+      "positionInPen": 10,
+      "teamId": 4976
+    },
+    {
+      "zwid": 2231350,
+      "name": "Shawn Stockigt ",
+      "pen": "3",
+      "positionOverall": 47,
+      "originalPositionInPen": 10,
+      "positionInPen": 10,
+      "teamId": 0
+    },
+    {
+      "zwid": 60679,
+      "name": "Daniel Rytz",
+      "pen": "1",
+      "positionOverall": 15,
+      "originalPositionInPen": 11,
+      "positionInPen": 11,
+      "teamId": 0
+    },
+    {
+      "zwid": 725283,
+      "name": "Alan Hunter (F365)",
+      "pen": "2",
+      "positionOverall": 31,
+      "originalPositionInPen": 11,
+      "positionInPen": 11,
+      "teamId": 12149
+    },
+    {
+      "zwid": 47390,
+      "name": "Henrik Jensen",
+      "pen": "3",
+      "positionOverall": 51,
+      "originalPositionInPen": 11,
+      "positionInPen": 11,
+      "teamId": 1986
+    },
+    {
+      "zwid": 984874,
+      "name": "Daniel Wegener DZR PP",
+      "pen": "1",
+      "positionOverall": 16,
+      "originalPositionInPen": 12,
+      "positionInPen": 12,
+      "teamId": 11939
+    },
+    {
+      "zwid": 1135554,
+      "name": "F PiPi",
+      "pen": "2",
+      "positionOverall": 32,
+      "originalPositionInPen": 12,
+      "positionInPen": 12,
+      "teamId": 0
+    },
+    {
+      "zwid": 4379002,
+      "name": "Rune Lillebraten",
+      "pen": "3",
+      "positionOverall": 52,
+      "originalPositionInPen": 12,
+      "positionInPen": 12,
+      "teamId": 0
+    },
+    {
+      "zwid": 514370,
+      "name": "Phil Donnelly [Wahoo Le Col]",
+      "pen": "1",
+      "positionOverall": 17,
+      "originalPositionInPen": 13,
+      "positionInPen": 13,
+      "teamId": 4516
+    },
+    {
+      "zwid": 1563752,
+      "name": "TP Tomas The Train",
+      "pen": "2",
+      "positionOverall": 34,
+      "originalPositionInPen": 13,
+      "positionInPen": 13,
+      "teamId": 0
+    },
+    {
+      "zwid": 4590225,
+      "name": "Pierre Cerveau",
+      "pen": "3",
+      "positionOverall": 53,
+      "originalPositionInPen": 13,
+      "positionInPen": 13,
+      "teamId": 0
+    },
+    {
+      "zwid": 1001043,
+      "name": "Marcus Svensson M&ouml;lndal",
+      "pen": "1",
+      "positionOverall": 18,
+      "originalPositionInPen": 14,
+      "positionInPen": 14,
+      "teamId": 5894
+    },
+    {
+      "zwid": 1950491,
+      "name": "Colin Lowe",
+      "pen": "2",
+      "positionOverall": 41,
+      "originalPositionInPen": 14,
+      "positionInPen": 14,
+      "teamId": 0
+    },
+    {
+      "zwid": 1648870,
+      "name": "Wayne Taylor",
+      "pen": "3",
+      "positionOverall": 58,
+      "originalPositionInPen": 14,
+      "positionInPen": 14,
+      "teamId": 0
+    },
+    {
+      "zwid": 4503691,
+      "name": "John Peasland",
+      "pen": "1",
+      "positionOverall": 20,
+      "originalPositionInPen": 15,
+      "positionInPen": 15,
+      "teamId": 0
+    },
+    {
+      "zwid": 2590130,
+      "name": "James Hayne (RWG) ",
+      "pen": "2",
+      "positionOverall": 43,
+      "originalPositionInPen": 15,
+      "positionInPen": 15,
+      "teamId": 16384
+    },
+    {
+      "zwid": 926879,
+      "name": "Antonio Dominguez",
+      "pen": "3",
+      "positionOverall": 60,
+      "originalPositionInPen": 15,
+      "positionInPen": 15,
+      "teamId": 8957
+    },
+    {
+      "zwid": 189817,
+      "name": "Mikhail Petrochenko",
+      "pen": "1",
+      "positionOverall": 21,
+      "originalPositionInPen": 16,
+      "positionInPen": 16,
+      "teamId": 3155
+    },
+    {
+      "zwid": 1026823,
+      "name": "J osh (Dirty Dancers)",
+      "pen": "2",
+      "positionOverall": 44,
+      "originalPositionInPen": 16,
+      "positionInPen": 16,
+      "teamId": 2707
+    },
+    {
+      "zwid": 217946,
+      "name": "Lizi Brooke [Wahoo Le Col]",
+      "pen": "1",
+      "positionOverall": 22,
+      "originalPositionInPen": 17,
+      "positionInPen": 17,
+      "teamId": 4516
+    },
+    {
+      "zwid": 925648,
+      "name": "Kent  Nikel BWH",
+      "pen": "2",
+      "positionOverall": 48,
+      "originalPositionInPen": 17,
+      "positionInPen": 17,
+      "teamId": 12414
+    },
+    {
+      "zwid": 3748152,
+      "name": "T TommyMasta",
+      "pen": "1",
+      "positionOverall": 24,
+      "originalPositionInPen": 18,
+      "positionInPen": 18,
+      "teamId": 0
+    },
+    {
+      "zwid": 1347974,
+      "name": "L. Pimentel [Estoira Bikes]",
+      "pen": "2",
+      "positionOverall": 49,
+      "originalPositionInPen": 18,
+      "positionInPen": 18,
+      "teamId": 9695
+    },
+    {
+      "zwid": 146582,
+      "name": "Moto Zawa[Igname]",
+      "pen": "1",
+      "positionOverall": 36,
+      "originalPositionInPen": 19,
+      "positionInPen": 19,
+      "teamId": 0
+    },
+    {
+      "zwid": 208311,
+      "name": "Steve Payne C-Triers",
+      "pen": "2",
+      "positionOverall": 57,
+      "originalPositionInPen": 19,
+      "positionInPen": 19,
+      "teamId": 7294
+    },
+    {
+      "zwid": 4559319,
+      "name": "Andreas Gessner",
+      "pen": "1",
+      "positionOverall": 38,
+      "originalPositionInPen": 20,
+      "positionInPen": 20,
+      "teamId": 2740
+    },
+    {
+      "zwid": 4401801,
+      "name": "Tim Broekmeulen3919",
+      "pen": "2",
+      "positionOverall": 59,
+      "originalPositionInPen": 20,
+      "positionInPen": 20,
+      "teamId": 2281
+    }
+  ]
+}

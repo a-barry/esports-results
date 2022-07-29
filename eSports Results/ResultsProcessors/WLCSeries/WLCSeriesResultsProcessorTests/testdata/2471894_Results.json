@@ -1,0 +1,328 @@
+{
+  "TeamOverall": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "374"
+    },
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "91"
+    },
+    {
+      "Id": "6165",
+      "Name": "BDO",
+      "Points": "49"
+    },
+    {
+      "Id": "588",
+      "Name": "Team Italy",
+      "Points": "48"
+    },
+    {
+      "Id": "6116",
+      "Name": "Serpentine",
+      "Points": "48"
+    },
+    {
+      "Id": "12328",
+      "Name": "MDC",
+      "Points": "48"
+    },
+    {
+      "Id": "13508",
+      "Name": "ROZ",
+      "Points": "48"
+    },
+    {
+      "Id": "17763",
+      "Name": "HISP",
+      "Points": "47"
+    },
+    {
+      "Id": "11939",
+      "Name": "DZR",
+      "Points": "46"
+    },
+    {
+      "Id": "3983",
+      "Name": "VCV",
+      "Points": "45"
+    },
+    {
+      "Id": "5509",
+      "Name": "CANYON BETA",
+      "Points": "45"
+    },
+    {
+      "Id": "13264",
+      "Name": "BAKPDL",
+      "Points": "42"
+    },
+    {
+      "Id": "7026",
+      "Name": "CICLI STEFANELLI",
+      "Points": "35"
+    }
+  ],
+  "TeamA": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "143"
+    },
+    {
+      "Id": "6165",
+      "Name": "BDO",
+      "Points": "49"
+    },
+    {
+      "Id": "588",
+      "Name": "Team Italy",
+      "Points": "48"
+    },
+    {
+      "Id": "5509",
+      "Name": "CANYON BETA",
+      "Points": "45"
+    }
+  ],
+  "TeamB": [
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "146"
+    },
+    {
+      "Id": "12328",
+      "Name": "MDC",
+      "Points": "48"
+    },
+    {
+      "Id": "3983",
+      "Name": "VCV",
+      "Points": "45"
+    },
+    {
+      "Id": "13264",
+      "Name": "BAKPDL",
+      "Points": "42"
+    },
+    {
+      "Id": "7026",
+      "Name": "CICLI STEFANELLI",
+      "Points": "35"
+    }
+  ],
+  "TeamC": [
+    {
+      "Id": "2707",
+      "Name": "DIRT",
+      "Points": "91"
+    },
+    {
+      "Id": "4516",
+      "Name": "Wahoo Le Col",
+      "Points": "85"
+    },
+    {
+      "Id": "6116",
+      "Name": "Serpentine",
+      "Points": "48"
+    },
+    {
+      "Id": "11939",
+      "Name": "DZR",
+      "Points": "46"
+    }
+  ],
+  "TeamD": [
+    {
+      "Id": "13508",
+      "Name": "ROZ",
+      "Points": "48"
+    },
+    {
+      "Id": "17763",
+      "Name": "HISP",
+      "Points": "47"
+    }
+  ],
+  "IndividualA": [
+    {
+      "Name": "Fred Richards [Wahoo Le Col]",
+      "Points": "50"
+    },
+    {
+      "Name": "Romain Cardis ",
+      "Points": "49"
+    },
+    {
+      "Name": "Matteo D'Isanto [Team Italy]",
+      "Points": "48"
+    },
+    {
+      "Name": "Lizi Brooke [Wahoo Le Col]",
+      "Points": "47"
+    },
+    {
+      "Name": "James Lawler [Wahoo Le Col]",
+      "Points": "46"
+    },
+    {
+      "Name": "Kimberleigh Readman (BETA)",
+      "Points": "45"
+    }
+  ],
+  "IndividualB": [
+    {
+      "Name": "Alex Cooper [Wahoo Le Col]",
+      "Points": "50"
+    },
+    {
+      "Name": "Leon Bond [Wahoo Le Col]",
+      "Points": "49"
+    },
+    {
+      "Name": "Mathias Bertram (Magdeburg Chainbreakers)",
+      "Points": "48"
+    },
+    {
+      "Name": "Wally",
+      "Points": "47"
+    },
+    {
+      "Name": "Mathew Charnley [Wahoo Le Col]",
+      "Points": "46"
+    },
+    {
+      "Name": "Roy Turner (VCV Alfred)",
+      "Points": "45"
+    },
+    {
+      "Name": "Jay Keteleers [Wahoo Le Col]",
+      "Points": "44"
+    },
+    {
+      "Name": "Fzhip Fontieyn",
+      "Points": "43"
+    },
+    {
+      "Name": "Jesse Dekker [BAKPDL]",
+      "Points": "42"
+    },
+    {
+      "Name": "Fil Aguilar",
+      "Points": "41"
+    },
+    {
+      "Name": "Josu Mondelo",
+      "Points": "40"
+    },
+    {
+      "Name": "C yclomarc6074",
+      "Points": "39"
+    },
+    {
+      "Name": "Colin Lowe",
+      "Points": "38"
+    },
+    {
+      "Name": "Jf Lzn",
+      "Points": "37"
+    },
+    {
+      "Name": "Peter Peumans",
+      "Points": "36"
+    },
+    {
+      "Name": "Mattia Masin (Cicli Stefanelli)",
+      "Points": "35"
+    },
+    {
+      "Name": "Christopher K&auml;mmer",
+      "Points": "34"
+    }
+  ],
+  "IndividualC": [
+    {
+      "Name": "Terence Temlett",
+      "Points": "50"
+    },
+    {
+      "Name": "Job Jonkers",
+      "Points": "49"
+    },
+    {
+      "Name": "Vin Lam [Serpentine]",
+      "Points": "48"
+    },
+    {
+      "Name": "Chris Hoe FlatlandriaCC",
+      "Points": "47"
+    },
+    {
+      "Name": "S&oslash;ren Bang-madsen",
+      "Points": "46"
+    },
+    {
+      "Name": "&#23665;&#30000;&#24693;&#21161;",
+      "Points": "45"
+    },
+    {
+      "Name": "Andrew Brown5758",
+      "Points": "44"
+    },
+    {
+      "Name": "David Swan [Wahoo Le Col]",
+      "Points": "43"
+    },
+    {
+      "Name": "Craig Christie [Wahoo Le Col]",
+      "Points": "42"
+    },
+    {
+      "Name": "M. Dickinson(DIRTy Sea Hydras)",
+      "Points": "41"
+    },
+    {
+      "Name": "Chris Humphris",
+      "Points": "40"
+    },
+    {
+      "Name": "Michael Stockfleth (RCC Copenhagen)",
+      "Points": "39"
+    },
+    {
+      "Name": "Th. Blasey  RSC Witten&#127474;&#127484;",
+      "Points": "38"
+    },
+    {
+      "Name": "Francisco Paco Jim&eacute;nez P&eacute;r",
+      "Points": "37"
+    },
+    {
+      "Name": "Charles Monty Burns",
+      "Points": "36"
+    }
+  ],
+  "IndividualD": [
+    {
+      "Name": "Adam Nolan6254",
+      "Points": "50"
+    },
+    {
+      "Name": "Giedrius Valancius",
+      "Points": "49"
+    },
+    {
+      "Name": "Andy Kayley ",
+      "Points": "48"
+    },
+    {
+      "Name": "David Garcia Martin",
+      "Points": "47"
+    }
+  ]
+}

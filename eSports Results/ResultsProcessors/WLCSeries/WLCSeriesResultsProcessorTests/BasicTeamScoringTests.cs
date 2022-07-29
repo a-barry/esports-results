@@ -45,9 +45,7 @@ namespace WLCSeriesResultsProcessorTests
 
             var processor = new WLCSeriesResultsProcessor.WLCEventProcessor();
 
-            processor.Init(config, testEventResults);
-
-            var processedResults = await processor.GetTeamResultsAsync();
+            var processedResults = await processor.GetTeamResultsAsync(config, testEventResults);
 
             // check only one entry per team
             for (int i = 1; i <= teams; i++)
@@ -105,9 +103,7 @@ namespace WLCSeriesResultsProcessorTests
 
             var processor = new WLCSeriesResultsProcessor.WLCEventProcessor();
 
-            processor.Init(config, testEventResults);
-
-            var processedResults = await processor.GetTeamResultsAsync();
+            var processedResults = await processor.GetTeamResultsAsync(config, testEventResults);
 
             // check only one entry per team per pen
             for (int p = 0; p <= pens; p++) // starting p at 0 so we get the overall pen as well.

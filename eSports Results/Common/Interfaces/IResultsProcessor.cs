@@ -1,11 +1,15 @@
-﻿namespace Common.Interfaces
+﻿using Common.Models;
+
+namespace Common.Interfaces
 {
     public interface IResultsProcessor
     {
-        void Init(Models.EventProcessorConfiguration configuration, Models.RawEventResults rawEventResults);
+        Task<Dictionary<int, IEnumerable<Models.IndividualResult>>> GetIndividualResultsAsync(EventProcessorConfiguration configuration, RawEventResults rawEventResults);
 
-        Task<Dictionary<int, IEnumerable<Models.IndividualResult>>> GetIndividualResultsAsync();
+        Task<Dictionary<int, IEnumerable<Models.TeamResult>>> GetTeamResultsAsync(EventProcessorConfiguration configuration, RawEventResults rawEventResults);
 
-        Task<Dictionary<int, IEnumerable<Models.TeamResult>>> GetTeamResultsAsync();
+        Task<Dictionary<int, IEnumerable<Models.IndividualResult>>> GetSeriesIndividualResultsAsync(SeriesProcessorConfiguration configuration, IEnumerable<RawEventResults> rawSeriesEventResults);
+
+        Task<Dictionary<int, IEnumerable<Models.TeamResult>>> GetSeriesTeamResultsAsync(SeriesProcessorConfiguration configuration, IEnumerable<RawEventResults> rawSeriesEventResults);
     }
 }
