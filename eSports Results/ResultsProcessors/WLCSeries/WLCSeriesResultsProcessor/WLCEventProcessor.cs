@@ -155,14 +155,27 @@ namespace WLCSeriesResultsProcessor
             // extract pens found in results (yes probably 4!)
             var pens = eventResults.Results.Select(r => r.Pen).Distinct();
 
+            // extract team names
+            var teams = eventResults.Results.Select(r => new KeyValuePair<string, string>(r.TeamId, r.TeamName)).Distinct().ToDictionary(r => r.Key, r => r.Value);
+
             // process pen '0' (i.e. the whole event)
-            // no overall is sum of all cats
-            //penTeamResults.Add(0, await ProcessTeamPen(0));
+            // no, overall is sum of all cats
+            // penTeamResults.Add(0, await ProcessTeamPen(0));
 
             // process all pens
             foreach (int p in pens)
             {
-                penTeamResults.Add(p, await ProcessTeamPen(p, configuration, eventResults));
+                var penTeamResult = await ProcessTeamPen(p, configuration, eventResults);
+
+                if (penTeamResult != null)
+                {
+                    foreach (var t in penTeamResult)
+                    {
+                        t.Name = teams[t.Id];
+                    }
+
+                    penTeamResults.Add(p, penTeamResult);
+                }
             }
 
             // combine scores from all pens to make overall team scores

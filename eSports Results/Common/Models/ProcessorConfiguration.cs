@@ -8,6 +8,18 @@ namespace Common.Models
 {
     public class SeriesProcessorConfiguration
     {
+        public Enums.Platform Platform { get; set; } = Enums.Platform.Zwift;
+
+        /// <summary>
+        /// Series Id
+        /// </summary>
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Title of the whole series
+        /// </summary>
+        public string Title { get; set; }
+
         /// <summary>
         /// THe miniumum number of events a rider has to complete to be included in the GC
         /// </summary>
@@ -18,6 +30,11 @@ namespace Common.Models
         /// </summary>
         public int QualifyingScoresPerRider { get; set; } = 0;
 
+        /// <summary>
+        /// The id of the events that make up the series
+        /// </summary>
+        public IEnumerable<string> EventIds { get; set; }
+
         public EventProcessorConfiguration EventConfiguration { get; set; }
     }
 
@@ -26,6 +43,7 @@ namespace Common.Models
         /// <summary>
         /// The number of points earned by the first placed rider
         /// </summary>
+        /// In future could make this an array for non-liner point steps
         public int PointsForFirst { get; set; }
 
         /// <summary>

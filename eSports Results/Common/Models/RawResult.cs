@@ -43,6 +43,16 @@ namespace Common.Models
         /// </summary>
         public string TeamId { get; set; }
 
+        /// <summary>
+        /// Name of the team that the rider belongs to.
+        /// </summary>
+        public string TeamName { get; set; }
+
+        /// <summary>
+        /// Has the rider posted dual recording data?
+        /// </summary>
+        public bool HasDualRecording { get; set; }
+
         public decimal power5s { get; set; }
         public decimal power10s { get; set; }
         public decimal power15s { get; set; }

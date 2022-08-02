@@ -1,0 +1,14 @@
+﻿@page "/"
+
+<PageTitle>Wahoo LeCol Results</PageTitle>
+
+<h1>Wahoo LeCol Results</h1>
+
+<div class="alert alert-warning" role="alert">
+    Before authentication will function correctly, you must configure your provider details in <code>Program.cs</code>
+</div>
+
+@foreach (var series in allSeries)
+{
+    <a href="/series/@series.Id">@series.Title</a>
+}

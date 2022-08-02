@@ -14,4 +14,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\ResultsProcessors\WLCSeries\WLCSeriesResultsProcessor\WLCSeriesResultsProcessor.csproj" />
+    <ProjectReference Include="..\ResultsSources\ZwiftPowerDataSource\ZwiftPowerDataSource.csproj" />
+  </ItemGroup>
+
 </Project>

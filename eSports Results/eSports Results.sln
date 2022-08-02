@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZwiftPower", "ZwiftPower", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZwiftPowerDataSource", "ResultsSources\ZwiftPowerDataSource\ZwiftPowerDataSource.csproj", "{38655301-1D39-43D4-AFE0-FF42BADE341B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eSportsResultsUI", "eSportsResultsUI\eSportsResultsUI.csproj", "{A2C17C2A-6D5B-437F-B264-E64723511A34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{38655301-1D39-43D4-AFE0-FF42BADE341B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38655301-1D39-43D4-AFE0-FF42BADE341B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38655301-1D39-43D4-AFE0-FF42BADE341B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C17C2A-6D5B-437F-B264-E64723511A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C17C2A-6D5B-437F-B264-E64723511A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C17C2A-6D5B-437F-B264-E64723511A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C17C2A-6D5B-437F-B264-E64723511A34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

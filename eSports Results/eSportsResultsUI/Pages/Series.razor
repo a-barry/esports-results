@@ -1,0 +1,12 @@
+﻿@page "/series/{SeriesId}"
+
+<PageTitle>@series.Title</PageTitle>
+
+<h1>@series.Title</h1>
+
+@for (int i = 1; i <= series.Events.Count(); i++)
+{
+    var ev = series.Events.ElementAt(i - 1);
+
+    <a href="/results/@ev">Race @i</a>
+}

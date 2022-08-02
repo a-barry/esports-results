@@ -39,7 +39,7 @@ namespace WLCSeriesResultsProcessorTests
             {
                 for (int i = 1; i <= riders; i++)
                 {
-                    testResults.Add(new RawResult() { Id = $"t{t}_r{i}", Pen = 1, TeamId = t.ToString(), PositionInPen = (riders * (t - 1)) + i });
+                    testResults.Add(new RawResult() { Id = $"t{t}_r{i}", Pen = 1, TeamId = t.ToString(), TeamName = t.ToString(), PositionInPen = (riders * (t - 1)) + i });
                 }
             }
 
@@ -55,6 +55,7 @@ namespace WLCSeriesResultsProcessorTests
 
             // totals for each team
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
+            Assert.IsTrue(processedResults[1].FirstOrDefault(t => t.Id == "1").Name == "1");
             Assert.IsTrue(processedResults[1].FirstOrDefault(t => t.Id == "1").Points == 30 + 29 + 28 + (7 * 1)); // score written like this shows top 3 scores from team + 7 participation points
             Assert.IsTrue(processedResults[1].FirstOrDefault(t => t.Id == "2").Points == 20 + 19 + 18 + (7 * 1)); 
             Assert.IsTrue(processedResults[1].FirstOrDefault(t => t.Id == "3").Points == 10 + 9 + 8 + (7 * 1)); 

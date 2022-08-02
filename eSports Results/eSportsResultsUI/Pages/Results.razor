@@ -1,0 +1,54 @@
+﻿@page "/results/{EventId}"
+
+<PageTitle>Event results</PageTitle>
+
+<h1>@eventResults.EventTitle results</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (eventResults == null)
+{
+    <p><em>Loading results...</em></p>
+}
+else
+{
+    for(int i = 1; i<=4; i++)
+    {
+        <h2>Pen @i</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Rider</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var result in eventResults.IndividualResults[i])
+            {
+                <tr>
+                    <td>@((MarkupString)result.Name)</td>
+                    <td>@result.Points</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    }
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Team Name</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var result in eventResults.TeamResults[1])
+            {
+                <tr>
+                    <td>@((MarkupString)result.Name)</td>
+                    <td>@result.Points</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
