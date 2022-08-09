@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "eSportsResultsUI": {
+    "eSportsResults.UI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

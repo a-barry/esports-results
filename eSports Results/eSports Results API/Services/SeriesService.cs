@@ -124,6 +124,7 @@ namespace eSports_Results_API.Services
                     ScorePrimes = false,
                     PointsForParticipation = 1
                 }
+
 //                topColour	#f2324f
 //middleColour	#5ed2e7
 //bottomColour	#f2329a

@@ -12,11 +12,11 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 using Microsoft.JSInterop;
-using eSportsResultsUI;
-using eSportsResultsUI.Shared;
+using eSportsResults.UI;
+using eSportsResults.UI.Shared;
 using Common.Models.ViewModels;
 
-namespace eSportsResultsUI.Pages
+namespace eSportsResults.UI.Pages
 {
     public partial class Index
     {
@@ -27,7 +27,7 @@ namespace eSportsResultsUI.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            allSeries = await http.GetFromJsonAsync<IEnumerable<SeriesViewModel>>("https://localhost:49155/series");
+            allSeries = await http.GetFromJsonAsync<IEnumerable<SeriesViewModel>>("/series");
         }
     }
 }

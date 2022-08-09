@@ -12,11 +12,11 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 using Microsoft.JSInterop;
-using eSportsResultsUI;
-using eSportsResultsUI.Shared;
+using eSportsResults.UI;
+using eSportsResults.UI.Shared;
 using Common.Models.ViewModels;
 
-namespace eSportsResultsUI.Pages
+namespace eSportsResults.UI.Pages
 {
     public partial class Results
     {
@@ -31,7 +31,7 @@ namespace eSportsResultsUI.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            eventResults = await http.GetFromJsonAsync<ResultsViewModel>($"https://localhost:49155/results/{EventId}");
+            eventResults = await http.GetFromJsonAsync<ResultsViewModel>($"/results/{EventId}");
 
             //eventResults = await helper.GetEventResults(SeriesId, EventId);
         }

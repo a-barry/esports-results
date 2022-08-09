@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "eSports_Results_API": {
+    "eSportsResults.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
