@@ -39,7 +39,7 @@ namespace WLCSeriesResultsProcessorTests
             {
                 for (int i = 1; i <= riders; i++)
                 {
-                    testResults.Add(new RawResult() { Id = $"t{t}_r{i}", Pen = 1, TeamId = t.ToString(), TeamName = t.ToString(), PositionInPen = (riders * (t - 1)) + i });
+                    testResults.Add(new RawResult() { Id = $"t{t}_r{i}", Pen = 1, Team = new RawTeam() { Id = t.ToString(), Name = t.ToString()}, PositionInPen = (riders * (t - 1)) + i });
                 }
             }
 
@@ -97,7 +97,7 @@ namespace WLCSeriesResultsProcessorTests
                 {
                     for (int i = 1; i <= riders; i++)
                     {
-                        testResults.Add(new RawResult() { Id = $"t{t}_r{i}", Pen = p, TeamId = t.ToString(), PositionInPen = (riders * (t - 1)) + i });
+                        testResults.Add(new RawResult() { Id = $"t{t}_r{i}", Pen = p, Team = new RawTeam() { Id = t.ToString(), Name = t.ToString() }, PositionInPen = (riders * (t - 1)) + i });
                     }
                 }
             }

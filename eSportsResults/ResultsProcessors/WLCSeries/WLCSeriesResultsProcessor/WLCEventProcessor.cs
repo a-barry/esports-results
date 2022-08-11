@@ -126,7 +126,7 @@ namespace WLCSeriesResultsProcessor
                 Name = r.Name,
                 Position = pen == 0 ? r.PositionOverall : r.PositionInPen,
                 Points = CalcRiderPoints(configuration, pen == 0 ? r.PositionOverall : r.PositionInPen),
-                TeamId = r.TeamId
+                TeamId = r.Team.Id
             });
 
             return results;
@@ -156,7 +156,7 @@ namespace WLCSeriesResultsProcessor
             var pens = eventResults.Results.Select(r => r.Pen).Distinct();
 
             // extract team names
-            var teams = eventResults.Results.Select(r => new KeyValuePair<string, string>(r.TeamId, r.TeamName)).Distinct().ToDictionary(r => r.Key, r => r.Value);
+            var teams = eventResults.Results.Select(r => new KeyValuePair<string, RawTeam>(r.Team.Id, r.Team)).Distinct().ToDictionary(r => r.Key, r => r.Value);
 
             // process pen '0' (i.e. the whole event)
             // no, overall is sum of all cats
@@ -171,7 +171,10 @@ namespace WLCSeriesResultsProcessor
                 {
                     foreach (var t in penTeamResult)
                     {
-                        t.Name = teams[t.Id];
+                        t.Name = teams[t.Id].Name;
+                        t.Colour1 = teams[t.Id].Colour1;
+                        t.Colour2 = teams[t.Id].Colour2;
+                        t.Colour3 = teams[t.Id].Colour3;
                     }
 
                     penTeamResults.Add(p, penTeamResult);

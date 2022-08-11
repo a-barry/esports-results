@@ -39,14 +39,9 @@ namespace Common.Models
         public int PositionInPen { get; set; }
 
         /// <summary>
-        /// Id of the team that the rider belongs to.
+        /// The team that the rider belongs to.
         /// </summary>
-        public string TeamId { get; set; }
-
-        /// <summary>
-        /// Name of the team that the rider belongs to.
-        /// </summary>
-        public string TeamName { get; set; }
+        public RawTeam Team { get; set; }
 
         /// <summary>
         /// Has the rider posted dual recording data?

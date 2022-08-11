@@ -42,6 +42,9 @@ namespace ZwiftPowerDataSource
             // validate that the supplied id is an int
             int zwiftEventId = eventIdToInt(id);
 
+            //signups
+            //https://zwiftpower.com/cache3/results/2425294_zwift.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}
+            //results
             //https://zwiftpower.com/cache3/results/2425294_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}
             var zpResults = await _httpClient.GetFromJsonAsync<ZwiftPowerData>($"https://zwiftpower.com/cache3/results/{zwiftEventId}_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}");
 
@@ -50,8 +53,14 @@ namespace ZwiftPowerDataSource
             {
                 Id = zpi.zwid.ToString(),
                 Name = zpi.name,
-                TeamId = zpi.tid,
-                TeamName = zpi.tname,
+                Team = new RawTeam()
+                {
+                    Id = zpi.tid,
+                    Name = zpi.tname,
+                    Colour1 = zpi.tc,
+                    Colour2 = zpi.tbc,
+                    Colour3 = zpi.tbd
+                },
                 PositionInPen = zpi.position_in_cat,
                 PositionOverall = zpi.pos,
                 Pen = CatToPen(zpi.category)

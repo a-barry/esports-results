@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace Common.Models
 {
-    public class TeamResult : ResultsBase
+    public class RawTeam
     {
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Name of the team that the rider belongs to.
+        /// </summary>
+        public string Name { get; set; }
+
         /// <summary>
         /// 
         /// </summary>

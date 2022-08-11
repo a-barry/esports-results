@@ -117,7 +117,10 @@ namespace WLCSeriesResultsProcessorTests
                 Id = r.zwid.ToString(),
                 Name = r.name,
                 Pen = r.penInt,
-                TeamId = r.teamId.ToString(),
+                Team = new RawTeam()
+                {
+                    Id = r.teamId.ToString()
+                },
                 PositionInPen = r.positionInPen,
                 OriginalPositionInPen = r.originalPositionInPen,
                 PositionOverall = r.positionOverall
@@ -191,7 +194,10 @@ namespace WLCSeriesResultsProcessorTests
                 Id = r.zwid.ToString(),
                 Name = r.name,
                 Pen = r.penInt,
-                TeamId = r.teamId.ToString(),
+                Team = new RawTeam()
+                {
+                    Id = r.teamId.ToString()
+                },
                 PositionInPen = r.positionInPen,
                 OriginalPositionInPen = r.originalPositionInPen,
                 PositionOverall = r.positionOverall
@@ -276,7 +282,10 @@ namespace WLCSeriesResultsProcessorTests
                     Id = r.zwid.ToString(),
                     Name = r.name,
                     Pen = r.penInt,
-                    TeamId = r.teamId.ToString(),
+                    Team = new RawTeam()
+                    {
+                        Id = r.teamId.ToString()
+                    },
                     PositionInPen = r.positionInPen,
                     OriginalPositionInPen = r.originalPositionInPen,
                     PositionOverall = r.positionOverall
@@ -341,7 +350,10 @@ namespace WLCSeriesResultsProcessorTests
                     Id = r.zwid.ToString(),
                     Name = r.name,
                     Pen = r.penInt,
-                    TeamId = r.teamId.ToString(),
+                    Team = new RawTeam()
+                    {
+                        Id = r.teamId.ToString()
+                    },
                     PositionInPen = r.positionInPen,
                     OriginalPositionInPen = r.originalPositionInPen,
                     PositionOverall = r.positionOverall
