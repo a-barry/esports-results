@@ -1,0 +1,27 @@
+﻿<ResultTitle Pen=Pen>Team</ResultTitle>
+
+<table class="table results team-results">
+    <thead>
+        <tr>
+            <th>Team Name</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var team in ResultsList)
+        {
+            <tr>
+                <td><TeamIcon Id=@team.Id Name=@team.Name></TeamIcon></td>
+                <td>@team.Points</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter] 
+    public int Pen { get; set; }
+    [Parameter] 
+    public IEnumerable<Common.Models.TeamResult> ResultsList { get; set; }
+}
+

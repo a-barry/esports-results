@@ -4,7 +4,7 @@ using System.Net.Http.Json;
 
 namespace ZwiftPowerDataSource
 {
-    public class Zwiftpower : Common.Interfaces.IDataSource
+    public class Zwiftpower : Common.Interfaces.IResultsDataSource
     {
         const string cfKPId = "K2HE75OK1CK137";
         const string cfKPSignature = "7f6sOCtlQZRe90rpvVq9l84rRNbxl4HBsyEqJByfkMsXWzVe2JkpWGGMZ~KZ1W5w9lm~wYTaQM8ZHFO-MCBokO9EsyeeAcxFOd7gIu5OTcFFFankW4L6RBR-o3oS48dIi22zpWjLZAyku4SXlXbhtMUJrLsASioVG~UDe00Kvc3OWw~WAf0a8LkrdMxG4kIOlb7vvKYEKONo7IO5-JxNVq5WDwMJqB43qRrI2dSK3TMDUsugJHd6QmWpaPxQPHDxrH7MkuBaumdUS1138NbwLL8KwVfcLlV~VnooURL~ID~9lLQHfQ11tkASNzeJgYczkBXTGiKeOh9npbElvqlfOg__";
@@ -46,6 +46,8 @@ namespace ZwiftPowerDataSource
             //https://zwiftpower.com/cache3/results/2425294_zwift.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}
             //results
             //https://zwiftpower.com/cache3/results/2425294_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}
+            //team riders
+            //https://zwiftpower.com/cache3/teams/4516_riders.json
             var zpResults = await _httpClient.GetFromJsonAsync<ZwiftPowerData>($"https://zwiftpower.com/cache3/results/{zwiftEventId}_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}");
 
             // map zpResults to our internal class
@@ -63,9 +65,81 @@ namespace ZwiftPowerDataSource
                 },
                 PositionInPen = zpi.position_in_cat,
                 PositionOverall = zpi.pos,
-                Pen = CatToPen(zpi.category)
+                Pen = CatToPen(zpi.category),
+                power5s = zpToRawPowerConversion(zpi.w5, zpi.wkg5),
+                power15s = zpToRawPowerConversion(zpi.w15, zpi.wkg15),
+                power30s = zpToRawPowerConversion(zpi.w30, zpi.wkg30),
+                power1m = zpToRawPowerConversion(zpi.w60, zpi.wkg60),
+                power2m = zpToRawPowerConversion(zpi.w120, zpi.wkg120),
+                power5m = zpToRawPowerConversion(zpi.w300, zpi.wkg300),
+                power20m = zpToRawPowerConversion(zpi.w1200, zpi.wkg1200),
+                powerAvgEvent = zpToRawPowerConversion(zpi.avg_power, zpi.avg_wkg),
+                powerFTPEvent = zpToRawPowerConversion(zpi.wftp, zpi.wkg_ftp),
+                Weight = objArrayToDecimal(zpi.weight),
+                Height = zpi.height[0],
+                FTP = stringToInt(zpi.ftp),
             });
         }
+
+        private RawPower zpToRawPowerConversion(object[] watts, object[] wpkg)
+        {
+            int powerAsInt = 0;
+
+            if (watts != null && watts.Length >= 1)
+            {
+                int.TryParse(watts[0].ToString(), out powerAsInt);
+            }
+
+            return zpToRawPowerConversion(powerAsInt, wpkg);
+        }
+        private RawPower zpToRawPowerConversion(int[] watts, object[] wpkg)
+        {
+            if (watts != null && watts.Length >= 1)
+            {
+                return zpToRawPowerConversion(watts[0], wpkg);
+            }
+
+            return zpToRawPowerConversion(0, wpkg);
+        }
+
+        private RawPower zpToRawPowerConversion(int watts, object[] wpkg)
+        {
+            return new RawPower() { power = watts, wpkg = objArrayToDecimal(wpkg) };
+        }
+
+        private decimal objArrayToDecimal(object[] objArr)
+        {
+            decimal result = 0;
+
+            if (objArr != null && objArr.Length >= 1)
+            {
+                result = objToDecimal(objArr[0]);
+            }
+            return result;
+        }
+
+        private decimal objToDecimal(object obj)
+        {
+            decimal result = 0;
+
+            if (obj != null)
+            {
+                decimal.TryParse(obj.ToString(), out result);
+            }
+            return result;
+        }
+        private int stringToInt(string str)
+        {
+            int result = 0;
+
+            if (str != null)
+            {
+                int.TryParse(str, out result);
+            }
+            return result;
+        }
+
+
 
         private async Task<IEnumerable<RawDualRecordingResult>> GetRawDualRecordingFromZPAsync(string id)
         {

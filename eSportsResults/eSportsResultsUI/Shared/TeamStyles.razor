@@ -1,0 +1,17 @@
+﻿<style>
+        @foreach (var team in ResultsList)
+        {
+            @teamStyle(team)
+        }
+</style>
+
+@code {
+    [Parameter] 
+    public IEnumerable<Common.Models.TeamResult> ResultsList { get; set; }
+
+    public string teamStyle(Common.Models.TeamResult team)
+    {
+        return $"table.results span.t{team.Id}{{color:#{team.Colour1};background-color:#{team.Colour2};border-color:#{team.Colour3}}}";
+    }
+}
+

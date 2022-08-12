@@ -1,0 +1,26 @@
+﻿<ResultTitle Pen=Pen>Individual</ResultTitle>
+
+<table class="table results individual-results">
+    <thead>
+        <tr>
+            <th>Rider</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var result in ResultsList)
+        {
+            <tr>
+                <td><IndividualName Name=@result.Name></IndividualName> <TeamIcon Id=@result.TeamId Name=@result.TeamName></TeamIcon></td>
+                <td>@result.Points</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter] 
+    public int Pen { get; set; }
+    [Parameter] 
+    public IEnumerable<Common.Models.IndividualResult> ResultsList { get; set; }
+}

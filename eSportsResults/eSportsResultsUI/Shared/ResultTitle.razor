@@ -1,0 +1,31 @@
+﻿<h2>@ChildContent @PenTitle()</h2>
+
+@code {
+    [Parameter] 
+    public int Pen { get; set; }
+    [Parameter] 
+    public RenderFragment ChildContent { get; set; }
+
+    string PenTitle()
+    {
+        switch(Pen) {
+            case 0:
+                return "Overall";
+                break;
+            case 1: 
+                return "Category A";
+                break;
+            case 2: 
+                return "Category B";
+                break;
+            case 3: 
+                return "Category C";
+                break;
+            case 4: 
+                return "Category D";
+                break;
+            default : 
+                return "";
+            }
+    }
+}

@@ -126,7 +126,8 @@ namespace WLCSeriesResultsProcessor
                 Name = r.Name,
                 Position = pen == 0 ? r.PositionOverall : r.PositionInPen,
                 Points = CalcRiderPoints(configuration, pen == 0 ? r.PositionOverall : r.PositionInPen),
-                TeamId = r.Team.Id
+                TeamId = r.Team.Id,
+                TeamName = r.Team.Name
             });
 
             return results;
@@ -156,7 +157,7 @@ namespace WLCSeriesResultsProcessor
             var pens = eventResults.Results.Select(r => r.Pen).Distinct();
 
             // extract team names
-            var teams = eventResults.Results.Select(r => new KeyValuePair<string, RawTeam>(r.Team.Id, r.Team)).Distinct().ToDictionary(r => r.Key, r => r.Value);
+            var teams = eventResults.Results.Select(r => r.Team).GroupBy(t => t.Id).Select(g => g.First()).ToDictionary(t => t.Id, t => t);
 
             // process pen '0' (i.e. the whole event)
             // no, overall is sum of all cats
@@ -182,15 +183,6 @@ namespace WLCSeriesResultsProcessor
             }
 
             // combine scores from all pens to make overall team scores
-            //var overallTeamResults = penTeamResults.SelectMany(p => p.Value) // flatten all pen results into a single list
-            //        .GroupBy(t => t.Id) // group by each team
-            //        .Select<IGrouping<string, TeamResult>, TeamResult>(gtr => new TeamResult()
-            //        {
-            //            Id = gtr.First().Id,
-            //            Points = gtr.Sum(tr => tr.Points)
-            //        }).ToList(); // aggregate team points from each pen into a single result per team for the whole event
-
-            // combine scores from all pens to make overall team scores
             penTeamResults.Add(0, CombineTeamPensIntoOverall(penTeamResults));
 
             return penTeamResults;
@@ -203,12 +195,16 @@ namespace WLCSeriesResultsProcessor
                     .Select<IGrouping<string, TeamResult>, TeamResult>(gtr => new TeamResult()
                     {
                         Id = gtr.First().Id,
+                        Name = gtr.First().Name,
+                        Colour1 = gtr.First().Colour1,
+                        Colour2 = gtr.First().Colour2,
+                        Colour3 = gtr.First().Colour3,
                         Points = gtr.Sum(tr => tr.Points)
-                    }).ToList(); // aggregate team points from each pen into a single result per team for the whole event
+                    }).OrderByDescending(t => t.Points).ToList(); // aggregate team points from each pen into a single result per team for the whole event
         }
 
         /// <summary>
-        /// Calcs team points.for a pen
+        /// Calcs team points for a pen
         /// 
         /// A teams points in a
         /// </summary>
@@ -248,7 +244,9 @@ namespace WLCSeriesResultsProcessor
                                         Id = gtr.First().TeamId,
                                         //Name = String.Empty, // team name not known here
                                         Points = gtr.Sum(tr => tr.Points)
-                                    }).ToList(); // aggregate team points into a single result per team
+                                    })
+                                    .Where(t => !string.IsNullOrEmpty(t.Id)) // get rid of team less points
+                                    .OrderByDescending(r => r.Points).ToList(); // aggregate team points into a single result per team
 
             // add in team names (lets not acutally and do this outside the processor so it applies to all)
             //foreach (TeamResult tr in teamResults) {

@@ -11,5 +11,6 @@ namespace Common.Models
     {
         public bool HasDuals { get; set; }
         public string TeamId { get; set; }
+        public string TeamName { get; set; }
     }
 }

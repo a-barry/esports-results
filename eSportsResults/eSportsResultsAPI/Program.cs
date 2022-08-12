@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient(sp => new HttpClient() );
-builder.Services.AddTransient<Common.Interfaces.IDataSource, ZwiftPowerDataSource.Zwiftpower>();
+builder.Services.AddTransient<Common.Interfaces.IResultsDataSource, ZwiftPowerDataSource.Zwiftpower>();
 builder.Services.AddTransient<Common.Interfaces.IResultsProcessor, WLCSeriesResultsProcessor.WLCEventProcessor>();
 
 // services

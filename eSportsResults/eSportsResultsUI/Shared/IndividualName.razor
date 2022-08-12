@@ -1,0 +1,30 @@
+﻿@NameWithoutTeam()
+
+@code {
+    [Parameter] 
+    public string Name { get; set; }
+
+    /// <summary>
+    /// Finds the first open brack ( or [ and returns all the text before that point.
+    /// Aim to avoid regex!
+    /// </summary>
+    /// <returns></returns>
+    public MarkupString NameWithoutTeam()
+    {
+        var i = Name.IndexOf('[');
+
+        if(i == -1)
+        {
+            i = Name.IndexOf('(');
+        }
+
+        if(i == -1)
+        {
+            return (MarkupString)Name;
+        }
+        else {
+            return (MarkupString)Name.Substring(0, i);
+        }
+    }
+}
+
