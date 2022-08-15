@@ -1,7 +1,10 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 h1:focus {
@@ -61,4 +64,157 @@ a, .btn-link {
 
     .blazor-error-boundary::after {
         content: "An error has occurred."
+    }
+
+.container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background: rgba(0, 0, 0, 0) linear-gradient(rgb(242, 50, 154), rgb(242, 50, 154) 10%, rgb(27, 147, 201) 40%, rgb(27, 147, 201) 65%, rgb(242, 50, 154) 85%, rgb(242, 50, 154)) repeat scroll 0% 0%;
+    padding: 10px;
+    /*min-height: 100%;*/
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+main .sponsors {
+    width: 100%;
+}
+
+h1 {
+    margin: 0px;
+    font-family: Michroma;
+    font-size: 50px;
+}
+
+h2 {
+    margin: 0px;
+    font-family: Michroma;
+    font-size: 30px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-box-pack: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+    .results .category {
+        border: 5px solid white;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.2) none repeat scroll 0% 0%;
+        height: 251px;
+        overflow-y: scroll;
+    }
+
+        .results .category.a {
+            border-color: rgb(255, 51, 51);
+        }
+
+        .results .category.b {
+            border-color: rgb(51, 221, 51);
+        }
+
+        .results .category.c {
+            border-color: rgb(51, 51, 221);
+        }
+
+        .results .category.d {
+            border-color: rgb(255, 238, 51);
+        }
+
+    .results.individual .category {
+        height: 390px;
+    }
+
+    .results .category h3 {
+        color: rgb(255, 238, 119);
+        font-size: 15px;
+        text-align: center;
+        margin:0;
+    }
+
+    .results.team .category table tr td:first-child, .results.team .category table tr th:first-child {
+        font-size: 14px;
+        padding-left: 15px;
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .results.team .category table tr td:last-child {
+        min-width: 24px;
+        max-width: 24px;
+        text-align: right;
+    }
+
+    .results.individual .category table tr td:first-child {
+        min-width: 200px;
+        max-width: 200px;
+        font-size: 12px;
+    }
+
+    .results.individual .category table tr td:last-child {
+        min-width: 24px;
+        max-width: 24px;
+        text-align: right;
+    }
+
+    .results.individual .team-icon {
+        float: right;
+        max-width: 70px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        display: inline;
+        padding: 2px;
+        font-weight: bold;
+        text-shadow: none;
+        line-height: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .results.individual .team-icon {
+        float: right;
+        max-width: 70px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        display: inline;
+        padding: 2px;
+        font-weight: bold;
+        text-shadow: none;
+        line-height: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size:10px
+    }
+
+    .results.team .team-icon {
+        float: right;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 2px;
+        padding: 2px;
+        font-weight: bold;
+        text-shadow: none;
+        line-height: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
     }
