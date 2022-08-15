@@ -21,76 +21,83 @@ namespace eSports_Results_API.Controllers
             _seriesService = seriesService;
         }
 
-        [HttpGet("{id}")]
-        public async Task<ResultsViewModel> Get(string id)
+        [HttpGet("event/{id}")]
+        public async Task<ResultsViewModel> GetEvent(string id)
         {
             var seriesConfig = await _seriesService.GetSeriesFromEventAsync(id);
 
             return await _resultsService.GetEventResults(seriesConfig, id);
         }
 
-    //    private async void zplogintests()
-    //    {
+        [HttpGet("series/{id}")]
+        public async Task<ResultsViewModel> GetSeries(string id)
+        {
+            var seriesConfig = await _seriesService.GetSeriesAsync(id);
 
-    //        var h = new HttpClient();
+            return await _resultsService.GetSeriesResults(seriesConfig, id);
+        }
+        //    private async void zplogintests()
+        //    {
 
-    //        var l = await h.GetAsync("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
+        //        var h = new HttpClient();
 
-
-    //        var loginURL = new Uri("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
-    //        var loginURL = new Uri("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
-    //        var cookieContainer = new CookieContainer();
-    //        using (var handler = new HttpClientHandler() { CookieContainer = cookieContainer })
-    //        using (var client = new HttpClient(handler) { })
-    //        {
-                
-    ////            var content = new FormUrlEncodedContent(new[]
-    ////            {
-    ////    new KeyValuePair<string, string>("foo", "bar"),
-    ////    new KeyValuePair<string, string>("baz", "bazinga"),
-    ////});
-    ////            cookieContainer.Add(baseAddress, new Cookie("CookieName", "cookie_value"));
-    //            var result = await client.GetAsync(loginURL);
-    //            result.EnsureSuccessStatusCode();
-
-    //            var login = new StringContent("{ \"email\":\"your.email@email.com\",\"password\":\"ssss\",\"rememberMe\":true,\"recaptchaVersion\":\"v3\",\"queryParams\":{ \"redirect_uri\":\"https://www.zwift.com/feed?auth_redirect=true\"},\"token\":\"\"}");
-
-    //            var loginResult = await client.PostAsync(loginURL, login);
-    //        }
+        //        var l = await h.GetAsync("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
 
 
-    //        //HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
-    //        //request.CookieContainer = new CookieContainer();
-    //        //request.Method = "GET";
-    //        ////request.ContentType = "application/x-www-form-urlencoded";
-    //        //request.AllowAutoRedirect = true;
+        //        var loginURL = new Uri("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
+        //        var loginURL = new Uri("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
+        //        var cookieContainer = new CookieContainer();
+        //        using (var handler = new HttpClientHandler() { CookieContainer = cookieContainer })
+        //        using (var client = new HttpClient(handler) { })
+        //        {
 
-    //        ////using (var stream = request.GetRequestStream())
-    //        ////{
-    //        ////    stream.Write(data, 0, data.Length);
-    //        ////}
+        ////            var content = new FormUrlEncodedContent(new[]
+        ////            {
+        ////    new KeyValuePair<string, string>("foo", "bar"),
+        ////    new KeyValuePair<string, string>("baz", "bazinga"),
+        ////});
+        ////            cookieContainer.Add(baseAddress, new Cookie("CookieName", "cookie_value"));
+        //            var result = await client.GetAsync(loginURL);
+        //            result.EnsureSuccessStatusCode();
 
-    //        //HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+        //            var login = new StringContent("{ \"email\":\"your.email@email.com\",\"password\":\"ssss\",\"rememberMe\":true,\"recaptchaVersion\":\"v3\",\"queryParams\":{ \"redirect_uri\":\"https://www.zwift.com/feed?auth_redirect=true\"},\"token\":\"\"}");
 
-    //        //var cookies = new CookieContainer();
-    //        //cookies.Add(response.Cookies);
+        //            var loginResult = await client.PostAsync(loginURL, login);
+        //        }
 
 
-    //        //foreach (Cookie cook in response.Cookies)
-    //        //{
-    //        //    //using (System.IO.StreamWriter file = new System.IO.StreamWriter(@desktop + "\\cookie.html", true))
-    //        //    //{
-    //        //    //    file.WriteLine(cook.ToString());
-    //        //    //}
-    //        //    // Show the string representation of the cookie.                
-    //        //}
+        //        //HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
+        //        //request.CookieContainer = new CookieContainer();
+        //        //request.Method = "GET";
+        //        ////request.ContentType = "application/x-www-form-urlencoded";
+        //        //request.AllowAutoRedirect = true;
 
-    //        //HttpWebRequest requestNext = (HttpWebRequest)WebRequest.Create("####");
-    //        ////requestNext.CookieContainer.Add(cookies);
-    //        //requestNext.Method = "POST";
+        //        ////using (var stream = request.GetRequestStream())
+        //        ////{
+        //        ////    stream.Write(data, 0, data.Length);
+        //        ////}
 
-    //        //HttpWebResponse responseNext = (HttpWebResponse)requestNext.GetResponse();
+        //        //HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
-    //    }
+        //        //var cookies = new CookieContainer();
+        //        //cookies.Add(response.Cookies);
+
+
+        //        //foreach (Cookie cook in response.Cookies)
+        //        //{
+        //        //    //using (System.IO.StreamWriter file = new System.IO.StreamWriter(@desktop + "\\cookie.html", true))
+        //        //    //{
+        //        //    //    file.WriteLine(cook.ToString());
+        //        //    //}
+        //        //    // Show the string representation of the cookie.                
+        //        //}
+
+        //        //HttpWebRequest requestNext = (HttpWebRequest)WebRequest.Create("####");
+        //        ////requestNext.CookieContainer.Add(cookies);
+        //        //requestNext.Method = "POST";
+
+        //        //HttpWebResponse responseNext = (HttpWebResponse)requestNext.GetResponse();
+
+        //    }
     }
 }

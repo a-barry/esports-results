@@ -1,4 +1,6 @@
-﻿<span class=@($"t{Id}")>@((MarkupString)Name)</span>
+﻿@if(!string.IsNullOrEmpty(Id)) {
+    <span class=@($"team-icon t{Id}")>@((MarkupString)Name)</span>
+}
 
 @code {
     [Parameter] 

@@ -31,7 +31,7 @@ namespace eSportsResults.UI.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            eventResults = await http.GetFromJsonAsync<ResultsViewModel>($"/results/{EventId}");
+            eventResults = await http.GetFromJsonAsync<ResultsViewModel>($"/results/event/{EventId}");
 
             //eventResults = await helper.GetEventResults(SeriesId, EventId);
         }

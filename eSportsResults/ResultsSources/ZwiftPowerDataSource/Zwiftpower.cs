@@ -48,37 +48,45 @@ namespace ZwiftPowerDataSource
             //https://zwiftpower.com/cache3/results/2425294_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}
             //team riders
             //https://zwiftpower.com/cache3/teams/4516_riders.json
-            var zpResults = await _httpClient.GetFromJsonAsync<ZwiftPowerData>($"https://zwiftpower.com/cache3/results/{zwiftEventId}_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}");
-
-            // map zpResults to our internal class
-            return zpResults.data.Select(zpi => new RawResult()
+            try
             {
-                Id = zpi.zwid.ToString(),
-                Name = zpi.name,
-                Team = new RawTeam()
+                var zpResults = await _httpClient.GetFromJsonAsync<ZwiftPowerData>($"https://zwiftpower.com/cache3/results/{zwiftEventId}_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}");
+
+                // map zpResults to our internal class
+                return zpResults.data.Select(zpi => new RawResult()
                 {
-                    Id = zpi.tid,
-                    Name = zpi.tname,
-                    Colour1 = zpi.tc,
-                    Colour2 = zpi.tbc,
-                    Colour3 = zpi.tbd
-                },
-                PositionInPen = zpi.position_in_cat,
-                PositionOverall = zpi.pos,
-                Pen = CatToPen(zpi.category),
-                power5s = zpToRawPowerConversion(zpi.w5, zpi.wkg5),
-                power15s = zpToRawPowerConversion(zpi.w15, zpi.wkg15),
-                power30s = zpToRawPowerConversion(zpi.w30, zpi.wkg30),
-                power1m = zpToRawPowerConversion(zpi.w60, zpi.wkg60),
-                power2m = zpToRawPowerConversion(zpi.w120, zpi.wkg120),
-                power5m = zpToRawPowerConversion(zpi.w300, zpi.wkg300),
-                power20m = zpToRawPowerConversion(zpi.w1200, zpi.wkg1200),
-                powerAvgEvent = zpToRawPowerConversion(zpi.avg_power, zpi.avg_wkg),
-                powerFTPEvent = zpToRawPowerConversion(zpi.wftp, zpi.wkg_ftp),
-                Weight = objArrayToDecimal(zpi.weight),
-                Height = zpi.height[0],
-                FTP = stringToInt(zpi.ftp),
-            });
+                    Id = zpi.zwid.ToString(),
+                    Name = zpi.name,
+                    Team = new RawTeam()
+                    {
+                        Id = zpi.tid,
+                        Name = zpi.tname,
+                        Colour1 = zpi.tc,
+                        Colour2 = zpi.tbc,
+                        Colour3 = zpi.tbd
+                    },
+                    PositionInPen = zpi.position_in_cat,
+                    PositionOverall = zpi.pos,
+                    Pen = CatToPen(zpi.category),
+                    power5s = zpToRawPowerConversion(zpi.w5, zpi.wkg5),
+                    power15s = zpToRawPowerConversion(zpi.w15, zpi.wkg15),
+                    power30s = zpToRawPowerConversion(zpi.w30, zpi.wkg30),
+                    power1m = zpToRawPowerConversion(zpi.w60, zpi.wkg60),
+                    power2m = zpToRawPowerConversion(zpi.w120, zpi.wkg120),
+                    power5m = zpToRawPowerConversion(zpi.w300, zpi.wkg300),
+                    power20m = zpToRawPowerConversion(zpi.w1200, zpi.wkg1200),
+                    powerAvgEvent = zpToRawPowerConversion(zpi.avg_power, zpi.avg_wkg),
+                    powerFTPEvent = zpToRawPowerConversion(zpi.wftp, zpi.wkg_ftp),
+                    Weight = objArrayToDecimal(zpi.weight),
+                    Height = zpi.height[0],
+                    FTP = stringToInt(zpi.ftp),
+                });
+            }
+            catch(Exception ex)
+            {
+
+            }
+            return null;
         }
 
         private RawPower zpToRawPowerConversion(object[] watts, object[] wpkg)

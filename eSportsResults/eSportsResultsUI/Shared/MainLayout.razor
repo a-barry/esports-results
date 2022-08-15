@@ -1,18 +1,22 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <div class="sidebar">
+@*    <div class="sidebar">
         <NavMenu />
-    </div>
+    </div>*@
 
     <main>
-        <div class="top-row px-4 auth">
+@*        <div class="top-row px-4 auth">
             <LoginDisplay />
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>*@
+        <div class="container">
+            <article class="content px-4">
+                @Body
+            <img class="sponsors" title="Wahoo, Veloskin, Endurnace zone, Veloforte, Le Col - sponsers of Wahoo Le Col" src="Wahoo_LeCol_eSports_Sponsors.png" />
+
+            </article>
         </div>
 
-        <article class="content px-4">
-            @Body
-        </article>
     </main>
 </div>

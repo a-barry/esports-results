@@ -25,11 +25,15 @@ namespace eSportsResults.UI.Pages
 
         [Parameter] public string SeriesId { get; set; }
 
-        protected SeriesViewModel? series;
+        //protected SeriesViewModel? series;
+
+        protected ResultsViewModel? seriesResults;
 
         protected override async Task OnInitializedAsync()
         {
-            series = await http.GetFromJsonAsync<SeriesViewModel>($"/series/{SeriesId}");
+            seriesResults = await http.GetFromJsonAsync<ResultsViewModel>($"/results/series/{SeriesId}");
+
+            //eventResults = await helper.GetEventResults(SeriesId, EventId);
         }
     }
 }

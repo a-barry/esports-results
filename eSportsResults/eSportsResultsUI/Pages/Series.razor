@@ -1,12 +1,28 @@
 ﻿@page "/series/{SeriesId}"
 
-<PageTitle>@series.Title</PageTitle>
+<PageTitle>@seriesResults.SeriesTitle</PageTitle>
 
-<h1>@series.Title</h1>
-
-@for (int i = 1; i <= series.Events.Count(); i++)
+@if (seriesResults == null)
 {
-    var ev = series.Events.ElementAt(i - 1);
+    <p><em>Loading results...</em></p>
+}
+else
+{
+    <TeamStyles ResultsList=seriesResults.TeamResults[0]></TeamStyles>
 
-    <a href="results/@ev">Race @i</a>
+    <h1>@seriesResults.SeriesTitle</h1>
+
+    <div class="results team">
+    @for(int i = 0; i<=4; i++)
+    {
+        <TeamResults Pen=i ResultsList=seriesResults.TeamResults[i]></TeamResults>
+    }
+    </div>
+
+    <div class="results individual">
+    @for(int i = 1; i<=4; i++)
+    {
+        <IndividualResults Pen=i ResultsList=seriesResults.IndividualResults[i]></IndividualResults>
+    }
+    </div>
 }

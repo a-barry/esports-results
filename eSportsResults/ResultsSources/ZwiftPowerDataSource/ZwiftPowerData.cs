@@ -18,7 +18,10 @@ namespace ZwiftPowerDataSource
         public string DT_RowId { get; set; }
         public string ftp { get; set; }
         public int friend { get; set; }
-        public string pt { get; set; }
+        /// <summary>
+        /// this might be zift verified!
+        /// </summary>
+        public object pt { get; set; }
         public string label { get; set; }
         /// <summary>
         /// zwift event id
@@ -35,8 +38,8 @@ namespace ZwiftPowerDataSource
         public float[] time { get; set; }
         public float time_gun { get; set; }
         public float gap { get; set; }
-        public string vtta { get; set; }
-        public int vttat { get; set; }
+        public object vtta { get; set; }
+        public object vttat { get; set; }
         /// <summary>
         /// Male or female
         /// </summary>

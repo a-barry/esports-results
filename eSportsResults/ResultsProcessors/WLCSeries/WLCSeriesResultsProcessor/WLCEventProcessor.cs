@@ -50,6 +50,7 @@ namespace WLCSeriesResultsProcessor
                                                                 {
                                                                     Id = i.First().Id,
                                                                     TeamId = i.First().TeamId,
+                                                                    TeamName = i.First().TeamName,
                                                                     Points = i.OrderByDescending(j => j.Points).Take(configuration.QualifyingScoresPerRider).Sum(v => v.Points),
                                                                     HasDuals = i.First().HasDuals,
                                                                     Name = i.First().Name

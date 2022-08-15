@@ -4,11 +4,27 @@
 
 <h1>Wahoo LeCol Results</h1>
 
-<div class="alert alert-warning" role="alert">
+@*<div class="alert alert-warning" role="alert">
     Before authentication will function correctly, you must configure your provider details in <code>Program.cs</code>
-</div>
+</div>*@
 
-@foreach (var series in allSeries)
-{
-    <a href="series/@series.Id">@series.Title</a>
-}
+<ul>
+    @foreach (var series in allSeries)
+    {
+        <li>
+            <h2><a href="series/@series.Id">@series.Title</a></h2>
+
+            <ul>
+                @for (int i = 1; i <= series.Events.Count(); i++)
+                {
+                    var race = series.Events.ElementAt(i - 1);
+                    <li>
+                        <a href="results/@race">Race @i.ToString()</a>
+                    </li>
+                }
+            </ul>
+        </li>
+
+
+    }
+</ul>
