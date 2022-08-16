@@ -65,6 +65,9 @@ namespace WLCSeriesResultsProcessor
             // extract pens found in results (yes probably 4!)
             var pens = rawSeriesResults.First().Results.Select(r => r.Pen).Distinct();
 
+            // extract team names
+            var teams = rawSeriesResults.SelectMany(e => e.Results.Select(r => r.Team)).GroupBy(t => t.Id).Select(g => g.First()).ToDictionary(t => t.Id, t => t);
+
             var penTeamResults = new Dictionary<int, IEnumerable<TeamResult>>();
 
             foreach (int p in pens)
@@ -78,6 +81,15 @@ namespace WLCSeriesResultsProcessor
                 {
                     var l = penTeamResults[p].ToList();
                     l.AddRange(await ProcessTeamPen(p, configuration.EventConfiguration, eventResults));
+
+                    //foreach (var t in l)
+                    //{
+                    //    t.Name = teams[t.Id].Name;
+                    //    t.Colour1 = teams[t.Id].Colour1;
+                    //    t.Colour2 = teams[t.Id].Colour2;
+                    //    t.Colour3 = teams[t.Id].Colour3;
+                    //}
+
                     penTeamResults[p] = l;
                 }
             }
@@ -85,12 +97,21 @@ namespace WLCSeriesResultsProcessor
             foreach (int p in pens)
             {
                 penTeamResults[p] = penTeamResults[p].GroupBy(r => r.Id)
-                                                                .Select(i => new TeamResult()
+                                                                .Select(i =>
                                                                 {
-                                                                    Id = i.First().Id,
-                                                                    Points = i.Sum(v => v.Points),
-                                                                    Name = i.First().Name
-                                                                }).ToList();
+                                                                    var tDetails = teams[i.First().Id];
+
+                                                                    return new TeamResult()
+                                                                    {
+                                                                        Id = tDetails.Id,
+                                                                        Points = i.Sum(v => v.Points),
+                                                                        Name = tDetails.Name,
+                                                                        Colour1 = tDetails.Colour1,
+                                                                        Colour2 = tDetails.Colour2,
+                                                                        Colour3 = tDetails.Colour3
+                                                                    };
+                                                                }
+                                                                ).ToList();
             }
 
             // combine scores from all pens to make overall team score
