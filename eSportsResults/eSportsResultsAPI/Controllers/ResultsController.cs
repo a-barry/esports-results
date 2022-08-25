@@ -100,6 +100,6 @@ namespace eSports_Results_API.Controllers
 
         //    //HttpWebResponse responseNext = (HttpWebResponse)requestNext.GetResponse();
 
-        }
+        //}
     }
 }
