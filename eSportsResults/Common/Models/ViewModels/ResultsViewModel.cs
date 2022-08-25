@@ -14,6 +14,8 @@ namespace Common.Models.ViewModels
         public string SeriesId { get; set; }
         public string SeriesTitle { get; set; }
 
+        public int EventCount { get; set; }
+
         public Dictionary<int, IEnumerable<IndividualResult>> IndividualResults { get; set; }
         public Dictionary<int, IEnumerable<TeamResult>> TeamResults { get; set; }
     }

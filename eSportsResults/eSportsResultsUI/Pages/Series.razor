@@ -6,12 +6,16 @@
 {
     <p><em>Loading results...</em></p>
 }
+else if (seriesResults.TeamResults.Count() == 0)
+{
+     <h1>@seriesResults.SeriesTitle</h1>
+}
 else
 {
     <TeamStyles ResultsList=seriesResults.TeamResults[0]></TeamStyles>
 
     <h1>@seriesResults.SeriesTitle</h1>
-    <h2>Overall rankings</h2>
+    <h2>Overall rankings after @seriesResults.EventCount race@(seriesResults.EventCount > 1 ? "s" : "")</h2>
     <div class="results team">
     @for(int i = 0; i<=4; i++)
     {

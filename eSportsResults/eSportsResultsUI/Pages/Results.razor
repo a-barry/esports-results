@@ -6,6 +6,11 @@
 {
     <p><em>Loading results...</em></p>
 }
+else if (eventResults.TeamResults.Count() == 0)
+{
+     <h1>@eventResults.SeriesTitle</h1>
+    <h2>Race @eventResults.EventTitle</h2>
+}
 else
 {
     <TeamStyles ResultsList=eventResults.TeamResults[0]></TeamStyles>

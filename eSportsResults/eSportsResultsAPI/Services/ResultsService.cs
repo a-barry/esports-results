@@ -37,8 +37,17 @@ namespace eSports_Results_API.Services
                 EventTitle = (seriesConfiguration.EventIds.ToList().IndexOf(eventId) + 1).ToString(),
             };
 
-            results.IndividualResults = await _processor.GetIndividualResultsAsync(seriesConfiguration.EventConfiguration, rawResults);
-            results.TeamResults = await _processor.GetTeamResultsAsync(seriesConfiguration.EventConfiguration, rawResults);
+            if(rawResults.GotData)
+            {
+                results.EventTitle += " (Future event)";
+                results.IndividualResults = new Dictionary<int, IEnumerable<IndividualResult>>();
+                results.TeamResults = new Dictionary<int, IEnumerable<TeamResult>>();
+            }
+            else
+            {
+                results.IndividualResults = await _processor.GetIndividualResultsAsync(seriesConfiguration.EventConfiguration, rawResults);
+                results.TeamResults = await _processor.GetTeamResultsAsync(seriesConfiguration.EventConfiguration, rawResults);
+            }
 
             return results;
         }
@@ -57,7 +66,11 @@ namespace eSports_Results_API.Services
 
                 foreach (var eventId in seriesConfiguration.EventIds) {
                     var eventResults = await _resultsDataSource.GetRawResultsFromEventAsync(eventId);
-                    rawResults.Add(eventResults);
+
+                    if(eventResults is not null && eventResults.GotData)
+                    {
+                        rawResults.Add(eventResults);
+                    }
                 }
 
                 // save for next time
@@ -69,10 +82,21 @@ namespace eSports_Results_API.Services
             {
                 SeriesId = seriesConfiguration.Id,
                 SeriesTitle = seriesConfiguration.Title,
+                EventCount = rawResults.Count
             };
 
-            results.IndividualResults = await _processor.GetSeriesIndividualResultsAsync(seriesConfiguration, rawResults);
-            results.TeamResults = await _processor.GetSeriesTeamResultsAsync(seriesConfiguration, rawResults);
+            if (rawResults.Count == 0)
+            {
+                results.SeriesTitle += " (Future series)";
+                results.IndividualResults = new Dictionary<int, IEnumerable<IndividualResult>>();
+                results.TeamResults = new Dictionary<int, IEnumerable<TeamResult>>();
+            }
+            else
+            {
+                results.IndividualResults = await _processor.GetSeriesIndividualResultsAsync(seriesConfiguration, rawResults);
+                results.TeamResults = await _processor.GetSeriesTeamResultsAsync(seriesConfiguration, rawResults);
+            }
+
 
             return results;
         }

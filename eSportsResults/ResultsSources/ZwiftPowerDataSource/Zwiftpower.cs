@@ -84,7 +84,7 @@ namespace ZwiftPowerDataSource
             }
             catch(Exception ex)
             {
-
+                // should log this!
             }
             return null;
         }
