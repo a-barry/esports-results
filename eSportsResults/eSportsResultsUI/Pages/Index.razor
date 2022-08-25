@@ -9,7 +9,7 @@
 </div>*@
 
 <ul>
-    @foreach (var series in allSeries)
+    @foreach (var series in allSeries.OrderByDescending(s => s.Id))
     {
         <li>
             <h2><a href="series/@series.Id">@series.Title</a></h2>
