@@ -134,7 +134,7 @@ namespace eSports_Results_API.Services
             allSeries.Add(new SeriesProcessorConfiguration()
             {
                 Id = "7",
-                Title = "Wahoo Le Col Saturday Brunch Series (Mixed) 2022/23",
+                Title = "Wahoo Le Col 2022/23 Season 1 (Mixed)",
                 QualifyingScoresPerRider = 4,
                 EventIds = new List<string>() { "3113330", "3113338", "3113340", "3113346", "3113348", "3113351" },
                 EventConfiguration = new EventProcessorConfiguration()
@@ -155,7 +155,7 @@ namespace eSports_Results_API.Services
             allSeries.Add(new SeriesProcessorConfiguration()
             {
                 Id = "8",
-                Title = "Wahoo Le Col Saturday Brunch Series (Women) 2022/23",
+                Title = "Wahoo Le Col 2022/23 Season 1 (Women)",
                 QualifyingScoresPerRider = 4,
                 EventIds = new List<string>() { "3113336", "3113339", "3113344", "3113347", "3113349", "3113357" },
                 EventConfiguration = new EventProcessorConfiguration()
