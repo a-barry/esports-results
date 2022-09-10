@@ -11,7 +11,7 @@
   "resources": {
     "assembly": {
       "Common.dll": "sha256-MbIZ8fubIfUmdr0iTB580EN51qza9+Lnmd32nWDaTfY=",
-      "eSportsResults.UI.dll": "sha256-geQtTjFGzUrMUBjIS+jCaNo\/+E\/quil7zJBpL+5sjWw=",
+      "eSportsResults.UI.dll": "sha256-LYzSNV\/iqwwIOoZwkYkZe+QfMRx+s46yKXyv\/KqvPps=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-FmE924+dmmze8bcv2pUnJm0CXCdoZAiLWB9zVKtNuX8=",
       "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-cCdMEeFEbH2L09JM4zWhhT7ddxEnMgXT1Ow23g+LUxE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-gQ3niHxEbCLpOci5HdeGnBaUZcG5asQkAm4eTWEuIN0=",
@@ -31,9 +31,9 @@
       "Microsoft.JSInterop.dll": "sha256-ibHooTkCokNojyjb08g0oKm1krbCNWhlna1qa8UJUsM=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-DI0RkZky47FtF3\/3VasOGjpMhrR+H3kb1cv\/2kzJoBQ=",
       "System.Collections.Concurrent.dll": "sha256-lgc3AY6QxGIpEerdza6uSJnWz7P1hVxN+0OsWJU7c3M=",
-      "System.Collections.dll": "sha256-Mcofts1xmwcaX4o1gbJIxvK9cms+bw1fTPPkJFLcjxQ=",
+      "System.Collections.dll": "sha256-cMWIF44\/BhZGQhWCln+P7tHRFvNr2BNTLT4W96zDZoI=",
       "System.ComponentModel.dll": "sha256-Y7QpEAr46iJCel\/8FN7AMtoGLP6XzUGaef+1VzWxE\/0=",
-      "System.Linq.dll": "sha256-BdEWanI+9y0pJPU\/+PnIjlEp8i8pXEkF8YdJZOm1TOk=",
+      "System.Linq.dll": "sha256-qWrFTs5sRzYwPGfAs3F9NaHTZEG6Hm0f1jc3yx67vcs=",
       "System.Memory.dll": "sha256-UokuFozSuCoaLbJ3EkT84XsrUyATeQOWd7PPF6xKE2M=",
       "System.Net.Http.dll": "sha256-HzJFRPOhGqKqcmJCsB2u1a4GmQDeIwP9QsKF9FubV9s=",
       "System.Net.Http.Json.dll": "sha256-SAzm43PC0NGBzUZvSKZhALtbVFv840PKkcc5m\/F8Fh4=",
