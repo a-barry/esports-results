@@ -11,7 +11,7 @@
   "resources": {
     "assembly": {
       "Common.dll": "sha256-MbIZ8fubIfUmdr0iTB580EN51qza9+Lnmd32nWDaTfY=",
-      "eSportsResults.UI.dll": "sha256-LYzSNV\/iqwwIOoZwkYkZe+QfMRx+s46yKXyv\/KqvPps=",
+      "eSportsResults.UI.dll": "sha256-GosQZ3NJ6IA80IKQ2CTO43a9FxTT5+D8m4fFk9GtYEc=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-FmE924+dmmze8bcv2pUnJm0CXCdoZAiLWB9zVKtNuX8=",
       "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-cCdMEeFEbH2L09JM4zWhhT7ddxEnMgXT1Ow23g+LUxE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-gQ3niHxEbCLpOci5HdeGnBaUZcG5asQkAm4eTWEuIN0=",
