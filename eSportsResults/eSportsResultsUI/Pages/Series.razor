@@ -1,14 +1,16 @@
 ﻿@page "/series/{SeriesId}"
 
-<PageTitle>@seriesResults.SeriesTitle</PageTitle>
+
 
 @if (seriesResults == null)
 {
+    <PageTitle>Series Results</PageTitle>
     <p><em>Loading results...</em></p>
 }
 else if (seriesResults.TeamResults.Count() == 0)
 {
-     <h1>@seriesResults.SeriesTitle</h1>
+    <PageTitle>@seriesResults.SeriesTitle</PageTitle>
+    <h1>@seriesResults.SeriesTitle</h1>
 }
 else
 {
