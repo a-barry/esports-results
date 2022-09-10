@@ -8,7 +8,13 @@
     Before authentication will function correctly, you must configure your provider details in <code>Program.cs</code>
 </div>*@
 
-<ul>
+@if (allSeries == null)
+{
+    <p><em>Loading series...</em></p>
+}
+else
+{
+  <ul>
     @foreach (var series in allSeries.OrderByDescending(s => s.Id))
     {
         <li>
@@ -27,4 +33,6 @@
 
 
     }
-</ul>
+</ul>  
+}
+
