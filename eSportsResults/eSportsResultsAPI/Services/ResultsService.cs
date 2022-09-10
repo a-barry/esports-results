@@ -37,7 +37,7 @@ namespace eSports_Results_API.Services
                 EventTitle = (seriesConfiguration.EventIds.ToList().IndexOf(eventId) + 1).ToString(),
             };
 
-            if(rawResults.GotData)
+            if(!rawResults.GotData)
             {
                 results.EventTitle += " (Future event)";
                 results.IndividualResults = new Dictionary<int, IEnumerable<IndividualResult>>();
