@@ -1,4 +1,6 @@
 using eSports_Results_API.Services;
+using Microsoft.Net.Http.Headers;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,9 +11,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient(sp => new HttpClient() );
+//builder.Services.AddTransient(sp => new HttpClient() );
 builder.Services.AddTransient<Common.Interfaces.IResultsDataSource, ZwiftPowerDataSource.Zwiftpower>();
 builder.Services.AddTransient<Common.Interfaces.IResultsProcessor, WLCSeriesResultsProcessor.WLCEventProcessor>();
+
+builder.Services.AddHttpClient(nameof(ZwiftPowerDataSource.Zwiftpower)).ConfigurePrimaryHttpMessageHandler(() =>
+{
+    return new HttpClientHandler() { CookieContainer = new CookieContainer(), UseCookies = true };
+});
 
 // services
 builder.Services.AddScoped<ResultsService>();

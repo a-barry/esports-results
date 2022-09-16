@@ -73,38 +73,6 @@ namespace eSports_Results_API.Controllers
             }
             return true;
 
-            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://www.zwift.com/eu/sign-in?redirect_uri=https://www.zwift.com/feed?auth_redirect=true");
-            //request.CookieContainer = new CookieContainer();
-            //request.Method = "GET";
-            ////request.ContentType = "application/x-www-form-urlencoded";
-            //request.AllowAutoRedirect = true;
-
-            ////using (var stream = request.GetRequestStream())
-            ////{
-            ////    stream.Write(data, 0, data.Length);
-            ////}
-
-            //HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-
-            //var cookies = new CookieContainer();
-            //cookies.Add(response.Cookies);
-
-
-            //foreach (Cookie cook in response.Cookies)
-            //{
-            //    //using (System.IO.StreamWriter file = new System.IO.StreamWriter(@desktop + "\\cookie.html", true))
-            //    //{
-            //    //    file.WriteLine(cook.ToString());
-            //    //}
-            //    // Show the string representation of the cookie.                
-            //}
-
-            //HttpWebRequest requestNext = (HttpWebRequest)WebRequest.Create("####");
-            ////requestNext.CookieContainer.Add(cookies);
-            //requestNext.Method = "POST";
-
-            //HttpWebResponse responseNext = (HttpWebResponse)requestNext.GetResponse();
-
         }
     }
 }

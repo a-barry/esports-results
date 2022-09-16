@@ -1,5 +1,7 @@
 ﻿using Common.Models;
+using HtmlAgilityPack;
 using System.Linq;
+using System.Net;
 using System.Net.Http.Json;
 
 namespace ZwiftPowerDataSource
@@ -14,8 +16,44 @@ namespace ZwiftPowerDataSource
         public Zwiftpower(HttpClient httpClient)
         {
             _httpClient = httpClient;
-
+           
         }
+
+        private async void LoginToZP()
+        {
+            // ZP url that will init a login flow
+            var zpLoginURL = new Uri("https://zwiftpower.com/ucp.php?mode=login&login=external&oauth_service=oauthzpsso");
+            
+            // get this page, this will get some cookies we need and also be redirect to zwift for auth
+            var result = await _httpClient.GetAsync(zpLoginURL);
+
+            result.EnsureSuccessStatusCode();
+
+            // get the HTML
+            var doc = new HtmlDocument();
+            doc.LoadHtml(await result.Content.ReadAsStringAsync());
+
+            // extract login form post URL from result
+            var loginForm = doc.GetElementbyId("form");
+            string loginURL = loginForm.GetAttributeValue("action","");
+
+            // create the form encoded login data.
+            var loginContent = new FormUrlEncodedContent(new[]
+            {
+                new KeyValuePair<string, string>("username", ""),
+                new KeyValuePair<string, string>("password", ""),
+                new KeyValuePair<string, string>("rememberMe", "on"),
+            });
+
+            // post to the login url
+            var loginResult = await _httpClient.PostAsync(loginURL, loginContent);
+
+            loginResult.EnsureSuccessStatusCode();
+
+            // hope this is not needed
+            //var htmlLogin = await result.Content.ReadAsStringAsync();
+        }
+
         public async Task<RawEventResults> GetRawResultsFromEventAsync(string id)
         {
             var rawResults =  new RawEventResults() { EventID = id, 
