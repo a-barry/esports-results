@@ -11,7 +11,7 @@
   "resources": {
     "assembly": {
       "Common.dll": "sha256-WVEcyTcy0Y8gkv8lKHO6OvT22IAZjkjGeDKu4PLuW2k=",
-      "eSportsResults.UI.dll": "sha256-sKKciVw4qr5megPmLCzmYDS94j1Z9DlBxmEybGxGRMA=",
+      "eSportsResults.UI.dll": "sha256-LQ3UITO90DFM2YX\/o68nkLVzdtxaUf7thn4hZnRU1Ik=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-FmE924+dmmze8bcv2pUnJm0CXCdoZAiLWB9zVKtNuX8=",
       "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-cCdMEeFEbH2L09JM4zWhhT7ddxEnMgXT1Ow23g+LUxE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-gQ3niHxEbCLpOci5HdeGnBaUZcG5asQkAm4eTWEuIN0=",
@@ -46,7 +46,7 @@
       "System.Security.Claims.dll": "sha256-ZYv8rnbunsqB63D5f3PWEyxL5MoY5lUS480qPCj0cq0=",
       "System.Text.Encodings.Web.dll": "sha256-n1cAxytitPhPEBsi0YEEG5DjTcerMVAQFIa5+U0sBfE=",
       "System.Text.Json.dll": "sha256-7hZkxxfbRpIe+h9fcObLfoB6U+JPzhLE0LtrlJUERiA=",
-      "WLCSeriesResultsProcessor.dll": "sha256-Qd3SkLL1sxSxnbxX2TQnvJ5iwYpjsm20aiHSrL74MEg="
+      "WLCSeriesResultsProcessor.dll": "sha256-WfgvTm8xawICBD\/8ORDmbldrWAvHnxBaiSgfKV0vBTU="
     },
     "extensions": null,
     "lazyAssembly": null,
