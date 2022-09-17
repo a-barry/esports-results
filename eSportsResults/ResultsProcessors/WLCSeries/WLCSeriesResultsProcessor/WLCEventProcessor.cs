@@ -54,7 +54,7 @@ namespace WLCSeriesResultsProcessor
                                                                     Points = i.OrderByDescending(j => j.Points).Take(configuration.QualifyingScoresPerRider).Sum(v => v.Points),
                                                                     HasDuals = i.First().HasDuals,
                                                                     Name = i.First().Name
-                                                                }).ToList();
+                                                                }).OrderByDescending(i => i.Points).ToList();
             }
 
             return penIndividualResults;
