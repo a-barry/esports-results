@@ -111,7 +111,7 @@ namespace WLCSeriesResultsProcessor
                                                                         Colour3 = tDetails.Colour3
                                                                     };
                                                                 }
-                                                                ).ToList();
+                                                                ).OrderByDescending(tr => tr.Points).ToList();
             }
 
             // combine scores from all pens to make overall team score
