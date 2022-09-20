@@ -24,7 +24,8 @@ namespace WLCSeriesResultsProcessor
         public async Task<Dictionary<int, IEnumerable<IndividualResult>>> GetSeriesIndividualResultsAsync(SeriesProcessorConfiguration configuration, IEnumerable<RawEventResults> rawSeriesResults)
         {
             // extract pens found in results (yes probably 4!)
-            var pens = rawSeriesResults.First().Results.Select(r => r.Pen).Distinct();
+            // do this across all events in the series that have returned results
+            var pens = rawSeriesResults.SelectMany(r => r.Results.Select(r => r.Pen)).Distinct();
 
             var penIndividualResults = new Dictionary<int, IEnumerable<IndividualResult>>();
 
@@ -63,7 +64,8 @@ namespace WLCSeriesResultsProcessor
         public async Task<Dictionary<int, IEnumerable<TeamResult>>> GetSeriesTeamResultsAsync(SeriesProcessorConfiguration configuration, IEnumerable<RawEventResults> rawSeriesResults)
         {
             // extract pens found in results (yes probably 4!)
-            var pens = rawSeriesResults.First().Results.Select(r => r.Pen).Distinct();
+            // do this across all events in the series that have returned results
+            var pens = rawSeriesResults.SelectMany(r => r.Results.Select(r => r.Pen)).Distinct();
 
             // extract team names
             var teams = rawSeriesResults.SelectMany(e => e.Results.Select(r => r.Team)).GroupBy(t => t.Id).Select(g => g.First()).ToDictionary(t => t.Id, t => t);
