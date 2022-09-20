@@ -16,7 +16,8 @@ namespace ZwiftPowerDataSource
         public Zwiftpower(HttpClient httpClient)
         {
             _httpClient = httpClient;
-           
+
+            LoginToZP();
         }
 
         private async void LoginToZP()

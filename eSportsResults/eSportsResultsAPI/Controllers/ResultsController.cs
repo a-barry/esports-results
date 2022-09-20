@@ -37,42 +37,35 @@ namespace eSports_Results_API.Controllers
             return await _resultsService.GetSeriesResults(seriesConfig, id);
         }
 
-        [HttpGet("tests")]
-        public async Task<bool> zplogintests()
-        {
-            var zpLoginURL = new Uri("https://zwiftpower.com/ucp.php?mode=login&login=external&oauth_service=oauthzpsso");
+        //[HttpGet("tests")]
+        //public async Task<bool> zplogintests()
+        //{
+        //    var zpLoginURL = new Uri("https://zwiftpower.com/ucp.php?mode=login&login=external&oauth_service=oauthzpsso");
 
-            var cookieContainer = new CookieContainer();
-            using (var handler = new HttpClientHandler() { CookieContainer = cookieContainer, UseCookies = true })
-            using (var client = new HttpClient(handler) { })
-            {
+        //    var cookieContainer = new CookieContainer();
+        //    using (var handler = new HttpClientHandler() { CookieContainer = cookieContainer, UseCookies = true })
+        //    using (var client = new HttpClient(handler) { })
+        //    {
+        //        var result = await client.GetAsync(zpLoginURL);
+        //        result.EnsureSuccessStatusCode();
 
-                //            var content = new FormUrlEncodedContent(new[]
-                //            {
-                //    new KeyValuePair<string, string>("foo", "bar"),
-                //    new KeyValuePair<string, string>("baz", "bazinga"),
-                //});
-                //            cookieContainer.Add(baseAddress, new Cookie("CookieName", "cookie_value"));
-                var result = await client.GetAsync(zpLoginURL);
-                result.EnsureSuccessStatusCode();
+        //        var html = await result.Content.ReadAsStringAsync();
 
-                var html = await result.Content.ReadAsStringAsync();
+        //        var loginURL = "";
 
-                var loginURL = "";
+        //        var loginContent = new FormUrlEncodedContent(new[]
+        //        {
+        //            new KeyValuePair<string, string>("username", ""),
+        //            new KeyValuePair<string, string>("password", ""),
+        //            new KeyValuePair<string, string>("rememberMe", "on"),
+        //        });
 
-                var loginContent = new FormUrlEncodedContent(new[]
-                {
-                    new KeyValuePair<string, string>("username", ""),
-                    new KeyValuePair<string, string>("password", ""),
-                    new KeyValuePair<string, string>("rememberMe", "on"),
-                });
+        //        var loginResult = await client.PostAsync(loginURL, loginContent);
 
-                var loginResult = await client.PostAsync(loginURL, loginContent);
+        //        var htmlLogin = await result.Content.ReadAsStringAsync();
+        //    }
+        //    return true;
 
-                var htmlLogin = await result.Content.ReadAsStringAsync();
-            }
-            return true;
-
-        }
+        //}
     }
 }
