@@ -1,5 +1,6 @@
 ﻿using Common.Models;
 using HtmlAgilityPack;
+using Microsoft.Extensions.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http.Json;
@@ -13,14 +14,25 @@ namespace ZwiftPowerDataSource
         const string cfKPPolicy = "eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly96d2lmdHBvd2VyLmNvbS8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDgzNjQ3fX19XX0_";
 
         private HttpClient _httpClient;
-        public Zwiftpower(HttpClient httpClient)
+        private IConfiguration _config;
+        public Zwiftpower(IHttpClientFactory httpClientFactory, IConfiguration config)
         {
-            _httpClient = httpClient;
-
-            LoginToZP();
+            _httpClient = httpClientFactory.CreateClient(nameof(Zwiftpower));
+            _config = config;
         }
 
-        private async void LoginToZP()
+        private bool LoggedIn = false;
+
+        private async Task Init()
+        {
+            if(!LoggedIn)
+            {
+                await LoginToZP();
+                LoggedIn = true;
+            }
+        }
+
+        private async Task LoginToZP()
         {
             // ZP url that will init a login flow
             var zpLoginURL = new Uri("https://zwiftpower.com/ucp.php?mode=login&login=external&oauth_service=oauthzpsso");
@@ -37,12 +49,13 @@ namespace ZwiftPowerDataSource
             // extract login form post URL from result
             var loginForm = doc.GetElementbyId("form");
             string loginURL = loginForm.GetAttributeValue("action","");
+            loginURL = loginURL.Replace("&amp;", "&");
 
             // create the form encoded login data.
             var loginContent = new FormUrlEncodedContent(new[]
             {
-                new KeyValuePair<string, string>("username", ""),
-                new KeyValuePair<string, string>("password", ""),
+                new KeyValuePair<string, string>("username", _config["ZwiftPower:Username"]),
+                new KeyValuePair<string, string>("password", _config["ZwiftPower:Password"]),
                 new KeyValuePair<string, string>("rememberMe", "on"),
             });
 
@@ -78,6 +91,8 @@ namespace ZwiftPowerDataSource
 
         private async Task<IEnumerable<RawResult>> GetRawResultsFromZPAsync(string id)
         {
+            await LoginToZP();
+
             // validate that the supplied id is an int
             int zwiftEventId = eventIdToInt(id);
 
@@ -89,7 +104,9 @@ namespace ZwiftPowerDataSource
             //https://zwiftpower.com/cache3/teams/4516_riders.json
             try
             {
-                var zpResults = await _httpClient.GetFromJsonAsync<ZwiftPowerData>($"https://zwiftpower.com/cache3/results/{zwiftEventId}_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}");
+                //string zpResultsURL = $"https://zwiftpower.com/cache3/results/{zwiftEventId}_view.json?Key-Pair-Id={cfKPId}&Signature={cfKPSignature}&Policy={cfKPPolicy}";
+                string zpResultsURL = $"https://zwiftpower.com/cache3/results/{zwiftEventId}_view.json";
+                var zpResults = await _httpClient.GetFromJsonAsync<ZwiftPowerData>(zpResultsURL);
 
                 // map zpResults to our internal class
                 return zpResults.data.Select(zpi => new RawResult()
@@ -190,6 +207,7 @@ namespace ZwiftPowerDataSource
 
         private async Task<IEnumerable<RawDualRecordingResult>> GetRawDualRecordingFromZPAsync(string id)
         {
+            await LoginToZP();
             //&_=1659430847635
 
             // validate that the supplied id is an int
