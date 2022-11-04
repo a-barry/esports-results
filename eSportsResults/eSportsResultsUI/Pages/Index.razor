@@ -15,7 +15,7 @@
 else
 {
   <ul>
-    @foreach (var series in allSeries.OrderByDescending(s => s.Id))
+    @foreach (var series in allSeries.OrderByDescending(s => Int32.Parse(s.Id)))
     {
         <li>
             <h2><a href="series/@series.Id">@series.Title</a></h2>
