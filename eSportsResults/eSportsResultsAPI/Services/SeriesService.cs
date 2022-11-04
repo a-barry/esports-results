@@ -172,6 +172,48 @@ namespace eSports_Results_API.Services
                 //bottomColour	#f2329a
 
             });
+            
+            allSeries.Add(new SeriesProcessorConfiguration()
+            {
+                Id = "9",
+                Title = "Wahoo Le Col 2022/23 Season 2 (Mixed)",
+                QualifyingScoresPerRider = 4,
+                EventIds = new List<string>() { "3157597", "3222198", "3222202", "3222208", "3222214", "3222218" },
+                EventConfiguration = new EventProcessorConfiguration()
+                {
+                    MaxScorersPerTeam = 3,
+                    PointsForFirst = 100,
+                    PointStep = 1,
+                    ScorePrimes = false,
+                    PointsForParticipation = 1
+                }
+
+                //                topColour	#f2324f
+                //middleColour	#5ed2e7
+                //bottomColour	#f2329a
+
+            });
+
+            allSeries.Add(new SeriesProcessorConfiguration()
+            {
+                Id = "10",
+                Title = "Wahoo Le Col 2022/23 Season 2 (Women)",
+                QualifyingScoresPerRider = 4,
+                EventIds = new List<string>() { "3157601", "3222224", "3222226", "3222227", "3222229", "3222232" },
+                EventConfiguration = new EventProcessorConfiguration()
+                {
+                    MaxScorersPerTeam = 3,
+                    PointsForFirst = 50,
+                    PointStep = 1,
+                    ScorePrimes = false,
+                    PointsForParticipation = 1
+                }
+
+                //                topColour	#f2324f
+                //middleColour	#5ed2e7
+                //bottomColour	#f2329a
+
+            });
         }
 
         public async Task<IEnumerable<SeriesProcessorConfiguration>> GetAllSeriesAsync()
