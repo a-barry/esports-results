@@ -220,7 +220,7 @@ namespace eSports_Results_API.Services
             {
                 Id = "11",
                 Title = "Wahoo Le Col Saturday Series Back To The Future 2022 (Mixed)",
-                QualifyingScoresPerRider = 2,
+                QualifyingScoresPerRider = 1,
                 EventIds = new List<string>() { "3333363", "3333365", "3333367" },
                 EventConfiguration = new EventProcessorConfiguration()
                 {
@@ -241,7 +241,7 @@ namespace eSports_Results_API.Services
             {
                 Id = "12",
                 Title = "Wahoo Le Col Saturday Series Back To The Future 2022 (Women)",
-                QualifyingScoresPerRider = 2,
+                QualifyingScoresPerRider = 1,
                 EventIds = new List<string>() { "3333370", "3333374", "3333375" },
                 EventConfiguration = new EventProcessorConfiguration()
                 {
