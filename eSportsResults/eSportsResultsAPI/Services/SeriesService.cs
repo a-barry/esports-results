@@ -214,6 +214,49 @@ namespace eSports_Results_API.Services
                 //bottomColour	#f2329a
 
             });
+            
+            
+            allSeries.Add(new SeriesProcessorConfiguration()
+            {
+                Id = "11",
+                Title = "Wahoo Le Col Saturday Series Back To The Future 2022 (Mixed)",
+                QualifyingScoresPerRider = 2,
+                EventIds = new List<string>() { "3333363", "3333365", "3333367" },
+                EventConfiguration = new EventProcessorConfiguration()
+                {
+                    MaxScorersPerTeam = 3,
+                    PointsForFirst = 100,
+                    PointStep = 1,
+                    ScorePrimes = false,
+                    PointsForParticipation = 1
+                }
+
+                //                topColour	#f2324f
+                //middleColour	#5ed2e7
+                //bottomColour	#f2329a
+
+            });
+
+            allSeries.Add(new SeriesProcessorConfiguration()
+            {
+                Id = "12",
+                Title = "Wahoo Le Col Saturday Series Back To The Future 2022 (Women)",
+                QualifyingScoresPerRider = 2,
+                EventIds = new List<string>() { "3333370", "3333374", "3333375" },
+                EventConfiguration = new EventProcessorConfiguration()
+                {
+                    MaxScorersPerTeam = 3,
+                    PointsForFirst = 50,
+                    PointStep = 1,
+                    ScorePrimes = false,
+                    PointsForParticipation = 1
+                }
+
+                //                topColour	#f2324f
+                //middleColour	#5ed2e7
+                //bottomColour	#f2329a
+
+            });
         }
 
         public async Task<IEnumerable<SeriesProcessorConfiguration>> GetAllSeriesAsync()
