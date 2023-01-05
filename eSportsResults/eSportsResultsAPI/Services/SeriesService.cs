@@ -261,7 +261,7 @@ namespace eSports_Results_API.Services
             allSeries.Add(new SeriesProcessorConfiguration()
             {
                 Id = "13",
-                Title = "Wahoo Le Col 2022/23 Season 4 (Mixed)",
+                Title = "Wahoo Le Col 2022/23 Season 3 (Mixed)",
                 QualifyingScoresPerRider = 4,
                 EventIds = new List<string>() { "3398669", "3398688", "3398691", "3398721", "3398726", "3398740" },
                 EventConfiguration = new EventProcessorConfiguration()
